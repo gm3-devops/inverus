@@ -79,7 +79,7 @@ const Navbar = () => {
                                         </Link>
                                     </Button>
                                     <Button size="sm" variant="default" asChild className="sm:flex">
-                                        <Link href="/auth/signup">
+                                        <Link href="/">
                                             Schedule a demo
                                             <ArrowRightIcon className="w-4 h-4 ml-2 lg:block" />
                                         </Link>

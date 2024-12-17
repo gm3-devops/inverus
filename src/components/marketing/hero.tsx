@@ -38,7 +38,7 @@ const Hero = () => {
             <Container delay={0.2}>
                 <div className="flex items-center justify-center md:gap-x-6 mt-8">
                     <Button asChild size="lg">
-                        <Link href="/app">
+                        <Link href="/">
                             Schedule a demo
                         </Link>
                     </Button>
