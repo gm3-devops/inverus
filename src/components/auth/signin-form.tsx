@@ -1,12 +1,12 @@
 "use client";
 
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState } from 'react';
 import { useRouter, useSearchParams } from "next/navigation";
 import { motion } from "framer-motion";
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
 import Link from "next/link";
-import { ArrowLeftIcon, MailIcon } from "lucide-react";
+import { MailIcon } from "lucide-react";
 import Icons from "../global/icons";
 import { FADE_IN_VARIANTS } from "@/constants";
 import { toast } from "sonner";
@@ -22,9 +22,7 @@ interface SignInFirstFactor {
 const SignInForm = () => {
 
     const router = useRouter();
-
     const params = useSearchParams();
-
     const from = params.get("from");
 
     const { isLoaded, signIn, setActive } = useSignIn();
@@ -76,22 +74,21 @@ const SignInForm = () => {
                 identifier: email,
             });
 
-            await signIn.prepareFirstFactor({
-                strategy: "email_code",
-                emailAddressId: signIn.supportedFirstFactors!.find(
-                    (factor) => factor.strategy === "email_code"
-                )!.emailAddressId,
-            });
+            // Safely find the factor with strategy "email_code"
+            const factor = signIn.supportedFirstFactors?.find(
+                (factor) => factor.strategy === "email_code"
+            );
 
-            setIsCodeSent(true);
+            if (factor?.emailAddressId) {
+                await signIn.prepareFirstFactor({
+                    strategy: "email_code",
+                    emailAddressId: factor.emailAddressId,
+                });
 
-            // if (signInAttempt.status === "complete") {
-            //     await setActive({ session: signInAttempt.createdSessionId });
-            //     setIsCodeSent(true);
-            // } else {
-            //     console.error(JSON.stringify(signInAttempt, null, 2));
-            //     toast.error("Invalid email. Please try again.");
-            // }
+                setIsCodeSent(true);
+            } else {
+                toast.error("No email factor available.");
+            }
 
         } catch (error: any) {
             console.error(JSON.stringify(error, null, 2));
@@ -110,10 +107,6 @@ const SignInForm = () => {
         } finally {
             setIsEmailLoading(false);
         }
-
-        // Check if the email is in db or not or if email is already have an account
-        // If email is already have an account, then show login form
-        // If email is not in db, then send a code to email address
     };
 
     const handleVerifyCode = async (e: React.FormEvent<HTMLFormElement>) => {
@@ -129,7 +122,6 @@ const SignInForm = () => {
         setIsCodeLoading(true);
 
         try {
-
             const signInAttempt = await signIn.attemptFirstFactor({
                 strategy: "email_code",
                 code,
@@ -162,10 +154,6 @@ const SignInForm = () => {
         } finally {
             setIsCodeLoading(false);
         }
-
-        // Check if the code is correct or not
-        // If code is correct, then show create password form
-        // If code is incorrect, then show error message
     };
 
     useEffect(() => {
@@ -330,54 +318,40 @@ const SignInForm = () => {
                             </motion.form>
                         </div>
                     ) : (
-                        <div>
-                            <motion.form
-                                variants={FADE_IN_VARIANTS}
-                                animate="visible"
-                                initial="hidden"
-                                onSubmit={handleEmail}
-                                className="py-8 w-full flex flex-col gap-4"
-                            >
-                                <div className="w-full">
-                                    <Input
-                                        autoFocus={true}
-                                        name="email"
-                                        type="email"
-                                        value={email}
-                                        disabled={isEmailLoading}
-                                        onChange={(e) => setEmail(e.target.value)}
-                                        placeholder="Enter your email address"
-                                        className="w-full"
-                                    />
-                                </div>
-                                <div className="w-full">
-                                    <Button
-                                        type="submit"
-                                        disabled={isEmailLoading}
-                                        className="w-full"
-                                    >
-                                        {isEmailLoading ? <LoadingIcon size="sm" className="mr-2" /> : "Continue"}
-                                    </Button>
-                                </div>
-                                <div className="w-full">
-                                    <Button
-                                        type="button"
-                                        variant="ghost"
-                                        disabled={isEmailLoading}
-                                        onClick={() => setIsEmailOpen(true)}
-                                        className="w-full"
-                                    >
-                                        <ArrowLeftIcon className="w-3.5 h-3.5 mr-2" />
-                                        Back
-                                    </Button>
-                                </div>
-                            </motion.form>
-                        </div>
+                        <motion.form
+                            variants={FADE_IN_VARIANTS}
+                            animate="visible"
+                            initial="hidden"
+                            onSubmit={handleEmail}
+                            className="py-8 w-full flex flex-col gap-4"
+                        >
+                            <div className="w-full">
+                                <Input
+                                    autoFocus={true}
+                                    name="email"
+                                    type="email"
+                                    value={email}
+                                    onChange={(e) => setEmail(e.target.value)}
+                                    disabled={isEmailLoading}
+                                    placeholder="Enter your email address"
+                                    className="w-full"
+                                />
+                            </div>
+                            <div className="w-full">
+                                <Button
+                                    type="submit"
+                                    disabled={isEmailLoading}
+                                    className="w-full"
+                                >
+                                    {isEmailLoading ? <LoadingIcon size="sm" className="mr-2" /> : "Send me the code"}
+                                </Button>
+                            </div>
+                        </motion.form>
                     )}
                 </div>
             )}
         </div>
-    )
+    );
 };
 
-export default SignInForm
+export default SignInForm;
