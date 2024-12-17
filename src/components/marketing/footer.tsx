@@ -125,7 +125,7 @@ const Footer = () => {
                                 <ul className="mt-4 text-muted-foreground text-sm">
                                     <li className="mt-2">
                                         <Link
-                                            href="/resources/blog"
+                                            href="/blog"
                                             className="transition-all duration-300 hover:text-foreground"
                                         >
                                             Blog
@@ -133,7 +133,7 @@ const Footer = () => {
                                     </li>
                                     <li className="mt-2">
                                         <Link
-                                            href="/resources/help"
+                                            href="/help"
                                             className="transition-all duration-300 hover:text-foreground"
                                         >
                                             Support
