@@ -68,7 +68,7 @@ const Menu = () => {
                     </NavigationMenuContent>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <Link href="/pricing" legacyBehavior passHref>
+                    <Link href="/blog" legacyBehavior passHref>
                         <NavigationMenuLink className="h-10 px-4 py-2 text-sm font-normal rounded-md text-foreground hover:text-muted-foreground w-max hover:bg-none">
                             Blog
                         </NavigationMenuLink>
