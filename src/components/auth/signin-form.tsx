@@ -2,23 +2,9 @@
 
 import React, { useEffect, useState } from 'react'
 import { useRouter, useSearchParams } from "next/navigation";
-import { zodResolver } from "@hookform/resolvers/zod";
-import { useForm } from "react-hook-form";
 import { motion } from "framer-motion";
-
 import { Input } from "../ui/input";
 import { Button } from "../ui/button";
-import {
-    Form,
-    FormControl,
-    FormDescription,
-    FormField,
-    FormItem,
-    FormLabel,
-    FormMessage,
-} from "@/components/ui/form";
-import { SignUpSchema, SignUpSchemaType } from "@/schema";
-import Container from "../global/container";
 import Link from "next/link";
 import { ArrowLeftIcon, MailIcon } from "lucide-react";
 import Icons from "../global/icons";
@@ -191,16 +177,30 @@ const SignInForm = () => {
                 initial="hidden"
             >
                 <div className="flex justify-center">
-                    <Link href="/">
-                        <Icons.icon className="w-8 h-8" />
-                    </Link>
+                    <span className="text-lg font-bold">
+                        in
+                    </span>
+                    <svg
+                        className="w-6 h-6 mx-1 text-blue-300 animate-draw-check"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="4"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                    >
+                        <path d="M20 6L9 17l-5-5" />
+                    </svg>
+                    <span className="text-lg font-bold">
+                        erus
+                    </span>
                 </div>
                 <h1 className="text-2xl text-center mt-4">
                     {isEmailOpen
-                        ? "Login to Luro"
+                        ? "Login to inVerus"
                         : isCodeSent
                             ? "Verify your email"
-                            : "Welcome to Luro"}
+                            : "Welcome to inVerus"}
                 </h1>
                 <p className="text-sm text-muted-foreground mt-2">
                     {isEmailOpen
