@@ -14,6 +14,11 @@ import { useSignIn } from "@clerk/nextjs";
 import LoadingIcon from "../ui/loading-icon";
 import { OAuthStrategy } from "@clerk/types";
 
+interface SignInFirstFactor {
+    strategy: string;
+    emailAddressId?: string;  // Add this if it should be part of the interface
+}
+
 const SignInForm = () => {
 
     const router = useRouter();
