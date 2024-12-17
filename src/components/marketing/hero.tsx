@@ -3,6 +3,7 @@ import Link from "next/link";
 import { BlurText } from "../ui/blur-text";
 import { Button } from "../ui/button";
 import Container from "../global/container";
+import { ScheduleCall } from "@/components/ui/cal";
 
 const Hero = () => {
     return (
@@ -37,11 +38,12 @@ const Hero = () => {
             </Container>
             <Container delay={0.2}>
                 <div className="flex items-center justify-center md:gap-x-6 mt-8">
-                    <Button asChild size="lg">
+                    {/* <Button asChild size="lg">
                         <Link href="/">
                             Schedule a demo
                         </Link>
-                    </Button>
+                    </Button> */}
+                    <ScheduleCall />
                     <Button asChild size="lg" variant="outline" className="hidden md:flex">
                         <Link href="#">
                             How it works

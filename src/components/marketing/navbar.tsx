@@ -2,7 +2,7 @@
 
 import { cn } from "@/functions";
 import { useClerk } from "@clerk/nextjs";
-import { ArrowRightIcon, XIcon } from "lucide-react";
+import { XIcon } from "lucide-react";
 import Link from "next/link";
 import { useEffect, useState } from 'react';
 import Icons from "../global/icons";
@@ -10,6 +10,7 @@ import Wrapper from "../global/wrapper";
 import { Button } from "../ui/button";
 import Menu from "./menu";
 import MobileMenu from "./mobile-menu";
+import { ScheduleCall } from "@/components/ui/cal";
 
 const Navbar = () => {
     const { user } = useClerk();
@@ -78,12 +79,13 @@ const Navbar = () => {
                                             Login
                                         </Link>
                                     </Button>
-                                    <Button size="sm" variant="default" asChild className="sm:flex">
+                                    <ScheduleCall />
+                                    {/* <Button size="sm" variant="default" asChild className="sm:flex">
                                         <Link href="/">
                                             Schedule a demo
                                             <ArrowRightIcon className="w-4 h-4 ml-2 lg:block" />
                                         </Link>
-                                    </Button>
+                                    </Button> */}
                                 </>
                             )}
                             <Button

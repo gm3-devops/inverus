@@ -1,11 +1,10 @@
 import { Container } from "@/components";
 import React from 'react'
-import MagicBadge from "@/components/ui/magic-badge";
 import Blogs from "@/components/blog/blog";
 
 const BlogPage = () => {
     return (
-        <div className="flex flex-col items-center justify-center pb-20 my-24">
+        <div className="flex flex-col items-center justify-center pb-20 my-28">
             <Container delay={0.1} className="w-full">
                 <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold font-heading text-center mt-6 !leading-tight">
                     Blog

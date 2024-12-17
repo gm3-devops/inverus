@@ -1,8 +1,6 @@
-import Link from "next/link";
 import Container from "../global/container";
-import { Button } from "../ui/button";
 import { LampContainer } from "@/components/ui/lamp";
-import { ArrowRight } from "lucide-react";
+import { ScheduleCall } from "@/components/ui/cal";
 
 const CTA = () => {
     return (
@@ -16,16 +14,19 @@ const CTA = () => {
                         <p className="text-muted-foreground mt-6 max-w-md mx-auto">
                             Empower your institution with the confidence to prevent identity fraud and meet compliance with ease
                         </p>
-                        <Button variant="default" className="mt-6" asChild>
+                        <div className="mt-6">
+                            <ScheduleCall />
+                        </div>
+                        {/* <Button variant="default" className="mt-6" asChild>
                             <Link href="/">
                                 Schedule a demo
                                 <ArrowRight className="w-4 h-4 ml-2" />
                             </Link>
-                        </Button>
+                        </Button> */}
                     </div>
                 </LampContainer>
             </Container>
-        </div>
+        </div >
     )
 };
 
