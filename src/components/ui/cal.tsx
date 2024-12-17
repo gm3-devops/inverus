@@ -29,7 +29,7 @@ export function ScheduleCall() {
             data-cal-config='{"layout":"month_view"}'
             className="bg-primary text-primary-foreground hover:opacity-70 bt-primary"
         >
-            Schedule Demo
+            Book a Demo
             <Calendar className="w-4 h-4 ml-2 lg:block" />
         </Button>
     );
