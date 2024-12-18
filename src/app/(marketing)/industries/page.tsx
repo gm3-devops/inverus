@@ -10,7 +10,7 @@ const LinkShorteningPage = () => {
         <>
             <Wrapper>
                 <Container delay={0.1} className="w-full">
-                    <div className="flex flex-col items-center justify-center py-40 max-w-xl mx-auto">
+                    <div id="cardealers" className="flex flex-col items-center justify-center py-40 max-w-xl mx-auto">
                         <MagicBadge title="Car Dealers" />
                         <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold font-heading text-center mt-6 !leading-tight">
                             Shorten links and track their performance
@@ -35,7 +35,7 @@ const LinkShorteningPage = () => {
                 <Container delay={0.2} className="w-full">
                     <div className="w-full flex max-w-4xl py-10 mx-auto">
                         <Image
-                            src="/assets/shorten-links.svg"
+                            src="/images/industries/password-protection.svg"
                             alt="Shorten links and track their performance"
                             width={80}
                             height={80}
