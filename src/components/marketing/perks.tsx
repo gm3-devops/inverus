@@ -12,9 +12,9 @@ const Perks = () => {
                     id="benefits"
                     className="flex w-full flex-col items-center justify-center py-8 lg:items-center"
                 >
-                    <MagicBadge title="Benefits" />
+                    <MagicBadge title="Why inVerus?" />
                     <h2 className="!leading-[1.1] mt-6 text-center font-heading font-medium text-3xl text-foreground md:text-5xl lg:text-center">
-                        Lorum Ipsum Dipsum
+                        AI-Driven Solutions for Proactive Identity Fraud Prevention
                     </h2>
                 </div>
             </Container>

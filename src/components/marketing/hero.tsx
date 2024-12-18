@@ -18,13 +18,15 @@ const Hero = () => {
                         <div className="w-1.5 h-1.5 rounded-full bg-primary flex items-center justify-center absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                         </div>
                     </div>
-                    <span className="inline-flex items-center justify-center gap-2 animate-text-gradient animate-background-shine bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text text-sm text-transparent">
-                        Build for the future
-                        <span className="text-xs text-secondary-foreground px-1.5 py-0.5 rounded-full bg-gradient-to-b from-foreground/20 to-foreground/10 flex items-center justify-center">
-                            What&apos;s new
-                            <ArrowRightIcon className="w-3.5 h-3.5 ml-1 text-foreground/50" />
+                    <Link href="/blog">
+                        <span className="inline-flex items-center justify-center gap-2 animate-text-gradient animate-background-shine bg-gradient-to-r from-[#b2a8fd] via-[#8678f9] to-[#c7d2fe] bg-[200%_auto] bg-clip-text text-sm text-transparent">
+                            Build for the future
+                            <span className="text-xs text-secondary-foreground px-1.5 py-0.5 rounded-full bg-gradient-to-b from-foreground/20 to-foreground/10 flex items-center justify-center">
+                                What&apos;s new
+                                <ArrowRightIcon className="w-3.5 h-3.5 ml-1 text-foreground/50" />
+                            </span>
                         </span>
-                    </span>
+                    </Link>
                 </div>
             </Container>
             <BlurText
@@ -33,20 +35,15 @@ const Hero = () => {
             />
             <Container delay={0.1}>
                 <p className="text-sm sm:text-base lg:text-lg mt-4 text-accent-foreground/60 max-w-2xl mx-auto">
-                    Identity fraud is a growing problem, costing businesses $43 billion in 2023, up 13% from 2022. AI-driven attacks and Deep Fakes exacerbate these risks, highlighting the need for strong, proactive identity validation.
+                    Identity fraud costs businesses $43 billion annually, with AI-driven deep fakes and attacks escalating the risks. InVerus delivers proactive, AI-powered identity fraud prevention to protect your business.
                 </p>
             </Container>
             <Container delay={0.2}>
                 <div className="flex items-center justify-center md:gap-x-6 mt-8">
-                    {/* <Button asChild size="lg">
-                        <Link href="/">
-                            Schedule a demo
-                        </Link>
-                    </Button> */}
                     <ScheduleCall />
-                    <Button asChild size="lg" variant="outline" className="hidden md:flex">
-                        <Link href="#">
-                            How it works
+                    <Button asChild size="lg" variant="white" className="hidden md:flex">
+                        <Link href="/solutions">
+                            Explore Our Solution
                         </Link>
                     </Button>
                 </div>

@@ -6,19 +6,19 @@ export const Pillars = [
   {
     title: "Consortium",
     description:
-      "Easily categorize the scripts and optimize the media to create posts.",
+      "Harness the power of shared intelligence across trusted partners to identify and proactively prevent complex identity fraud before it occurs.",
     icon: Boxes,
   },
   {
     title: "Harvestor",
     description:
-      "Create SEO-optimized blog posts that are easy to customize and share.",
+      "Our Reverse Search Engine technology scours publicly available and consortium data to validate identities and uncover suspicious activity with precision.",
     icon: ScanSearch,
   },
   {
     title: "Behavioral Insights",
     description:
-      "Content is provided in Markdown format and can be easily exported.",
+      "Leverage behavioral patterns and advanced analytics to detect anomalies, predict fraud risks, and enhance decision-making.",
     icon: WandSparklesIcon,
   },
 ] as const;

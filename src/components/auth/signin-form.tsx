@@ -178,16 +178,35 @@ const SignInForm = () => {
                 initial="hidden"
             >
                 <div className="flex justify-center">
-                    <Link href="/">
-                        <Icons.icon className="w-8 h-8" />
+                    <Link
+                        href="/"
+                        className="inline-flex items-center justify-center text-lg font-semibold text-foreground"
+                    >
+                        <span className="text-lg font-bold">
+                            in
+                        </span>
+                        <svg
+                            className="w-6 h-6 mx-1 text-blue-300 animate-draw-check"
+                            viewBox="0 0 24 24"
+                            fill="none"
+                            stroke="currentColor"
+                            strokeWidth="4"
+                            strokeLinecap="round"
+                            strokeLinejoin="round"
+                        >
+                            <path d="M20 6L9 17l-5-5" />
+                        </svg>
+                        <span className="text-lg font-bold">
+                            erus
+                        </span>
                     </Link>
                 </div>
                 <h1 className="text-2xl text-center mt-4">
                     {isEmailOpen
-                        ? "Login to Luro"
+                        ? "Login to inVerus"
                         : isCodeSent
                             ? "Verify your email"
-                            : "Welcome to Luro"}
+                            : "Welcome to inVerus"}
                 </h1>
                 <p className="text-sm text-muted-foreground mt-2">
                     {isEmailOpen

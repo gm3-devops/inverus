@@ -18,14 +18,14 @@ const Menu = () => {
         <NavigationMenu>
             <NavigationMenuList>
                 <NavigationMenuItem>
-                    <Link href="/docs" legacyBehavior passHref>
+                    <Link href="/" legacyBehavior passHref>
                         <NavigationMenuLink className="h-10 px-4 py-2 text-sm font-normal rounded-md text-foreground hover:text-muted-foreground w-max hover:bg-none">
                             Home
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <Link href="/docs" legacyBehavior passHref>
+                    <Link href="/solutions" legacyBehavior passHref>
                         <NavigationMenuLink className="h-10 px-4 py-2 text-sm font-normal rounded-md text-foreground hover:text-muted-foreground w-max hover:bg-none">
                             Solutions
                         </NavigationMenuLink>
@@ -40,7 +40,7 @@ const Menu = () => {
                             <li className="row-span-3">
                                 <NavigationMenuLink asChild>
                                     <Link
-                                        href="/"
+                                        href="/industries"
                                         className="flex flex-col justify-end w-full h-full p-4 no-underline rounded-lg outline-none select-none bg-gradient-to-tr from-accent to-accent/50 focus:shadow-md"
                                     >
                                         <div className="text-blue-300 animate-glow">
@@ -55,13 +55,13 @@ const Menu = () => {
                                     </Link>
                                 </NavigationMenuLink>
                             </li>
-                            <Item title="Car Dealers" href="/features/cars" icon={<CarFront className="w-5 h-5" />}>
+                            <Item title="Car Dealers" href="/industries#cardealers" icon={<CarFront className="w-5 h-5" />}>
                                 Supporting Dealers, DMS Providers, and Fraud Prevention Teams.
                             </Item>
-                            <Item title="Financial Institutions" href="/features/finance" icon={<DollarSign className="w-5 h-5" />}>
+                            <Item title="Financial Institutions" href="/industries#finance" icon={<DollarSign className="w-5 h-5" />}>
                                 Fraud Prevention Teams, Compliance Officers, and Account Managers.
                             </Item>
-                            <Item title="Healthcare Providers" href="/features/healthcare" icon={<HospitalIcon className="w-5 h-5" />}>
+                            <Item title="Healthcare Providers" href="/industries#healthcare" icon={<HospitalIcon className="w-5 h-5" />}>
                                 Hospital Administrators, Compliance Teams, and Medical Practice Owners.
                             </Item>
                         </ul>
@@ -75,14 +75,14 @@ const Menu = () => {
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <Link href="/integrations" legacyBehavior passHref>
+                    <Link href="/about-us" legacyBehavior passHref>
                         <NavigationMenuLink className="h-10 px-4 py-2 text-sm font-normal rounded-md text-foreground hover:text-muted-foreground w-max hover:bg-none">
                             About us
                         </NavigationMenuLink>
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <Link href="/integrations" legacyBehavior passHref>
+                    <Link href="/contact-us" legacyBehavior passHref>
                         <NavigationMenuLink className="h-10 px-4 py-2 text-sm font-normal rounded-md text-foreground hover:text-muted-foreground w-max hover:bg-none">
                             Contact us
                         </NavigationMenuLink>

@@ -1,16 +1,16 @@
 import {
   ZapIcon,
   ChartSplineIcon,
-  LifeBuoyIcon,
-  PaletteIcon,
   ShieldCheckIcon,
   WaypointsIcon,
+  Expand,
+  Cpu,
 } from "lucide-react";
 
 export const PERKS = [
   {
     icon: ZapIcon,
-    title: "Fast and Efficient",
+    title: "Fast and Accurate",
     description:
       "Experience quick and seamless content creation with our optimized AI tools.",
   },
@@ -18,30 +18,30 @@ export const PERKS = [
     icon: ChartSplineIcon,
     title: "Insightful Analytics",
     description:
-      "Gain valuable insights and analytics to enhance your social media strategy.",
+      "Actionable insights to identify threats, prevent fraud, and optimize security measures.",
   },
   {
-    icon: LifeBuoyIcon,
-    title: "24/7 Support",
+    icon: Expand,
+    title: "Scalable and Flexible Solutions",
     description:
-      "Our team is available around the clock to assist with any issues or questions.",
+      "Tailor the platform to meet the needs of Auto, Finance, Healthcare, and beyond.",
   },
   {
-    icon: PaletteIcon,
-    title: "Customizable Solutions",
+    icon: Cpu,
+    title: "Continuous Innovation",
     description:
-      "Tailor the tools and features to fit your unique social media needs.",
+      "Stay ahead of emerging threats with AI-driven solutions and adaptive fraud detection.",
   },
   {
     icon: ShieldCheckIcon,
     title: "Secure and Reliable",
     description:
-      "Trust our platform to keep your data safe and ensure consistent performance.",
+      "Built on advanced encryption and rigorous security protocols to safeguard your data.",
   },
   {
     icon: WaypointsIcon,
-    title: "Seamless Integration",
+    title: "Ease of Implementation",
     description:
-      "Easily integrate with your existing social media platforms and tools.",
+      "Seamless integration into your existing workflows with minimal input from your tech team.",
   },
 ];

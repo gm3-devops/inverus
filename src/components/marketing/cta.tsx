@@ -9,10 +9,15 @@ const CTA = () => {
                 <LampContainer>
                     <div className="flex flex-col items-center justify-center relative w-full text-center">
                         <h2 className="text-4xl lg:text-5xl xl:text-6xl lg:!leading-snug font-semibold mt-8">
-                            From Idea to Launch <br /> Faster Than Ever
+                            Accelerate Security
+                            <br />
+                            Prevent Fraud
+                            <br />
+                            Safeguard Trust
+                            <br />
                         </h2>
                         <p className="text-muted-foreground mt-6 max-w-md mx-auto">
-                            Empower your institution with the confidence to prevent identity fraud and meet compliance with ease
+                            Proactively Prevent Fraud and Protect Your Business with Confidence.
                         </p>
                         <div className="mt-6">
                             <ScheduleCall />

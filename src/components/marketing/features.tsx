@@ -10,12 +10,12 @@ const Features = () => {
         <div className="flex flex-col items-center justify-center py-12 md:py-16 lg:py-24 w-full">
             <Container delay={0.3}>
                 <div className="mx-auto flex w-full max-w-xl flex-col items-center justify-center py-8 lg:items-center">
-                    <MagicBadge title="The Pillars" />
+                    <MagicBadge title="Our Unique Patented Solution" />
                     <h2 className="!leading-[1.1] mt-6 text-center font-heading font-medium text-3xl text-foreground md:text-5xl lg:text-center">
                         The Future of Identity Fraud Prevention
                     </h2>
                     <p className="mt-4 max-w-lg text-center text-lg text-muted-foreground lg:text-center">
-                        Innovative solutions to safeguard your business from emerging threats
+                        Innovative solutions to safeguard your business from emerging threats.
                     </p>
                 </div>
             </Container>

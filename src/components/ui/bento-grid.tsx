@@ -16,8 +16,8 @@ export const CARDS = [
     {
         Icon: CarFrontIcon,
         name: "Auto Dealers",
-        description: "Safeguard dealerships, streamline integrations, and secure brand networks with real-time fraud prevention.",
-        href: "#",
+        description: "Safeguard dealerships with seamless identity verification, prevent fraudulent activities, and protect high-value transactions in real-time.",
+        href: "/auto-dealers",
         cta: "Learn more",
         className: "col-span-3 lg:col-span-1",
         background: (
@@ -34,8 +34,8 @@ export const CARDS = [
         Icon: DollarSign,
         name: "Financial Institutions",
         description:
-            "Prevent identity fraud, ensure compliance, and reduce operational costs with precision-driven solutions.",
-        href: "#",
+            "Strengthen fraud prevention, maintain regulatory compliance, and reduce risk exposure with accurate identity verification solutions.",
+        href: "/financial-institutions",
         cta: "Learn more",
         className: "col-span-3 lg:col-span-2",
         background: (
@@ -51,8 +51,8 @@ export const CARDS = [
     {
         Icon: Landmark,
         name: "Government",
-        description: "Strengthen systems, safeguard public trust",
-        href: "#",
+        description: "Enhance public sector systems with robust identity verification to prevent fraud and maintain citizen trust.",
+        href: "/government",
         cta: "Learn more",
         className: "col-span-3 lg:col-span-2 max-w-full overflow-hidden",
         background: (
@@ -62,9 +62,9 @@ export const CARDS = [
     {
         Icon: Activity,
         name: "Healthcare Providers",
-        description: "Protect patient data, prevent medical fraud",
+        description: "Ensure patient identity accuracy, prevent medical fraud, and safeguard sensitive health data.",
         className: "col-span-3 lg:col-span-1",
-        href: "#",
+        href: "/healthcare-providers",
         cta: "Learn more",
         background: (
             <Image
