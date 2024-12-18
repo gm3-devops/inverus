@@ -1,10 +1,10 @@
-import { PERKS } from "@/constants";
+import { Benefits } from "@/constants/benefits";
 import { cn } from "@/functions";
 import { LucideIcon } from "lucide-react";
 import Container from "../global/container";
 import MagicBadge from "../ui/magic-badge";
 
-const Perks = () => {
+const WhyinVerus = () => {
     return (
         <div className="flex flex-col items-center justify-center py-8 md:py-12 w-full">
             <Container delay={0.1}>
@@ -14,15 +14,17 @@ const Perks = () => {
                 >
                     <MagicBadge title="Why inVerus?" />
                     <h2 className="!leading-[1.1] mt-6 text-center font-heading font-medium text-3xl text-foreground md:text-5xl lg:text-center">
-                        AI-Driven Solutions for Proactive Identity Fraud Prevention
+                        Proactive AI-Driven Solutions
                     </h2>
+                    <p className="mt-4 max-w-lg text-center text-lg text-muted-foreground lg:text-center">
+                        Innovative AI solutions designed to safeguard your business and enhance trust in a rapidly evolving landscape.                    </p>
                 </div>
             </Container>
             <Container>
                 <div className="mt-16 w-full">
                     <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full relative">
-                        {PERKS.map((perk, index) => (
-                            <Perk key={index} index={index} {...perk} />
+                        {Benefits.map((benefit, index) => (
+                            <Benefit key={index} index={index} {...benefit} />
                         ))}
                     </div>
                 </div>
@@ -31,7 +33,7 @@ const Perks = () => {
     )
 };
 
-const Perk = ({
+const Benefit = ({
     title,
     description,
     icon: Icon,
@@ -74,4 +76,4 @@ const Perk = ({
     );
 };
 
-export default Perks
+export default WhyinVerus

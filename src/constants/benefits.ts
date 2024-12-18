@@ -7,7 +7,7 @@ import {
   Cpu,
 } from "lucide-react";
 
-export const PERKS = [
+export const Benefits = [
   {
     icon: ZapIcon,
     title: "Fast and Accurate",

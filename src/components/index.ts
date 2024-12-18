@@ -13,7 +13,7 @@ import Navbar from "./marketing/navbar";
 import Team from "./marketing/team";
 import Features from "./marketing/features";
 import Connect from "./marketing/industries";
-import Perks from "./marketing/perks";
+import Perks from "./marketing/why-inverus";
 import Reviews from "./marketing/reviews";
 import CTA from "./marketing/cta";
 import Footer from "./marketing/footer";
