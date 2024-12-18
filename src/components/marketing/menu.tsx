@@ -56,22 +56,22 @@ const Menu = () => {
                             </li>
                             <Item title="Car Dealers" href="/industries#cardealers" icon={<CarFront className="w-5 h-5" />}>
                                 <p className="line-clamp-1 text-sm leading-snug text-muted-foreground">
-                                    Dealers, DMS Providers, and Brands.
+                                    Dealers, DMS Providers +
                                 </p>
                             </Item>
                             <Item title="Financial Institutions" href="/industries#finance" icon={<DollarSign className="w-5 h-5" />}>
                                 <p className="line-clamp-1 text-sm leading-snug text-muted-foreground">
-                                    Banks, Insurance Providers, and Credit Unions.
+                                    Banks, Insurance Providers +
                                 </p>
                             </Item>
                             <Item title="Healthcare Providers" href="/industries#healthcare" icon={<HospitalIcon className="w-5 h-5" />}>
                                 <p className="line-clamp-1 text-sm leading-snug text-muted-foreground">
-                                    Hospitals, Medical Practices, and Telehealth Providers.
+                                    Hospitals, Medical Practices +
                                 </p>
                             </Item>
                             <Item title="Government" href="/industries#government" icon={<Landmark className="w-5 h-5" />}>
                                 <p className="line-clamp-1 text-sm leading-snug text-muted-foreground">
-                                    Safeguarding Public Systems and Citizen Data.
+                                    Safeguarding Public Systems
                                 </p>
                             </Item>
                         </ul>
