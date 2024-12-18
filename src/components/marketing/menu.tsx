@@ -4,7 +4,6 @@ import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMe
 import { CarFront, HospitalIcon, DollarSign, UsersIcon, ShieldCheckIcon } from 'lucide-react';
 import Link from 'next/link';
 import React from 'react';
-import Icons from "../global/icons";
 
 interface Props {
     title: string;
@@ -56,13 +55,19 @@ const Menu = () => {
                                 </NavigationMenuLink>
                             </li>
                             <Item title="Car Dealers" href="/industries#cardealers" icon={<CarFront className="w-5 h-5" />}>
-                                Supporting Dealers, DMS Providers, and Fraud Prevention Teams.
+                                <p className="line-clamp-1 text-sm leading-snug text-muted-foreground">
+                                    Supporting Dealers, DMS Providers, and Fraud Prevention Teams.
+                                </p>
                             </Item>
                             <Item title="Financial Institutions" href="/industries#finance" icon={<DollarSign className="w-5 h-5" />}>
-                                Fraud Prevention Teams, Compliance Officers, and Account Managers.
+                                <p className="line-clamp-1 text-sm leading-snug text-muted-foreground">
+                                    Fraud Prevention Teams, Compliance Officers, and Account Managers.
+                                </p>
                             </Item>
                             <Item title="Healthcare Providers" href="/industries#healthcare" icon={<HospitalIcon className="w-5 h-5" />}>
-                                Hospital Administrators, Compliance Teams, and Medical Practice Owners.
+                                <p className="line-clamp-1 text-sm leading-snug text-muted-foreground">
+                                    Hospital Administrators, Compliance Teams, and Medical Practice Owners.
+                                </p>
                             </Item>
                         </ul>
                     </NavigationMenuContent>
