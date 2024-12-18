@@ -62,35 +62,6 @@ const Footer = () => {
                                 </ul>
                             </div>
                         </Container>
-                        <Container delay={0.3}>
-                            <div className="mt-10 md:mt-0 flex flex-col">
-                                <h3 className="text-base font-medium text-white">
-                                    Integrations
-                                </h3>
-                                <ul className="mt-4 text-sm text-muted-foreground">
-                                    <li className="">
-                                        <Link href="" className="hover:text-foreground transition-all duration-300">
-                                            Facebook
-                                        </Link>
-                                    </li>
-                                    <li className="mt-2">
-                                        <Link href="" className="hover:text-foreground transition-all duration-300">
-                                            Instagram
-                                        </Link>
-                                    </li>
-                                    <li className="mt-2">
-                                        <Link href="" className="hover:text-foreground transition-all duration-300">
-                                            Twitter
-                                        </Link>
-                                    </li>
-                                    <li className="mt-2">
-                                        <Link href="" className="hover:text-foreground transition-all duration-300">
-                                            LinkedIn
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </div>
-                        </Container>
                     </div>
                     <div className="md:grid md:grid-cols-2 md:gap-8">
                         <Container delay={0.4}>
@@ -107,30 +78,6 @@ const Footer = () => {
                                     <li className="mt-2">
                                         <Link href="/resources/help" className="hover:text-foreground transition-all duration-300">
                                             Support
-                                        </Link>
-                                    </li>
-                                </ul>
-                            </div>
-                        </Container>
-                        <Container delay={0.5}>
-                            <div className="mt-10 md:mt-0 flex flex-col">
-                                <h3 className="text-base font-medium text-white">
-                                    Company
-                                </h3>
-                                <ul className="mt-4 text-sm text-muted-foreground">
-                                    <li className="">
-                                        <Link href="" className="hover:text-foreground transition-all duration-300">
-                                            About Us
-                                        </Link>
-                                    </li>
-                                    <li className="mt-2">
-                                        <Link href="/privacy" className="hover:text-foreground transition-all duration-300">
-                                            Privacy Policy
-                                        </Link>
-                                    </li>
-                                    <li className="mt-2">
-                                        <Link href="/terms" className="hover:text-foreground transition-all duration-300">
-                                            Terms & Conditions
                                         </Link>
                                     </li>
                                 </ul>
