@@ -92,10 +92,18 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-            <div className="mt-8 border-t border-border/40 pt-4 md:pt-8 md:flex md:items-center md:justify-between w-full">
+            <div className="mt-8 border-t border-border/40 pt-4 md:pt-8 md:flex md:items-center md:justify-between w-full flex-wrap">
                 <Container delay={0.5}>
-                    <p className="text-sm text-muted-foreground mt-8 md:mt-0">
-                        &copy; {new Date().getFullYear()} Linkify INC. All rights reserved.
+                    <p className="text-sm text-muted-foreground mt-8 md:mt-0 md:ml-auto">
+                        &copy; {new Date().getFullYear()} inVerus Inc. All rights reserved.
+                        <span>{" "}|{" "} </span>
+                        <Link href="/privacy-policy" className="hover:text-foreground transition-all duration-300">
+                            Privacy Policy
+                        </Link>
+                        <span>{" "}|{" "}</span>
+                        <Link href="/terms-and-conditions" className="hover:text-foreground transition-all duration-300">
+                            Terms & Conditions
+                        </Link>
                     </p>
                 </Container>
             </div>
