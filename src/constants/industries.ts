@@ -1,10 +1,4 @@
-import {
-  Car,
-  Handshake,
-  ScanSearch,
-  Split,
-  WandSparklesIcon,
-} from "lucide-react";
+import { Car, Expand, Gauge, Handshake, Split, SwatchBook } from "lucide-react";
 
 export const fraud = [
   {
@@ -21,5 +15,23 @@ export const fraud = [
     icon: Split,
     title: "Car Brands",
     info: "Ensuring trust across dealership networks while combating fraud at scale.",
+  },
+];
+
+export const implementation = [
+  {
+    icon: SwatchBook,
+    title: "Secure Integration",
+    info: "Plug-and-play API requires minimal tech team involvement.",
+  },
+  {
+    icon: Expand,
+    title: "Scalable Solutions",
+    info: "Seamlessly supports multi-dealer networks and DMS platforms.",
+  },
+  {
+    icon: Gauge,
+    title: "Quick Setup",
+    info: "Secure deployment without disrupting existing workflows.",
   },
 ];

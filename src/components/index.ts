@@ -17,7 +17,6 @@ import Perks from "./marketing/why-inverus";
 import Reviews from "./marketing/reviews";
 import CTA from "./marketing/cta";
 import Footer from "./marketing/footer";
-
 export {
   Icons,
   Images,
