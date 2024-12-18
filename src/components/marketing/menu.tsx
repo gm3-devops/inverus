@@ -54,22 +54,22 @@ const Menu = () => {
                                     </Link>
                                 </NavigationMenuLink>
                             </li>
-                            <Item title="Car Dealers" href="/industries#cardealers" icon={<CarFront className="w-5 h-5" />}>
+                            <Item title="Car Dealers" href="/industries/car-dealers" icon={<CarFront className="w-5 h-5" />}>
                                 <p className="line-clamp-1 text-sm leading-snug text-muted-foreground">
                                     Dealers, DMS Providers +
                                 </p>
                             </Item>
-                            <Item title="Financial Institutions" href="/industries#finance" icon={<DollarSign className="w-5 h-5" />}>
+                            <Item title="Financial Institutions" href="/industries/finance" icon={<DollarSign className="w-5 h-5" />}>
                                 <p className="line-clamp-1 text-sm leading-snug text-muted-foreground">
                                     Banks, Insurance Providers +
                                 </p>
                             </Item>
-                            <Item title="Healthcare Providers" href="/industries#healthcare" icon={<HospitalIcon className="w-5 h-5" />}>
+                            <Item title="Healthcare Providers" href="/industries/healthcare" icon={<HospitalIcon className="w-5 h-5" />}>
                                 <p className="line-clamp-1 text-sm leading-snug text-muted-foreground">
                                     Hospitals, Medical Practices +
                                 </p>
                             </Item>
-                            <Item title="Government" href="/industries#government" icon={<Landmark className="w-5 h-5" />}>
+                            <Item title="Government" href="/industries/government" icon={<Landmark className="w-5 h-5" />}>
                                 <p className="line-clamp-1 text-sm leading-snug text-muted-foreground">
                                     Safeguarding Public Systems
                                 </p>
@@ -92,7 +92,9 @@ const Menu = () => {
                     </Link>
                 </NavigationMenuItem>
                 <NavigationMenuItem>
-                    <Link href="/contact-us" legacyBehavior passHref>
+                    <Link
+                        href="mailto:andrew@inverus.tech?subject=Potential%20Project%20Request&body=Hello%20inVerus,%0D%0A%0D%0AI%20am%20interested%20in%20discussing%20a%20potential%20project%20with%20you.%20Here%20are%20the%20details:%0D%0A%0D%0A[Add%20your%20project%20details%20here]%0D%0A%0D%0AThank%20you,%0D%0A[Your%20Name]"
+                        legacyBehavior passHref>
                         <NavigationMenuLink className="h-10 px-4 py-2 text-sm font-normal rounded-md text-foreground hover:text-muted-foreground w-max hover:bg-none">
                             Contact us
                         </NavigationMenuLink>

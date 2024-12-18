@@ -126,7 +126,9 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
                         onClick={() => setIsOpen(false)}
                         className="w-full px-4 py-2 text-lg hover:text-muted-foreground font-normal transition transform rounded-md cursor-pointer text-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                     >
-                        <Link href="/" className="flex items-center w-full text-start">
+                        <Link
+                            href="mailto:andrew@inverus.tech?subject=Potential%20Project%20Request&body=Hello%20inVerus,%0D%0A%0D%0AI%20am%20interested%20in%20discussing%20a%20potential%20project%20with%20you.%20Here%20are%20the%20details:%0D%0A%0D%0A[Add%20your%20project%20details%20here]%0D%0A%0D%0AThank%20you,%0D%0A[Your%20Name]"
+                            className="flex items-center w-full text-start">
                             <Send className="w-4 h-4 mr-2" />
                             Contact Us
                         </Link>

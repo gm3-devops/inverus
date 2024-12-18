@@ -11,7 +11,7 @@ const LinkShorteningPage = () => {
             <Wrapper>
                 <Container delay={0.1} className="w-full">
                     <div id="cardealers" className="flex flex-col items-center justify-center py-40 max-w-xl mx-auto">
-                        <MagicBadge title="Car Dealers" />
+                        <MagicBadge title="Healthcare Providers" />
                         <h1 className="text-2xl md:text-4xl lg:text-5xl font-semibold font-heading text-center mt-6 !leading-tight">
                             Shorten links and track their performance
                         </h1>
