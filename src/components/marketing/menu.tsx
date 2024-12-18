@@ -1,7 +1,7 @@
 "use client"
 
 import { NavigationMenu, NavigationMenuContent, NavigationMenuItem, NavigationMenuLink, NavigationMenuList, NavigationMenuTrigger } from "@/components/ui/navigation-menu";
-import { CarFront, HospitalIcon, DollarSign, UsersIcon, ShieldCheckIcon } from 'lucide-react';
+import { CarFront, HospitalIcon, DollarSign, ShieldCheckIcon, Landmark } from 'lucide-react';
 import Link from 'next/link';
 import React from 'react';
 
@@ -36,7 +36,7 @@ const Menu = () => {
                     </NavigationMenuTrigger>
                     <NavigationMenuContent>
                         <ul className="grid rounded-3xl gap-3 p-4 md:w-[400px] lg:w-[500px] xl:w-[550px] lg:grid-cols-[.75fr_1fr]">
-                            <li className="row-span-3">
+                            <li className="row-span-4">
                                 <NavigationMenuLink asChild>
                                     <Link
                                         href="/industries"
@@ -56,17 +56,22 @@ const Menu = () => {
                             </li>
                             <Item title="Car Dealers" href="/industries#cardealers" icon={<CarFront className="w-5 h-5" />}>
                                 <p className="line-clamp-1 text-sm leading-snug text-muted-foreground">
-                                    Supporting Dealers, DMS Providers, and Fraud Prevention Teams.
+                                    Dealers, DMS Providers, and Brands.
                                 </p>
                             </Item>
                             <Item title="Financial Institutions" href="/industries#finance" icon={<DollarSign className="w-5 h-5" />}>
                                 <p className="line-clamp-1 text-sm leading-snug text-muted-foreground">
-                                    Fraud Prevention Teams, Compliance Officers, and Account Managers.
+                                    Banks, Insurance Providers, and Credit Unions.
                                 </p>
                             </Item>
                             <Item title="Healthcare Providers" href="/industries#healthcare" icon={<HospitalIcon className="w-5 h-5" />}>
                                 <p className="line-clamp-1 text-sm leading-snug text-muted-foreground">
-                                    Hospital Administrators, Compliance Teams, and Medical Practice Owners.
+                                    Hospitals, Medical Practices, and Telehealth Providers.
+                                </p>
+                            </Item>
+                            <Item title="Government" href="/industries#government" icon={<Landmark className="w-5 h-5" />}>
+                                <p className="line-clamp-1 text-sm leading-snug text-muted-foreground">
+                                    Safeguarding Public Systems and Citizen Data.
                                 </p>
                             </Item>
                         </ul>

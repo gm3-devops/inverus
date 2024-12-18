@@ -55,6 +55,11 @@ const Footer = () => {
                                             Healthcare Providers
                                         </Link>
                                     </li>
+                                    <li className="mt-2">
+                                        <Link href="" className="hover:text-foreground transition-all duration-300">
+                                            Government
+                                        </Link>
+                                    </li>
                                 </ul>
                             </div>
                         </Container>
