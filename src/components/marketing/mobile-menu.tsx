@@ -4,7 +4,7 @@ import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/
 import { cn } from "@/functions";
 import { useClickOutside } from "@/hooks";
 import { motion } from "framer-motion";
-import { Box, CalendarClock, Captions, CircleHelp, CopyCheck, FileText, Gem, Layers3, LineChart, Newspaper, UserCog, Waypoints } from "lucide-react";
+import { BadgeCheck, Box, CalendarClock, Captions, CarFront, CircleHelp, CopyCheck, DollarSign, FileText, Gem, Home, HospitalIcon, Landmark, Layers3, LineChart, Newspaper, NotebookPen, Radar, Scan, Send, Waypoints } from "lucide-react";
 import Link from "next/link";
 import React from 'react';
 
@@ -47,16 +47,25 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
                         className="w-full px-4 py-2 text-lg hover:text-muted-foreground font-normal transition transform rounded-md cursor-pointer text-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                     >
                         <Link href="/how-it-works" className="flex items-center w-full text-start">
-                            <UserCog className="w-4 h-4 mr-2" />
-                            How it works
+                            <Home className="w-4 h-4 mr-2" />
+                            Home
+                        </Link>
+                    </li>
+                    <li
+                        onClick={() => setIsOpen(false)}
+                        className="w-full px-4 py-2 text-lg hover:text-muted-foreground font-normal transition transform rounded-md cursor-pointer text-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
+                    >
+                        <Link href="/how-it-works" className="flex items-center w-full text-start">
+                            <Radar className="w-4 h-4 mr-2" />
+                            Solutions
                         </Link>
                     </li>
                     <Accordion type="single" collapsible className="w-full">
                         <AccordionItem value="item-1" className="border-transparent">
                             <AccordionTrigger className="px-4 py-2 text-lg hover:text-muted-foreground font-normal">
                                 <span className="flex items-center">
-                                    <CopyCheck className="w-4 h-4 mr-2" />
-                                    Features
+                                    <Scan className="w-4 h-4 mr-2" />
+                                    Industries
                                 </span>
                             </AccordionTrigger>
                             <AccordionContent onClick={() => setIsOpen(false)} className="flex flex-col items-start gap-1 mt-1">
@@ -64,24 +73,32 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
                                     className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                                 >
                                     <Link href="/" className="flex items-center w-full text-start">
-                                        <Captions className="w-4 h-4 mr-2" />
-                                        Caption Generation
+                                        <CarFront className="w-4 h-4 mr-2" />
+                                        Car Dealers
                                     </Link>
                                 </li>
                                 <li
                                     className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                                 >
                                     <Link href="/" className="flex items-center w-full text-start">
-                                        <CalendarClock className="w-4 h-4 mr-2" />
-                                        Post Scheduling
+                                        <DollarSign className="w-4 h-4 mr-2" />
+                                        Financial Institutions
                                     </Link>
                                 </li>
                                 <li
                                     className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                                 >
                                     <Link href="/" className="flex items-center w-full text-start">
-                                        <LineChart className="w-4 h-4 mr-2" />
-                                        Analytics Dashboard
+                                        <HospitalIcon className="w-4 h-4 mr-2" />
+                                        Healthcare Providers
+                                    </Link>
+                                </li>
+                                <li
+                                    className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
+                                >
+                                    <Link href="/" className="flex items-center w-full text-start">
+                                        <Landmark className="w-4 h-4 mr-2" />
+                                        Government
                                     </Link>
                                 </li>
                             </AccordionContent>
@@ -92,8 +109,8 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
                         className="w-full px-4 py-2 text-lg hover:text-muted-foreground font-normal transition transform rounded-md cursor-pointer text-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                     >
                         <Link href="/" className="flex items-center w-full text-start">
-                            <Gem className="w-4 h-4 mr-2" />
-                            Pricing
+                            <NotebookPen className="w-4 h-4 mr-2" />
+                            Blog
                         </Link>
                     </li>
                     <li
@@ -101,54 +118,19 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
                         className="w-full px-4 py-2 text-lg hover:text-muted-foreground font-normal transition transform rounded-md cursor-pointer text-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                     >
                         <Link href="/" className="flex items-center w-full text-start">
-                            <Waypoints className="w-4 h-4 mr-2" />
-                            Integrations
+                            <BadgeCheck className="w-4 h-4 mr-2" />
+                            About Us
                         </Link>
                     </li>
-                    <Accordion type="single" collapsible className="w-full">
-                        <AccordionItem value="item-1" className="border-transparent">
-                            <AccordionTrigger className="px-4 py-2 text-lg hover:text-muted-foreground font-normal">
-                                <span className="flex items-center">
-                                    <Layers3 className="w-4 h-4 mr-2" />
-                                    Resources
-                                </span>
-                            </AccordionTrigger>
-                            <AccordionContent onClick={() => setIsOpen(false)} className="flex flex-col items-start gap-1 mt-1">
-                                <li
-                                    className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
-                                >
-                                    <Link href="/" className="flex items-center w-full text-start">
-                                        <Newspaper className="w-4 h-4 mr-2" />
-                                        Blog
-                                    </Link>
-                                </li>
-                                <li
-                                    className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
-                                >
-                                    <Link href="/" className="flex items-center w-full text-start">
-                                        <FileText className="w-4 h-4 mr-2" />
-                                        Case Studies
-                                    </Link>
-                                </li>
-                                <li
-                                    className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
-                                >
-                                    <Link href="/" className="flex items-center w-full text-start">
-                                        <Box className="w-4 h-4 mr-2" />
-                                        Tools
-                                    </Link>
-                                </li>
-                                <li
-                                    className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
-                                >
-                                    <Link href="/" className="flex items-center w-full text-start">
-                                        <CircleHelp className="w-4 h-4 mr-2" />
-                                        Support
-                                    </Link>
-                                </li>
-                            </AccordionContent>
-                        </AccordionItem>
-                    </Accordion>
+                    <li
+                        onClick={() => setIsOpen(false)}
+                        className="w-full px-4 py-2 text-lg hover:text-muted-foreground font-normal transition transform rounded-md cursor-pointer text-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
+                    >
+                        <Link href="/" className="flex items-center w-full text-start">
+                            <Send className="w-4 h-4 mr-2" />
+                            Contact Us
+                        </Link>
+                    </li>
                 </ul>
             </motion.div>
         </div>
