@@ -5,7 +5,7 @@ import { ShieldCheckIcon } from 'lucide-react';
 
 const Footer = () => {
     return (
-        <footer className="flex flex-col relative items-center justify-center border-t border-border pt-16 pb-8 md:pb-0 px-6 lg:px-8 w-full max-w-6xl mx-auto lg:pt-32 bg-[radial-gradient(35%_128px_at_50%_0%,theme(backgroundColor.white/8%),transparent)]">
+        <footer className="flex flex-col relative items-center justify-center border-t border-border pt-8 pb-8 md:pb-0 px-6 lg:px-8 w-full max-w-6xl mx-auto lg:pt-10 bg-[radial-gradient(35%_128px_at_50%_0%,theme(backgroundColor.white/8%),transparent)]">
             <div className="absolute top-0 left-1/2 right-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-1.5 bg-primary rounded-full"></div>
 
             <div className="grid gap-8 xl:grid-cols-3 xl:gap-8 w-full">
@@ -31,10 +31,10 @@ const Footer = () => {
                         </div>
                     </div>
                 </Container>
-                <div className="grid grid-cols-2 gap-8 mt-4 xl:col-span-2 xl:mt-0">
+                <div className="grid grid-cols-2 gap-8 mt-2 xl:col-span-2 xl:mt-0">
                     <div className="md:grid md:grid-cols-2 md:gap-8">
                         <Container delay={0.2}>
-                            <div>
+                            <div className="pt-4 pb-4 md:pt-8 md:pb-8">
                                 <h3 className="text-base font-medium text-white">Industries</h3>
                                 <ul className="mt-4 text-sm text-muted-foreground">
                                     <li className="mt-2">
@@ -64,7 +64,7 @@ const Footer = () => {
 
                     <div className="md:grid md:grid-cols-2 md:gap-8">
                         <Container delay={0.4}>
-                            <div>
+                            <div className="pt-4 pb-4 md:pt-8 md:pb-8">
                                 <h3 className="text-base font-medium text-white">Company</h3>
                                 <ul className="mt-4 text-sm text-muted-foreground">
                                     <li className="mt-2">
