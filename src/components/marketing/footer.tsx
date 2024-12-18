@@ -5,10 +5,10 @@ import { ShieldCheckIcon } from 'lucide-react';
 
 const Footer = () => {
     return (
-        <footer className="flex flex-col relative items-center justify-center border-t border-border pt-4 pb-2 md:pb-0 px-4 lg:px-4 w-full max-w-6xl mx-auto lg:pt-10 bg-[radial-gradient(35%_128px_at_50%_0%,theme(backgroundColor.white/8%),transparent)]">
+        <footer className="flex flex-col relative items-center justify-center border-t border-border pt-16 pb-8 md:pb-0 px-6 lg:px-8 w-full max-w-6xl mx-auto lg:pt-32 bg-[radial-gradient(35%_128px_at_50%_0%,theme(backgroundColor.white/8%),transparent)]">
             <div className="absolute top-0 left-1/2 right-1/2 -translate-x-1/2 -translate-y-1/2 w-8 h-1.5 bg-primary rounded-full"></div>
 
-            <div className="grid grid-cols-3 gap-8 xl:col-span-2 xl:mt-0">
+            <div className="grid gap-8 xl:grid-cols-3 xl:gap-8 w-full">
                 <Container delay={0.1}>
                     <div className="flex flex-col items-start justify-start md:max-w-[200px]">
                         <div className="flex items-start">
@@ -88,8 +88,7 @@ const Footer = () => {
                     </div>
                 </div>
             </div>
-
-            <div className="mt-10 border-t border-border/40 pt-4 w-full flex flex-col md:flex-row items-center md:flex-row md:justify-between">
+            {/* <div className="mt-auto border-t border-border/40 pt-4 w-full flex flex-col items-center md:flex-row md:justify-between">
                 <p className="text-sm text-muted-foreground text-center md:text-left">
                     &copy; {new Date().getFullYear()} inVerus Inc. All rights reserved.
                 </p>
@@ -102,7 +101,7 @@ const Footer = () => {
                         Terms & Conditions
                     </Link>
                 </div>
-            </div>
+            </div> */}
         </footer>
     )
 }
