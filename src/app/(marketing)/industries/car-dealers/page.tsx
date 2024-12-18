@@ -69,8 +69,6 @@ const LinkShorteningPage = () => {
                         </div>
                     </div>
                 </Container>
-            </Wrapper>
-            <Wrapper className="flex flex-col items-center justify-center py-8 md:py-12 w-full">
                 <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
                     <div className="max-w-2xl mx-auto mx-auto text-start md:text-center">
                         <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
