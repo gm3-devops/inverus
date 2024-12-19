@@ -154,17 +154,23 @@ const AboutUs = () => {
                                 <div className="absolute inset-px rounded-lg bg-background [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] border border-border"></div>
                                 <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
                                     <div className="px-8 pt-8 sm:px-10 sm:pt-10">
-                                        <h3 className="font-semibold text-neutral-300 text-xl">Behavioral Insights</h3>
+                                        <h3 className="font-semibold text-neutral-300 text-xl">
+                                            Behavioral Insights
+                                        </h3>
                                         <p className="text-muted-foreground mt-2 text-start">
                                             Detect anomalies in buyer behavior during test drives, warranty claims, and purchase cycles.
                                         </p>
                                     </div>
                                     <div className="flex flex-1 items-center max-lg:py-6 lg:pb-2">
-                                        <img
-                                            className="h-[min(152px,40cqw)] object-cover"
-                                            src="https://tailwindui.com/plus/img/component-images/bento-03-security.png"
-                                            alt=""
-                                        />
+                                        <div className="flex flex-1 items-center justify-center max-lg:py-6 lg:pb-2">
+                                            <Image
+                                                className="object-contain"
+                                                src="/images/industries/insights.svg"
+                                                alt="Consortium Intelligence"
+                                                width={250}
+                                                height={250}
+                                            />
+                                        </div>
                                     </div>
                                 </div>
                                 <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5"></div>
@@ -173,16 +179,20 @@ const AboutUs = () => {
                                 <div className="absolute inset-px rounded-lg bg-background [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] border border-border"></div>
                                 <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
                                     <div className="px-8 pt-8 sm:px-10 sm:pt-10">
-                                        <h3 className="font-semibold text-neutral-300 text-xl">Harvestor / Reverse Search Engine</h3>
+                                        <h3 className="font-semibold text-neutral-300 text-xl">
+                                            Harvestor / Reverse Search Engine
+                                        </h3>
                                         <p className="text-muted-foreground mt-2 text-start">
                                             Pinpoint fraudsters and repeat offenders through advanced search.
                                         </p>
                                     </div>
-                                    <div className="flex flex-1 items-center justify-center px-8 sm:px-10 lg:pb-2">
-                                        <img
-                                            className="w-full max-lg:max-w-xs"
-                                            src="https://tailwindui.com/plus/img/component-images/bento-03-performance.png"
-                                            alt=""
+                                    <div className="flex flex-1 items-center justify-center max-lg:py-6 lg:pb-2">
+                                        <Image
+                                            className="object-contain"
+                                            src="/images/industries/ai.svg"
+                                            alt="Consortium Intelligence"
+                                            width={250}
+                                            height={250}
                                         />
                                     </div>
                                 </div>
@@ -192,16 +202,20 @@ const AboutUs = () => {
                                 <div className="absolute inset-px rounded-lg bg-background [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] border border-border"></div>
                                 <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
                                     <div className="px-8 pt-8 sm:px-10 sm:pt-10">
-                                        <h3 className="font-semibold text-neutral-300 text-xl">Consortium Intelligence</h3>
+                                        <h3 className="font-semibold text-neutral-300 text-xl">
+                                            Consortium Intelligence
+                                        </h3>
                                         <p className="text-muted-foreground mt-2 text-start">
                                             Shared real-time data on fraudulent behaviors across the dealer network.
                                         </p>
                                     </div>
-                                    <div className="flex flex-1 items-center max-lg:py-6 lg:pb-2">
-                                        <img
-                                            className="h-[min(152px,40cqw)] object-cover"
-                                            src="https://tailwindui.com/plus/img/component-images/bento-03-security.png"
-                                            alt=""
+                                    <div className="flex flex-1 items-center justify-center max-lg:py-6 lg:pb-2">
+                                        <Image
+                                            className="object-contain"
+                                            src="/images/industries/consortium.svg"
+                                            alt="Consortium Intelligence"
+                                            width={250}
+                                            height={250}
                                         />
                                     </div>
                                 </div>
@@ -210,10 +224,10 @@ const AboutUs = () => {
                         </div>
                     </div>
                 </Container>
-            </Wrapper>
+            </Wrapper >
 
             {/* CTA */}
-            <Wrapper className="flex flex-col items-center justify-center py-8 md:py-12 w-full">
+            < Wrapper className="flex flex-col items-center justify-center py-8 md:py-12 w-full" >
                 <Container delay={0.2} className="w-full">
                     <div className="flex flex-col items-center justify-center text-center w-full px-4 md:px-0 mx-auto h-[500px] border border-border rounded-3xl overflow-hidden relative">
                         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-12 bg-violet-500 blur-[10rem]"></div>
@@ -242,7 +256,7 @@ const AboutUs = () => {
                     </div>
                 </Container>
             </Wrapper >
-        </>
+        </ >
     )
 };
 
