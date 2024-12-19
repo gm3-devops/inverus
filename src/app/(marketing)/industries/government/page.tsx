@@ -5,7 +5,7 @@ import Image from "next/image";
 import { fraud, implementation } from "@/constants/industries";
 import { Icons } from "@/components";
 import { ScheduleCall } from "@/components/ui/cal";
-import { Calendar, Landmark, Rocket, Scale } from "lucide-react";
+import { Calendar, Icon, Landmark, Rocket, Scale } from "lucide-react";
 import { Particles } from "@/components/ui/particles";
 import RetroGrid from "@/components/ui/retro-grid";
 import { CasesCard, CasesGrid } from "@/components/ui/use-cases-grid";
@@ -90,20 +90,18 @@ const GovernmentPage = () => {
                     </div>
                 </Container>
                 <Container delay={0.2} className="w-full">
-                    <div className="w-full flex max-w-4xl py-2 mx-auto">
-                        <Image
-                            src="/images/industries/qr-codes.svg"
-                            alt="Create QR codes for your links"
-                            width={80}
-                            height={80}
-                            className="w-full h-auto"
-                        />
+                    <div className="w-full flex max-w-4xl py-2 mx-auto items-center justify-center">
+                        <div className="fingerprint-box flex items-center justify-center">
+                            <div className="svg-box flex items-center justify-center">
+                                <Icons.fingerprint />
+                            </div>
+                        </div>
                     </div>
                 </Container>
-            </Wrapper>
+            </Wrapper >
 
             {/* Fraud Challenge Section */}
-            <Wrapper className="flex flex-col items-center justify-center py-8 md:py-12 w-full">
+            < Wrapper className="flex flex-col items-center justify-center py-8 md:py-12 w-full" >
                 <Container delay={0.2} className="w-full">
                     <div className="max-w-2xl mx-auto mx-auto text-start md:text-center">
                         <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
@@ -139,10 +137,10 @@ const GovernmentPage = () => {
                         </div>
                     </div>
                 </Container>
-            </Wrapper>
+            </Wrapper >
 
             {/* Solution Section */}
-            <Wrapper className="flex flex-col items-center justify-center py-8 md:py-12 w-full">
+            < Wrapper className="flex flex-col items-center justify-center py-8 md:py-12 w-full" >
                 <Container delay={0.2} className="w-full">
                     <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
                         <div className="max-w-2xl mx-auto text-start md:text-center">
@@ -230,7 +228,7 @@ const GovernmentPage = () => {
             </Wrapper >
 
             {/* Implementation */}
-            <Wrapper className="flex flex-col items-center justify-center md:py-12 w-full">
+            < Wrapper className="flex flex-col items-center justify-center md:py-12 w-full" >
                 <Container delay={0.2} className="w-full">
                     <div className="max-w-md mx-auto text-start md:text-center">
                         <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
@@ -260,7 +258,7 @@ const GovernmentPage = () => {
             </Wrapper >
 
             {/* Use Cases */}
-            <Wrapper className="flex flex-col items-center justify-center py-8 md:py-12 w-full">
+            < Wrapper className="flex flex-col items-center justify-center py-8 md:py-12 w-full" >
                 <Container delay={0.2} className="w-full">
                     <div
                         className="flex w-full flex-col items-center justify-center py-8 lg:items-center"
@@ -281,10 +279,10 @@ const GovernmentPage = () => {
                         ))}
                     </CasesGrid>
                 </Container>
-            </Wrapper>
+            </Wrapper >
 
             {/* CTA */}
-            <Wrapper className="flex flex-col items-center justify-center py-8 md:py-12 w-full">
+            < Wrapper className="flex flex-col items-center justify-center py-8 md:py-12 w-full" >
                 <Container delay={0.2} className="w-full">
                     <div className="flex flex-col items-center justify-center text-center w-full px-4 md:px-0 mx-auto h-[500px] border border-border rounded-3xl overflow-hidden relative">
                         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-12 bg-violet-500 blur-[10rem]"></div>
@@ -312,7 +310,7 @@ const GovernmentPage = () => {
                         />
                     </div>
                 </Container>
-            </Wrapper >
+            </Wrapper>
         </>
     )
 };

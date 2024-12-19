@@ -75,6 +75,24 @@ const config = {
           "50%": { strokeDasharray: "30, 30", strokeDashoffset: "0" },
           "100%": { strokeDasharray: "0, 30", strokeDashoffset: "30" }, // Restart to loop
         },
+        scanning: {
+          "0%, 100%": {
+            height: "0%",
+          },
+          "50%": {
+            height: "100%",
+          },
+        },
+        printsAnimations: {
+          "0%, 100%": {
+            "stroke-dasharray": "100",
+            "stroke-dashoffset": "50",
+          },
+          "50%": {
+            "stroke-dasharray": "55",
+            "stroke-dashoffset": "100",
+          },
+        },
         "accordion-down": {
           from: { height: "0" },
           to: { height: "var(--radix-accordion-content-height)" },
@@ -130,6 +148,8 @@ const config = {
         loading: "loading 0.6s linear infinite",
         "draw-check": "draw-check 2s ease-in-out infinite",
         glow: "glow 1.5s ease-in-out infinite",
+        scanning: "scanning 4s linear infinite alternate",
+        printsAnimations: "printsAnimations 4s infinite",
       },
       spacing: {
         "1/8": "12.5%",

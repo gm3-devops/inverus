@@ -131,3 +131,101 @@
     transform: scale(1);
   }
 }
+
+
+.main-container {
+  display: flex;
+  min-height: 100vh;
+  min-width: 250px;
+  align-items: center;
+  justify-content: center;
+}
+
+.fingerprint-box {
+  display: flex;
+  width: 200px;
+  height: 200px;
+  position: relative;
+  justify-content: center;
+}
+
+.fingerprint-box::before,
+.fingerprint-box::after,
+.svg-box::before,
+.svg-box::after {
+  position: absolute;
+  content: '';
+  width: 35px;
+  height: 35px;
+}
+
+.fingerprint-box::before {
+  top: -2px;
+  left: -2px;
+  border-top: 4px solid #3780FF;
+  border-left: 4px solid #3780FF;
+}
+
+.fingerprint-box::after {
+  right: -2px;
+  bottom: -2px;
+  border-right: 4px solid #3780FF;
+  border-bottom: 4px solid #3780FF;
+}
+
+.svg-box::before {
+  top: -2px;
+  right: -2px;
+  border-top: 4px solid #3780FF;
+  border-right: 4px solid #3780FF;
+}
+
+.svg-box::after {
+  left: -2px;
+  bottom: -2px;
+  border-left: 4px solid #3780FF;
+  border-bottom: 4px solid #3780FF;
+}
+
+.scanner {
+  top: 0%;
+  width: 100%;
+  position: absolute;
+  animation: scanning 4s linear infinite alternate;
+  background: linear-gradient(0deg, #3780FF 0%, transparent 60%);
+}
+
+.svg-box svg {
+  filter: drop-shadow(0px 0px 20px #3780FF);
+}
+
+.svg-box path {
+  stroke-dasharray: 100;
+  animation: printsAnimations 4s infinite;
+}
+
+@keyframes printsAnimations {
+
+  0%,
+  100% {
+    stroke-dasharray: 100;
+    stroke-dashoffset: 50;
+  }
+
+  50% {
+    stroke-dasharray: 55;
+    stroke-dashoffset: 100;
+  }
+}
+
+@keyframes scanning {
+
+  0%,
+  100% {
+    height: 0%;
+  }
+
+  50% {
+    height: 100%;
+  }
+}
