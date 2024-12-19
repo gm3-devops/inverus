@@ -1,4 +1,4 @@
-import { Background, Team, Connect, Container, CTA, Features, Hero, Perks, Wrapper } from "@/components";
+import { Background, Team, Industries, Container, CTA, Features, Hero, Perks, Wrapper } from "@/components";
 import { Spotlight } from "@/components/ui/spotlight";
 
 const HomePage = () => {
@@ -14,7 +14,7 @@ const HomePage = () => {
                 </Container>
                 <Features />
                 <Team />
-                <Connect />
+                <Industries />
                 <Perks />
                 {/* <Reviews /> */}
                 <CTA />

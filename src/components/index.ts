@@ -12,11 +12,13 @@ import Hero from "./marketing/hero";
 import Navbar from "./marketing/navbar";
 import Team from "./marketing/team";
 import Features from "./marketing/features";
-import Connect from "./marketing/industries";
+import Industries from "./marketing/industries";
 import Perks from "./marketing/why-inverus";
 import Reviews from "./marketing/reviews";
 import CTA from "./marketing/cta";
 import Footer from "./marketing/footer";
+import SectionsCTA from "./marketing/sections-cta";
+
 export {
   Icons,
   Images,
@@ -27,10 +29,11 @@ export {
   Navbar,
   Team,
   Features,
-  Connect,
+  Industries,
   Perks,
   Reviews,
   CTA,
+  SectionsCTA,
   Footer,
   SignInForm,
   SignUpForm,

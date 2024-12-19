@@ -1,6 +1,7 @@
 import Container from "../global/container";
 import { LampContainer } from "@/components/ui/lamp";
 import { ScheduleCall } from "@/components/ui/cal";
+import { Calendar } from "lucide-react";
 
 const CTA = () => {
     return (
@@ -20,7 +21,10 @@ const CTA = () => {
                             Proactively Prevent Fraud and Protect Your Business with Confidence.
                         </p>
                         <div className="mt-6">
-                            <ScheduleCall />
+                            <ScheduleCall
+                                buttonText="Book a Demo"
+                                iconr={<Calendar className="w-4 h-4" />}
+                            />
                         </div>
                         {/* <Button variant="default" className="mt-6" asChild>
                             <Link href="/">

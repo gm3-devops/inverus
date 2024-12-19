@@ -1,4 +1,17 @@
-import { Car, Expand, Gauge, Handshake, Split, SwatchBook } from "lucide-react";
+import {
+  Car,
+  DollarSign,
+  Expand,
+  Gauge,
+  HandCoins,
+  Handshake,
+  IdCard,
+  Scale,
+  ScanEye,
+  Split,
+  SwatchBook,
+  TrendingUp,
+} from "lucide-react";
 
 export const fraud = [
   {
@@ -33,5 +46,41 @@ export const implementation = [
     icon: Gauge,
     title: "Quick Setup",
     info: "Secure deployment without disrupting existing workflows.",
+  },
+];
+
+export const finance = [
+  {
+    icon: DollarSign,
+    title: "Fraud Crisis",
+    info: "In 2023, financial identity fraud caused over $1 billion in losses globally.",
+  },
+  {
+    icon: IdCard,
+    title: "Fraud Tactics",
+    info: "Fraud tactics, such as synthetic identities and Deep Fakes, require real-time fraud prevention solutions.",
+  },
+  {
+    icon: Scale,
+    title: "Compliance Challenges",
+    info: "Institutions face mounting pressures to comply with KYC/AML regulations while managing operational costs.",
+  },
+];
+
+export const finsolutions = [
+  {
+    icon: ScanEye,
+    title: "Enhanced Compliance",
+    info: "Streamline KYC/AML processes with precision validation.",
+  },
+  {
+    icon: HandCoins,
+    title: "Cost Savings",
+    info: "Reduce investigation time and fraud-related costs.",
+  },
+  {
+    icon: TrendingUp,
+    title: "Real-Time Prevention",
+    info: " Faster, more accurate fraud detection.",
   },
 ];
