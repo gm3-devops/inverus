@@ -216,7 +216,7 @@ const AboutUs = () => {
                         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-12 bg-violet-500 blur-[10rem]"></div>
                         <div className="flex flex-col items-center justify-center w-full z-20">
                             <h2 className="text-4xl md:text-6xl font-heading heading font-semibold !leading-tight mt-6">
-                                Join Us in <br className="hidden md:block" /> Building a Safer, Fraud-Free Future
+                                Join Us in Building <br className="hidden md:block" /> a Safer, Fraud-Free Future
                             </h2>
                             <p className="text-base md:text-lg text-center text-accent-foreground/80 max-w-xl mx-auto mt-6">
                                 Ready to get started? Ensure seamless fraud prevention and identity verification with scalable, secure solutions.
