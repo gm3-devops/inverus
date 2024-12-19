@@ -1,5 +1,6 @@
 export const leadershipTeam = [
   {
+    key: 1,
     name: "Jim Anderson",
     title: "CTO & Co-Founder",
     avatar: "/images/team/Jim.png",
@@ -15,6 +16,7 @@ export const leadershipTeam = [
     companies: ["/images/companies/10.svg", "/images/companies/5.svg"],
   },
   {
+    key: 2,
     name: "Steven G Chrust",
     title: "Co-Founder & Vice Chairman ",
     avatar: "/images/team/SGC.png",
@@ -33,30 +35,35 @@ export const leadershipTeam = [
 
 export const teamMembers = [
   {
+    key: 1,
     name: "Laura Trumbull",
     title: "COO",
     bio: "Served as CTO at American Real-Time Services, COO/CTO at Chaikin Analytics, and VP of Marketing App Tech at Meredith.",
     imageUrl: "/images/team/laura_trumbull.png",
   },
   {
+    key: 2,
     name: "Tom Saleh",
     title: "CIO",
     bio: "Founder/CEO of XNET (acquired) and CTO at the Financial Accounting Standards Board.",
     imageUrl: "/images/team/tom_saleh.png",
   },
   {
+    key: 3,
     name: "Stephen Rossetter",
     title: "CFO",
     bio: "Co-Founder/Managing Partner at Centripetal Capital Partners.",
     imageUrl: "/images/team/stephen_rossetter.png",
   },
   {
+    key: 4,
     name: "Larry Rafsky, PhD",
     title: "Head of Data Science",
     bio: "Founder/CEO of Acquire Media (acquired) and IDD at Dow Jones.",
     imageUrl: "/images/team/LR.png",
   },
   {
+    key: 5,
     name: "Jeffrey Brodlieb",
     title: "Business Strategy",
     bio: "VP of Finance & Ops at GE Capital and Principal at Boston Consulting Group.",
@@ -66,6 +73,7 @@ export const teamMembers = [
 
 export const advisorMember = [
   {
+    key: 1,
     name: "David Bell",
     title: "Chairman Emeritus & Senior Advisor",
     avatar: "/images/team/david_bell.png",
@@ -80,6 +88,7 @@ export const advisorMember = [
     companies: ["/images/companies/4.svg", "/images/companies/13.svg"],
   },
   {
+    key: 2,
     name: "Lawrence Leibowitz",
     title: "COO & Financial Markets Leader",
     avatar: "/images/team/lawrence_leibowitz.png",
@@ -92,6 +101,7 @@ export const advisorMember = [
     companies: ["/images/companies/13.svg", "/images/companies/16.svg"],
   },
   {
+    key: 3,
     name: "Keith Turco",
     title: "Growth & Marketing Innovator",
     avatar: "/images/team/keith_turco.png",
@@ -106,6 +116,7 @@ export const advisorMember = [
     companies: ["/images/companies/11.svg", "/images/companies/18.svg"],
   },
   {
+    key: 4,
     name: "Andrew O’Doherty",
     title: "Blockchain & Digital Transformation Expert",
     avatar: "/images/team/andrew_odoherty.png",

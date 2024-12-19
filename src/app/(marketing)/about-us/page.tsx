@@ -15,7 +15,7 @@ const AboutUs = () => {
             {/* Section Landing */}
             <Wrapper className="flex flex-col items-center justify-center py-8 md:py-12 w-full">
                 <Container delay={0.1} className="w-full">
-                    <div id="cardealers" className="flex flex-col items-center justify-center py-40 max-w-2xl mx-auto">
+                    <div className="flex flex-col items-center justify-center py-40 max-w-2xl mx-auto">
                         <MagicBadge title="About Us" />
                         <h2 className="text-3xl lg:text-4xl font-semibold font-heading text-center mt-6 !leading-tight">
                             Building a Safer World Through Trusted Identity Validation
@@ -52,7 +52,7 @@ const AboutUs = () => {
             {/* Leadeership */}
             <Wrapper className="flex flex-col items-center justify-center py-8 md:py-12 w-full">
                 <Container delay={0.1} className="w-full">
-                    <div id="cardealers" className="flex flex-col items-center justify-center py-10 max-w-2xl mx-auto">
+                    <div className="flex flex-col items-center justify-center py-10 max-w-2xl mx-auto">
                         <MagicBadge title="Leadership Team" />
                         <h2 className="text-3xl lg:text-4xl font-semibold font-heading text-center mt-6 !leading-tight">
                             Leadership You Can Trust
@@ -64,6 +64,7 @@ const AboutUs = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5 p-8">
                         {leadershipTeam.map((member) => (
                             <BioCard
+                                key={member.key}
                                 name={member.name}
                                 title={member.title}
                                 avatar={member.avatar}
@@ -78,7 +79,7 @@ const AboutUs = () => {
             {/* Team */}
             <Wrapper className="flex flex-col items-center justify-center py-8 md:py-12 w-full">
                 <Container delay={0.1} className="w-full">
-                    <div id="cardealers" className="flex flex-col items-center justify-center py-10 max-w-2xl mx-auto">
+                    <div className="flex flex-col items-center justify-center py-10 max-w-2xl mx-auto">
                         <MagicBadge title="Our Team" />
                         <h2 className="text-3xl lg:text-4xl font-semibold font-heading text-center mt-6 !leading-tight">
                             Thriving Through Adversity
@@ -92,6 +93,7 @@ const AboutUs = () => {
                         {teamMembers.map((member) => (
                             <div key={member.name}>
                                 <Image
+                                    key={member.key}
                                     src={member.imageUrl}
                                     alt={member.name}
                                     className="h-20 w-20 rounded-full object-cover"
@@ -110,7 +112,7 @@ const AboutUs = () => {
             {/* Advisors */}
             <Wrapper className="flex flex-col items-center justify-center py-8 md:py-12 w-full">
                 <Container delay={0.1} className="w-full">
-                    <div id="cardealers" className="flex flex-col items-center justify-center py-10 max-w-2xl mx-auto">
+                    <div className="flex flex-col items-center justify-center py-10 max-w-2xl mx-auto">
                         <MagicBadge title="Our Advisors" />
                         <h2 className="text-3xl lg:text-4xl font-semibold font-heading text-center mt-6 !leading-tight">
                             Guiding Transformational Success
@@ -122,6 +124,7 @@ const AboutUs = () => {
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-5 p-8">
                         {advisorMember.map((member) => (
                             <BioCard
+                                key={member.key}
                                 name={member.name}
                                 title={member.title}
                                 avatar={member.avatar}

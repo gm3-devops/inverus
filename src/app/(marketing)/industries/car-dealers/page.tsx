@@ -73,7 +73,7 @@ const DealersPage = () => {
             {/* Section Landing */}
             <Wrapper className="flex flex-col items-center justify-center py-8 md:py-12 w-full">
                 <Container delay={0.1} className="w-full">
-                    <div id="cardealers" className="flex flex-col items-center justify-center py-40 max-w-2xl mx-auto">
+                    <div className="flex flex-col items-center justify-center py-40 max-w-2xl mx-auto">
                         <MagicBadge title="Car Dealers" />
                         <h2 className="text-3xl lg:text-4xl font-semibold font-heading text-center mt-6 !leading-tight">
                             Protect Your Dealerships, Empower Your Systems, Secure Your Brand.
@@ -246,7 +246,6 @@ const DealersPage = () => {
             <Wrapper className="flex flex-col items-center justify-center py-8 md:py-12 w-full">
                 <Container delay={0.2} className="w-full">
                     <div
-                        id="use-cases"
                         className="flex w-full flex-col items-center justify-center py-8 lg:items-center"
                     >
                         <MagicBadge title="Industries" />
