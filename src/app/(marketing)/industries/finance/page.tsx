@@ -104,7 +104,7 @@ const FinancePage = () => {
 
             {/* Fraud Challenge Section */}
             <Wrapper className="flex flex-col items-center justify-center py-8 md:py-12 w-full">
-                <Container delay={0.2} className="w-full pt-10">
+                <Container delay={0.2} className="w-full ">
                     <div className="max-w-2xl mx-auto mx-auto text-start md:text-center">
                         <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
                             The Growing Threat of Financial Identity Fraud
@@ -168,8 +168,8 @@ const FinancePage = () => {
                                                     className="object-contain"
                                                     src="/images/industries/insights.svg"
                                                     alt="Consortium Intelligence"
-                                                    width={250}
-                                                    height={250}
+                                                    width={200}
+                                                    height={200}
                                                 />
                                             </div>
                                         </div>
@@ -192,8 +192,8 @@ const FinancePage = () => {
                                                 className="object-contain"
                                                 src="/images/industries/ai.svg"
                                                 alt="Consortium Intelligence"
-                                                width={250}
-                                                height={250}
+                                                width={200}
+                                                height={200}
                                             />
                                         </div>
                                     </div>
@@ -215,8 +215,8 @@ const FinancePage = () => {
                                                 className="object-contain"
                                                 src="/images/industries/consortium.svg"
                                                 alt="Consortium Intelligence"
-                                                width={250}
-                                                height={250}
+                                                width={200}
+                                                height={200}
                                             />
                                         </div>
                                     </div>

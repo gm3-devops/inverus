@@ -167,8 +167,8 @@ const AboutUs = () => {
                                                 className="object-contain"
                                                 src="/images/industries/insights.svg"
                                                 alt="Consortium Intelligence"
-                                                width={250}
-                                                height={250}
+                                                width={200}
+                                                height={200}
                                             />
                                         </div>
                                     </div>
@@ -191,8 +191,8 @@ const AboutUs = () => {
                                             className="object-contain"
                                             src="/images/industries/ai.svg"
                                             alt="Consortium Intelligence"
-                                            width={250}
-                                            height={250}
+                                            width={200}
+                                            height={200}
                                         />
                                     </div>
                                 </div>
@@ -214,8 +214,8 @@ const AboutUs = () => {
                                             className="object-contain"
                                             src="/images/industries/consortium.svg"
                                             alt="Consortium Intelligence"
-                                            width={250}
-                                            height={250}
+                                            width={200}
+                                            height={200}
                                         />
                                     </div>
                                 </div>

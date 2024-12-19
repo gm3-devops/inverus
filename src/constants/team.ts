@@ -60,14 +60,14 @@ export const teamMembers = [
     name: "Larry Rafsky, PhD",
     title: "Head of Data Science",
     bio: "Founder/CEO of Acquire Media (acquired) and IDD at Dow Jones.",
-    imageUrl: "/images/team/LR.png",
+    imageUrl: "/images/team/larry_rafsky.png.png",
   },
   {
     key: 5,
     name: "Jeffrey Brodlieb",
     title: "Business Strategy",
     bio: "VP of Finance & Ops at GE Capital and Principal at Boston Consulting Group.",
-    imageUrl: "/images/team/JB.png",
+    imageUrl: "/images/team/jeffrey_brodlieb.png.png",
   },
 ];
 
