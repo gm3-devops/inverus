@@ -1,11 +1,61 @@
 "use client";
 
 import Container from "../global/container";
-import MagicCard from "../ui/magic-card";
-import { PillarContent } from "../ui/pillars-content";
 import MagicBadge from "../ui/magic-badge";
-import Image from "next/image";
 import { PillarsCard, PillarsGrid } from "@/components/ui/bento-grid-pillars";
+
+import { BrainCircuit, ScanSearch, Share2 } from 'lucide-react';
+import Image from "next/image";
+import GlobeAndStars from "@/components/ui/globe-and-stars";
+import RadarAnimation from '@/components/ui/radar';
+
+export const PillarContent = [
+    {
+        Icon: Share2,
+        name: "Consortium",
+        description: "Harness the power of shared intelligence across trusted partners to identify and prevent identity fraud before it occurs.",
+        href: "/solutions#consortium",
+        cta: "Learn more",
+        className: "col-span-3 lg:col-span-2",
+        background: (
+            <div className="absolute w-full h-full right-0 top-0 origin-top rounded-md transition-all duration-300 ease-out  [mask-image:linear-gradient(to_top,transparent_20%,#000_100%)] md:[mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105 group-hover:-translate-y-4">
+                <GlobeAndStars />
+            </div>
+        ),
+    },
+    {
+        Icon: ScanSearch,
+        name: "Harvestor",
+        description:
+            "Our Reverse Search Engine technology scours publicly available and consortium data to validate identities and uncover suspicious activity with precision.",
+        href: "/solutions#harvestor",
+        cta: "Learn more",
+        className: "col-span-3 lg:col-span-1",
+        background: (
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 origin-top rounded-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_100%)] group-hover:scale-105">
+                <RadarAnimation />
+            </div>
+        ),
+    },
+    {
+        Icon: BrainCircuit,
+        name: "Behavioral Insights",
+        description: "Leverage behavioral patterns and advanced analytics to detect anomalies, predict fraud risks, and enhance decision-making.",
+        href: "/solutions#behavioural-insights",
+        cta: "Learn more",
+        className: "col-span-3 lg:col-span-1",
+        background: (
+            <Image
+                src="/images/pillars/consortium.svg"
+                alt="Consortium"
+                width={300}
+                height={300}
+                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 origin-top rounded-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_100%)] group-hover:scale-105"
+            />
+        ),
+    },
+];
+
 
 const Features = () => {
     return (
@@ -23,82 +73,6 @@ const Features = () => {
                         Innovative solutions to safeguard your business from emerging threats.
                     </p>
                 </div>
-
-                {/* <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-                    <div className="mt-10 grid gap-6 lg:grid-cols-3 sm:mt-16">
-                        <div className="relative">
-                            <div className="absolute inset-px rounded-lg bg-background [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] border border-border"></div>
-                            <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
-                                <div className="px-8 pt-8 sm:px-10 sm:pt-10">
-                                    <h3 className="font-semibold text-neutral-300 text-xl">
-                                        Consortium
-                                    </h3>
-                                    <p className="text-muted-foreground mt-2 text-start">
-                                        Harness the power of shared intelligence across trusted partners to identify and prevent identity fraud before it occurs
-                                    </p>
-                                </div>
-                                <div className="flex flex-1 items-center max-lg:py-6 lg:pb-2">
-                                    <div className="flex flex-1 items-center justify-center max-lg:py-6 lg:pb-2">
-                                        <Image
-                                            className="object-contain"
-                                            src="/images/industries/insights.svg"
-                                            alt="Consortium Intelligence"
-                                            width={200}
-                                            height={200}
-                                        />
-                                    </div>
-                                </div>
-                            </div>
-                            <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5"></div>
-                        </div>
-                        <div className="relative">
-                            <div className="absolute inset-px rounded-lg bg-background [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] border border-border"></div>
-                            <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
-                                <div className="px-8 pt-8 sm:px-10 sm:pt-10">
-                                    <h3 className="font-semibold text-neutral-300 text-xl">
-                                        Harvestor / Reverse Search Engine
-                                    </h3>
-                                    <p className="text-muted-foreground mt-2 text-start">
-                                        Our Reverse Search Engine technology scours publicly available and consortium data to validate identities and uncover suspicious activity with precision.
-                                    </p>
-                                </div>
-                                <div className="flex flex-1 items-center justify-center max-lg:py-6 lg:pb-2">
-                                    <Image
-                                        className="object-contain"
-                                        src="/images/industries/ai.svg"
-                                        alt="Consortium Intelligence"
-                                        width={200}
-                                        height={200}
-                                    />
-                                </div>
-                            </div>
-                            <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5"></div>
-                        </div>
-                        <div className="relative">
-                            <div className="absolute inset-px rounded-lg bg-background [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] border border-border"></div>
-                            <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
-                                <div className="px-8 pt-8 sm:px-10 sm:pt-10">
-                                    <h3 className="font-semibold text-neutral-300 text-xl">
-                                        Behavioral Insights
-                                    </h3>
-                                    <p className="text-muted-foreground mt-2 text-start">
-                                        Leverage behavioral patterns and advanced analytics to detect anomalies, predict fraud risks, and enhance decision-making.
-                                    </p>
-                                </div>
-                                <div className="flex flex-1 items-center justify-center max-lg:py-6 lg:pb-2">
-                                    <Image
-                                        className="object-contain"
-                                        src="/images/industries/consortium.svg"
-                                        alt="Consortium Intelligence"
-                                        width={200}
-                                        height={200}
-                                    />
-                                </div>
-                            </div>
-                            <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5"></div>
-                        </div>
-                    </div>
-                </div> */}
             </Container>
             <Container delay={0.2}>
                 <PillarsGrid className="py-8">

@@ -17,17 +17,18 @@ export const fraud = [
   {
     icon: Car,
     title: "Dealers",
-    info: "Rising fraud risks at test drives, point-of-sale, and warranty claims.",
+    info: "Facing fraud risks at test drives, points-of-sale, and during warranty claims",
+    imgsrc: "",
   },
   {
     icon: Handshake,
     title: "DMS Providers",
-    info: "Growing demand for fraud prevention integrations and reseller value-add services.",
+    info: "Meeting demand for fraud prevention tools and added reseller services.",
   },
   {
     icon: Split,
     title: "Car Brands",
-    info: "Ensuring trust across dealership networks while combating fraud at scale.",
+    info: "Building trust in dealership networks while scaling fraud prevention.",
   },
 ];
 
