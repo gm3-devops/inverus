@@ -5,11 +5,12 @@ export const leadershipTeam = [
     title: "CTO & Co-Founder",
     avatar: "/images/team/Jim.png",
     description: [
+      "Co-founded About.com (Acquired).",
+      "Led US Platform at Spotify (2011-2014): Employee #6",
       "Over 20 years of expertise in protecting identity and data.",
       "Advised US government and law enforcement on counter-terrorism and security.",
       "Developed tech solutions for U.S. Patriot Act, KYC, and AML compliance.",
       "Pioneer in IP and data security.",
-      "Co-founded About.com (Acquired).",
       "Led US Platform at Spotify (2011-2014): Contributed to launch and growth.",
       "Inventor & author of 25+ U.S. patents in security, AI/ML, telecommunications, and mobile solutions.",
     ],
@@ -21,53 +22,15 @@ export const leadershipTeam = [
     title: "Co-Founder & Vice Chairman ",
     avatar: "/images/team/SGC.png",
     description: [
-      "Helped merge Winstar Communications into a $10bn enterprise.",
-      "Led Worlds, Inc's 3D virtual community platform (1999-2000).",
-      "Founded Centripetal Capital Partners, focusing on private equity growth.",
-      "Provides leadership and governance to growth-stage companies.",
-      "Lectured at Harvard and testified on AT&T's break-up.",
+      "Co-Founder of Winstar Communications (Nasdaq: WCII), which merged into a $10bn enterprise.",
+      "Chairman at Worlds Inc (Nasdaq: WDDD), a 3D virtual community platform (1999-2000).",
+      "Senior Principal at Centripetal Capital Partners, focusing on private equity growth.",
+      "Chairman at several growth-stage companies.",
       "Expert in telecommunications policy and industry trends.",
       "Experience scaling and leading high-growth companies.",
+      "Lectured at Harvard Business School and testified before Congress on AT&T's break-up.",
     ],
-    companies: ["/images/companies/11.svg", "/images/companies/6.svg"],
-  },
-];
-
-export const teamMembers = [
-  {
-    key: 1,
-    name: "Laura Trumbull",
-    title: "COO",
-    bio: "Served as CTO at American Real-Time Services, COO/CTO at Chaikin Analytics, and VP of Marketing App Tech at Meredith.",
-    imageUrl: "/images/team/laura_trumbull.png",
-  },
-  {
-    key: 2,
-    name: "Tom Saleh",
-    title: "CIO",
-    bio: "Founder/CEO of XNET (acquired) and CTO at the Financial Accounting Standards Board.",
-    imageUrl: "/images/team/tom_saleh.png",
-  },
-  {
-    key: 3,
-    name: "Stephen Rossetter",
-    title: "CFO",
-    bio: "Co-Founder/Managing Partner at Centripetal Capital Partners.",
-    imageUrl: "/images/team/stephen_rossetter.png",
-  },
-  {
-    key: 4,
-    name: "Larry Rafsky, PhD",
-    title: "Head of Data Science",
-    bio: "Founder/CEO of Acquire Media (acquired) and IDD at Dow Jones.",
-    imageUrl: "/images/team/larry_rafsky.png.png",
-  },
-  {
-    key: 5,
-    name: "Jeffrey Brodlieb",
-    title: "Business Strategy",
-    bio: "VP of Finance & Ops at GE Capital and Principal at Boston Consulting Group.",
-    imageUrl: "/images/team/jeffrey_brodlieb.png.png",
+    companies: ["/images/companies/19.svg", "/images/companies/6.svg"],
   },
 ];
 
@@ -85,12 +48,12 @@ export const advisorMember = [
       "CEO @ Bozell Worldwide.",
       "Founder & Chairman @ Gyro.",
     ],
-    companies: ["/images/companies/4.svg", "/images/companies/13.svg"],
+    companies: ["/images/companies/4.svg", "/images/companies/12.svg"],
   },
   {
     key: 2,
     name: "Lawrence Leibowitz",
-    title: "COO & Financial Markets Leader",
+    title: "Growth & Marketing Leader",
     avatar: "/images/team/lawrence_leibowitz.png",
     description: [
       "COO & Head of Equity Markets @ NYSE Euronext (NYSE: NYX): Played a significant role during its $10.2 billion acquisition by Intercontinental Exchange (ICE) in 2013.",
@@ -123,8 +86,79 @@ export const advisorMember = [
     description: [
       "Founder/Managing Partner @ gm3: A Business & Technology Advisory firm.",
       "Founder @ My Data Hub: An early-stage decentralized data marketplace platform leveraging blockchain technology.",
-      "Global Head of Onboarding Ops & Digital Transformation @ Citigroup Securities Services (NYSE: C).",
+      "Global Head of Ops & Onboarding Digital Transformation @ Citigroup Securities Services (NYSE: C).",
     ],
-    companies: ["/images/companies/1.svg", "/images/companies/17.svg"],
+    companies: ["/images/companies/1.svg", "/images/companies/20.svg"],
+  },
+];
+
+export const teamMembers = [
+  {
+    key: 1,
+    name: "Andrew O’Doherty",
+    title: "Blockchain & Digital Transformation Expert",
+    avatar: "/images/team/andrew_odoherty.png",
+    description: [
+      "Founder/Managing Partner @ gm3: A Business & Technology Advisory firm.",
+      "Founder @ My Data Hub: An early-stage decentralized data marketplace platform leveraging blockchain technology.",
+      "Global Head of Ops & Onboarding Digital Transformation @ Citigroup Securities Services (NYSE: C).",
+    ],
+    companies: ["/images/companies/1.svg", "/images/companies/20.svg"],
+  },
+  {
+    key: 2,
+    name: "Laura Trumbull",
+    title: "COO",
+    avatar: "/images/team/laura_trumbull.png",
+    description: [
+      "Served as CTO at American Real-Time Services.",
+      "COO/CTO at Chaikin Analytics.",
+      "VP of Marketing App Tech at Meredith.",
+    ],
+    companies: ["/images/companies/3.svg", "/images/companies/9.svg"],
+  },
+  {
+    key: 3,
+    name: "Tom Saleh",
+    title: "CIO",
+    bio: "Founder/CEO of XNET (acquired) and CTO at the Financial Accounting Standards Board.",
+    avatar: "/images/team/tom_saleh.png",
+    description: [
+      "Founder/CEO of XNET (acquired) .",
+      "CTO at the Financial Accounting Standards Board.",
+    ],
+    companies: ["/images/companies/7.svg", "/images/companies/13.svg"],
+  },
+  {
+    key: 4,
+    name: "Stephen Rossetter",
+    title: "CFO",
+    avatar: "/images/team/stephen_rossetter.png",
+    description: [
+      "Co-Founder/Managing Partner at Centripetal Capital Partners.",
+    ],
+    companies: ["/images/companies/21.svg", "/images/companies/22.svg"],
+  },
+  {
+    key: 5,
+    name: "Larry Rafsky, PhD",
+    title: "Head of Data Science",
+    avatar: "/images/team/larry_rafsky.png",
+    description: [
+      "Founder/CEO of Acquire Media (acquired).",
+      "IDD at Dow Jones.",
+    ],
+    companies: ["/images/companies/8.svg", "/images/companies/15.svg"],
+  },
+  {
+    key: 6,
+    name: "Jeffrey Brodlieb",
+    title: "Business Strategy",
+    avatar: "/images/team/jeffrey_brodlieb.png",
+    description: [
+      "VP of Finance & Ops at GE Capital.",
+      "Principal at Boston Consulting Group.",
+    ],
+    companies: ["/images/companies/2.svg", "/images/companies/23.svg"],
   },
 ];
