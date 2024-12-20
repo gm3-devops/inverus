@@ -14,7 +14,7 @@ import RadarAnimation from '@/components/ui/radar';
 import { PillarsCard, PillarsGrid } from "@/components/ui/bento-grid-pillars";
 import MagicCard from "@/components/ui/magic-card";
 
-export const PillarContent = [
+const PillarContent = [
     {
         Icon: Share2,
         name: "Consortium Intelligence",
