@@ -1,67 +1,61 @@
 import Container from "@/components/global/container";
 import Wrapper from "@/components/global/wrapper";
 import MagicBadge from "@/components/ui/magic-badge";
-import Image from "next/image";
-import { finance, finsolutions } from "@/constants/industries";
+import { finance, fincnanceImplementation, fraud, implementation } from "@/constants/industries";
 import { Icons } from "@/components";
 import { ScheduleCall } from "@/components/ui/cal";
 import { Calendar, Rocket } from "lucide-react";
 import { Particles } from "@/components/ui/particles";
 import RetroGrid from "@/components/ui/retro-grid";
-import { CasesCard, CasesGrid } from "@/components/ui/use-cases-grid";
-import { CarFrontIcon, Box, Activity } from "lucide-react";
+import { BrainCircuit, ScanSearch, Share2 } from 'lucide-react';
+import Image from "next/image";
+import GlobeAndStars from "@/components/ui/globe-and-stars";
+import RadarAnimation from '@/components/ui/radar';
+import { PillarsCard, PillarsGrid } from "@/components/ui/bento-grid-pillars";
+import MagicCard from "@/components/ui/magic-card";
 
-const FINANCECASE = [
+const PillarContent = [
     {
-        Icon: CarFrontIcon,
-        name: "Account Opening",
+        Icon: Share2,
+        name: "Consortium Intelligence",
+        description: "Proactively flag identity risks using shared fraud data.",
+        href: "/solutions#consortium",
+        cta: "Learn more",
+        className: "col-span-3 lg:col-span-2",
+        background: (
+            <div className="absolute w-full h-full right-0 top-0 origin-top rounded-md transition-all duration-300 ease-out  [mask-image:linear-gradient(to_top,transparent_20%,#000_100%)] md:[mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105 group-hover:-translate-y-4">
+                <GlobeAndStars />
+            </div>
+        ),
+    },
+    {
+        Icon: ScanSearch,
+        name: "Harvestor / Reverse Search Engine",
         description:
-            "Validate identities before account creation..",
-        href: "/",
+            "Identify suspicious patterns and anomalies instantly.",
+        href: "/solutions#harvestor",
+        cta: "Learn more",
+        className: "col-span-3 lg:col-span-1",
+        background: (
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 origin-top rounded-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_100%)] group-hover:scale-105">
+                <RadarAnimation />
+            </div>
+        ),
+    },
+    {
+        Icon: BrainCircuit,
+        name: "Behavioral Insights",
+        description: "Detect irregularities in transactions, geographic activity, and account usage.",
+        href: "/solutions#behavioural-insights",
         cta: "Learn more",
         className: "col-span-3 lg:col-span-1",
         background: (
             <Image
-                src="/images/porsche.svg"
-                alt="Industry Spotlight"
+                src="/images/pillars/consortium.svg"
+                alt="Consortium"
                 width={300}
                 height={300}
-                className="absolute top-10 left-10 origin-top rounded-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_100%)] group-hover:scale-105"
-            />
-        ),
-    },
-    {
-        Icon: Box,
-        name: "Loan Approvals",
-        description:
-            "Detect fraudulent loan applications early.",
-        href: "/",
-        cta: "Learn more",
-        className: "col-span-3 lg:col-span-2",
-        background: (
-            <Image
-                src="/images/cards.svg"
-                alt="Financial Institutions"
-                width={300}
-                height={300}
-                className="absolute top-10 left-10 origin-top rounded-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_100%)] group-hover:scale-105"
-            />
-        ),
-    },
-    {
-        Icon: Activity,
-        name: "Transaction Monitoring",
-        description: "Real-time risk detection across banking activities.",
-        className: "col-span-3 lg:col-span-3",
-        href: "/",
-        cta: "Learn more",
-        background: (
-            <Image
-                src="/images/healthcare.svg"
-                alt="Healthcare Institutions"
-                width={300}
-                height={300}
-                className="absolute top-10 left-10 origin-top rounded-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_100%)] group-hover:scale-105"
+                className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 origin-top rounded-none transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_0%,#000_100%)] group-hover:scale-105"
             />
         ),
     },
@@ -73,10 +67,10 @@ const FinancePage = () => {
             {/* Section Landing */}
             <Wrapper className="flex flex-col items-center justify-center py-8 md:py-12 w-full">
                 <Container delay={0.1} className="w-full">
-                    <div id="cardealers" className="flex flex-col items-center justify-center py-40 max-w-2xl mx-auto">
+                    <div className="flex flex-col items-center justify-center py-40 max-w-2xl mx-auto">
                         <MagicBadge title="Financial Institutions" />
                         <h2 className="text-3xl lg:text-4xl font-semibold font-heading text-center mt-6 !leading-tight">
-                            Securing Financial Transactions with Trusted Identity Validation.
+                            Securing Financial Transactions with Trusted Identity Validation
                         </h2>
                         <p className="text-base md:text-lg mt-6 text-center text-muted-foreground">
                             Stop identity fraud before it starts. Protect your customers, reduce costs, and ensure compliance with ease.
@@ -89,25 +83,14 @@ const FinancePage = () => {
                         </div>
                     </div>
                 </Container>
-                <Container delay={0.2} className="w-full">
-                    <div className="w-full flex max-w-4xl py-2 mx-auto">
-                        <Image
-                            src="/images/industries/qr-codes.svg"
-                            alt="Create QR codes for your links"
-                            width={80}
-                            height={80}
-                            className="w-full h-auto"
-                        />
-                    </div>
-                </Container>
             </Wrapper>
 
             {/* Fraud Challenge Section */}
-            <Wrapper className="flex flex-col items-center justify-center py-8 md:py-12 w-full">
-                <Container delay={0.2} className="w-full ">
+            <Wrapper className="flex flex-col items-center justify-center w-full">
+                <Container delay={0.2} className="w-full">
                     <div className="max-w-2xl mx-auto mx-auto text-start md:text-center">
                         <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
-                            The Growing Threat of Financial Identity Fraud
+                            The Growing Threat of Financial Identity Frau
                         </h2>
                         <p className="text-muted-foreground mt-6">
                             Uncovering vulnerabilities across the automotive landscape, from dealerships to DMS providers and car brands, and the strategies needed to combat them.
@@ -119,112 +102,52 @@ const FinancePage = () => {
                         <Icons.feature className="w-auto h-80" />
                     </div>
                 </Container>
-                <Container delay={0.1} className="w-full">
-                    <div className="flex flex-col items-center justify-center py-8 md:py-12 w-full">
-                        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full gap-8">
-                            {finance.map((feature) => (
-                                <div key={feature.title} className="flex flex-col items-start lg:items-start px-0 md:px-0">
-                                    <div className="flex items-center justify-center">
-                                        <feature.icon className="w-8 h-8" />
+                <div className="grid w-full grid-cols-1 gap-4 py-8 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
+                    {finance.map((target, id) => (
+                        <Container delay={0.2 * id} key={id}>
+                            <MagicCard className="group md:py-8">
+                                <div className="flex w-full flex-col items-start justify-start"> {/* Updated alignment */}
+                                    <target.icon
+                                        strokeWidth={1.5}
+                                        className="h-10 w-10 text-primary"
+                                    />
+                                    <div className="relative flex flex-col items-start"> {/* Ensures left alignment */}
+                                        <h3 className="mt-6 font-medium text-base text-foreground">
+                                            {target.title}
+                                        </h3>
+                                        <p className="mt-2 text-left text-muted-foreground text-sm"> {/* Added text-left */}
+                                            {target.info}
+                                        </p>
                                     </div>
-                                    <h3 className="text-lg font-medium mt-4">
-                                        {feature.title}
-                                    </h3>
-                                    <p className="text-muted-foreground mt-2 text-start lg:text-start">
-                                        {feature.info}
-                                    </p>
                                 </div>
-                            ))}
-                        </div>
-                    </div>
-                </Container>
+                            </MagicCard>
+                        </Container>
+                    ))}
+                </div>
             </Wrapper>
 
             {/* Solution Section */}
             <Wrapper className="flex flex-col items-center justify-center py-8 md:py-12 w-full">
-                <Container delay={0.2} className="w-full">
-                    <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-                        <div className="max-w-2xl mx-auto text-start md:text-center">
-                            <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
-                                How inVerus Delivers for Auto Industry Leaders
-                            </h2>
-                        </div>
-                        <div className="mx-auto max-w-2xl px-6 lg:max-w-7xl lg:px-8">
-                            <div className="mt-10 grid gap-6 lg:grid-cols-3 sm:mt-16">
-                                <div className="relative">
-                                    <div className="absolute inset-px rounded-lg bg-background [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] border border-border"></div>
-                                    <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
-                                        <div className="px-8 pt-8 sm:px-10 sm:pt-10">
-                                            <h3 className="font-semibold text-neutral-300 text-xl">
-                                                Behavioral Insights
-                                            </h3>
-                                            <p className="text-muted-foreground mt-2 text-start">
-                                                Detect anomalies in buyer behavior during test drives, warranty claims, and purchase cycles.
-                                            </p>
-                                        </div>
-                                        <div className="flex flex-1 items-center max-lg:py-6 lg:pb-2">
-                                            <div className="flex flex-1 items-center justify-center max-lg:py-6 lg:pb-2">
-                                                <Image
-                                                    className="object-contain"
-                                                    src="/images/industries/insights.svg"
-                                                    alt="Consortium Intelligence"
-                                                    width={200}
-                                                    height={200}
-                                                />
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5"></div>
-                                </div>
-                                <div className="relative">
-                                    <div className="absolute inset-px rounded-lg bg-background [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] border border-border"></div>
-                                    <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
-                                        <div className="px-8 pt-8 sm:px-10 sm:pt-10">
-                                            <h3 className="font-semibold text-neutral-300 text-xl">
-                                                Harvestor / Reverse Search Engine
-                                            </h3>
-                                            <p className="text-muted-foreground mt-2 text-start">
-                                                Pinpoint fraudsters and repeat offenders through advanced search.
-                                            </p>
-                                        </div>
-                                        <div className="flex flex-1 items-center justify-center max-lg:py-6 lg:pb-2">
-                                            <Image
-                                                className="object-contain"
-                                                src="/images/industries/ai.svg"
-                                                alt="Consortium Intelligence"
-                                                width={200}
-                                                height={200}
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5"></div>
-                                </div>
-                                <div className="relative">
-                                    <div className="absolute inset-px rounded-lg bg-background [box-shadow:0_-20px_80px_-20px_#ffffff1f_inset] border border-border"></div>
-                                    <div className="relative flex h-full flex-col overflow-hidden rounded-[calc(theme(borderRadius.lg)+1px)]">
-                                        <div className="px-8 pt-8 sm:px-10 sm:pt-10">
-                                            <h3 className="font-semibold text-neutral-300 text-xl">
-                                                Consortium Intelligence
-                                            </h3>
-                                            <p className="text-muted-foreground mt-2 text-start">
-                                                Shared real-time data on fraudulent behaviors across the dealer network.
-                                            </p>
-                                        </div>
-                                        <div className="flex flex-1 items-center justify-center max-lg:py-6 lg:pb-2">
-                                            <Image
-                                                className="object-contain"
-                                                src="/images/industries/consortium.svg"
-                                                alt="Consortium Intelligence"
-                                                width={200}
-                                                height={200}
-                                            />
-                                        </div>
-                                    </div>
-                                    <div className="pointer-events-none absolute inset-px rounded-lg shadow ring-1 ring-black/5"></div>
-                                </div>
-                            </div>
-                        </div>
+                <Container delay={0.3}>
+                    <div
+                        id="features"
+                        className="flex w-full flex-col items-center justify-center py-8 lg:items-center"
+                    >
+                        <MagicBadge title="Our Unique Patented Solution" />
+                        <h2 className="!leading-[1.1] mt-6 text-center font-heading font-medium text-3xl text-foreground md:text-5xl lg:text-center">
+                            How inVerus Supports Financial Institutions
+                        </h2>
+                        <p className="mt-4 max-w-lg text-center text-lg text-muted-foreground lg:text-center">
+                            inVerus empowers financial institutions with cutting-edge fraud detection solutions to combat identity theft, ensure regulatory compliance, and minimize operational costs, safeguarding both institutions and their customers.
+                        </p>
                     </div>
+                </Container>
+                <Container delay={0.2}>
+                    <PillarsGrid className="py-8">
+                        {PillarContent.map((feature, idx) => (
+                            <PillarsCard key={idx} {...feature} />
+                        ))}
+                    </PillarsGrid>
                 </Container>
             </Wrapper >
 
@@ -233,17 +156,17 @@ const FinancePage = () => {
                 <Container delay={0.2} className="w-full">
                     <div className="max-w-md mx-auto text-start md:text-center">
                         <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
-                            Key Features & Benefits
+                            Ease of Implementation
                         </h2>
                     </div>
                 </Container>
                 <Container>
                     <div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full divide-x-0 md:divide-x divide-y md:divide-y-0 divide-gray-900 first:border-l-2 lg:first:border-none first:border-gray-900">
-                            {finsolutions.map((step) => (
+                            {fincnanceImplementation.map((step) => (
                                 <div key={step.title} className="flex flex-col items-start px-4 md:px-6 lg:px-8 lg:py-6 py-4">
                                     <div className="flex items-center justify-center">
-                                        <step.icon className="w-8 h-8" />
+                                        <step.icon className="w-8 h-8 text-primary" />
                                     </div>
                                     <h3 className="text-lg font-medium mt-4">
                                         {step.title}
@@ -257,31 +180,6 @@ const FinancePage = () => {
                     </div>
                 </Container>
             </Wrapper >
-
-            {/* Use Cases */}
-            <Wrapper className="flex flex-col items-center justify-center py-8 md:py-12 w-full">
-                <Container delay={0.2} className="w-full">
-                    <div
-                        id="use-cases"
-                        className="flex w-full flex-col items-center justify-center py-8 lg:items-center"
-                    >
-                        <MagicBadge title="Industries" />
-                        <h2 className="!leading-[1.1] mt-6 text-center font-heading font-medium text-3xl text-foreground md:text-5xl lg:text-center">
-                            Safeguarding Critical Sectors
-                        </h2>
-                        <p className="mt-4 max-w-lg text-center text-lg text-muted-foreground lg:text-center">
-                            Tailored solutions to combat fraud and ensure trust across industries.
-                        </p>
-                    </div>
-                </Container>
-                <Container delay={0.2}>
-                    <CasesGrid className="py-8">
-                        {FINANCECASE.map((feature, idx) => (
-                            <CasesCard key={idx} {...feature} />
-                        ))}
-                    </CasesGrid>
-                </Container>
-            </Wrapper>
 
             {/* CTA */}
             <Wrapper className="flex flex-col items-center justify-center py-8 md:py-12 w-full">

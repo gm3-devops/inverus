@@ -70,7 +70,7 @@ const DealersPage = () => {
                     <div className="flex flex-col items-center justify-center py-40 max-w-2xl mx-auto">
                         <MagicBadge title="Car Dealers" />
                         <h2 className="text-3xl lg:text-4xl font-semibold font-heading text-center mt-6 !leading-tight">
-                            Protect Your Dealerships, Empower Your Systems, Secure Your Brand.
+                            Protect Your Dealerships, Empower Your Systems, Secure Your Brand
                         </h2>
                         <p className="text-base md:text-lg mt-6 text-center text-muted-foreground">
                             Fraud is costing auto dealers billions annually. inVerus delivers advanced solutions to safeguard every step of the process.
@@ -138,7 +138,7 @@ const DealersPage = () => {
                             How InVerus Delivers for Auto Industry Leaders
                         </h2>
                         <p className="mt-4 max-w-lg text-center text-lg text-muted-foreground lg:text-center">
-                            Innovative solutions to safeguard your business from emerging threats.
+                            inVerus equips automotive dealerships, DMS providers, and car brands with innovative fraud prevention tools, enhancing trust, safeguarding transactions, and ensuring seamless operations across the automotive network.
                         </p>
                     </div>
                 </Container>
@@ -156,7 +156,7 @@ const DealersPage = () => {
                 <Container delay={0.2} className="w-full">
                     <div className="max-w-md mx-auto text-start md:text-center">
                         <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
-                            Ease of Implementation Section
+                            Ease of Implementation
                         </h2>
                     </div>
                 </Container>
@@ -180,30 +180,6 @@ const DealersPage = () => {
                     </div>
                 </Container>
             </Wrapper >
-
-            {/* Use Cases */}
-            {/* <Wrapper className="flex flex-col items-center justify-center py-8 md:py-12 w-full">
-                <Container delay={0.2} className="w-full">
-                    <div
-                        className="flex w-full flex-col items-center justify-center py-8 lg:items-center"
-                    >
-                        <MagicBadge title="Industries" />
-                        <h2 className="!leading-[1.1] mt-6 text-center font-heading font-medium text-3xl text-foreground md:text-5xl lg:text-center">
-                            Safeguarding Critical Sectors
-                        </h2>
-                        <p className="mt-4 max-w-lg text-center text-lg text-muted-foreground lg:text-center">
-                            Tailored solutions to combat fraud and ensure trust across industries.
-                        </p>
-                    </div>
-                </Container>
-                <Container delay={0.2}>
-                    <PillarsGrid className="py-8">
-                        {PillarContent.map((feature, idx) => (
-                            <PillarsCard key={idx} {...feature} />
-                        ))}
-                    </PillarsGrid>
-                </Container>
-            </Wrapper> */}
 
             {/* CTA */}
             <Wrapper className="flex flex-col items-center justify-center py-8 md:py-12 w-full">
