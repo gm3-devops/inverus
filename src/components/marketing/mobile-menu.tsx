@@ -72,7 +72,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
                                 <li
                                     className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                                 >
-                                    <Link href="/car-dealers" className="flex items-center w-full text-start">
+                                    <Link href="/industries/car-dealers" className="flex items-center w-full text-start">
                                         <CarFront className="w-4 h-4 mr-2" />
                                         Car Dealers
                                     </Link>
@@ -80,7 +80,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
                                 <li
                                     className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                                 >
-                                    <Link href="/finance" className="flex items-center w-full text-start">
+                                    <Link href="/industries/finance" className="flex items-center w-full text-start">
                                         <DollarSign className="w-4 h-4 mr-2" />
                                         Financial Institutions
                                     </Link>
@@ -88,7 +88,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
                                 <li
                                     className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                                 >
-                                    <Link href="/healthcare" className="flex items-center w-full text-start">
+                                    <Link href="/industries/healthcare" className="flex items-center w-full text-start">
                                         <HospitalIcon className="w-4 h-4 mr-2" />
                                         Healthcare Providers
                                     </Link>
@@ -96,7 +96,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
                                 <li
                                     className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                                 >
-                                    <Link href="/government" className="flex items-center w-full text-start">
+                                    <Link href="/industries/government" className="flex items-center w-full text-start">
                                         <Landmark className="w-4 h-4 mr-2" />
                                         Government
                                     </Link>
