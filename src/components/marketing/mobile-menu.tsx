@@ -46,7 +46,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
                         onClick={() => setIsOpen(false)}
                         className="w-full px-4 py-2 text-lg hover:text-muted-foreground font-normal transition transform rounded-md cursor-pointer text-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                     >
-                        <Link href="/how-it-works" className="flex items-center w-full text-start">
+                        <Link href="/" className="flex items-center w-full text-start">
                             <Home className="w-4 h-4 mr-2" />
                             Home
                         </Link>
@@ -55,7 +55,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
                         onClick={() => setIsOpen(false)}
                         className="w-full px-4 py-2 text-lg hover:text-muted-foreground font-normal transition transform rounded-md cursor-pointer text-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                     >
-                        <Link href="/how-it-works" className="flex items-center w-full text-start">
+                        <Link href="/solutions" className="flex items-center w-full text-start">
                             <Radar className="w-4 h-4 mr-2" />
                             Solutions
                         </Link>
@@ -72,7 +72,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
                                 <li
                                     className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                                 >
-                                    <Link href="/" className="flex items-center w-full text-start">
+                                    <Link href="/car-dealers" className="flex items-center w-full text-start">
                                         <CarFront className="w-4 h-4 mr-2" />
                                         Car Dealers
                                     </Link>
@@ -80,7 +80,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
                                 <li
                                     className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                                 >
-                                    <Link href="/" className="flex items-center w-full text-start">
+                                    <Link href="/finance" className="flex items-center w-full text-start">
                                         <DollarSign className="w-4 h-4 mr-2" />
                                         Financial Institutions
                                     </Link>
@@ -88,7 +88,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
                                 <li
                                     className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                                 >
-                                    <Link href="/" className="flex items-center w-full text-start">
+                                    <Link href="/healthcare" className="flex items-center w-full text-start">
                                         <HospitalIcon className="w-4 h-4 mr-2" />
                                         Healthcare Providers
                                     </Link>
@@ -96,7 +96,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
                                 <li
                                     className="w-full px-4 py-2 text-lg font-normal transition transform rounded-md cursor-pointer text-foreground/80 hover:text-muted-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                                 >
-                                    <Link href="/" className="flex items-center w-full text-start">
+                                    <Link href="/government" className="flex items-center w-full text-start">
                                         <Landmark className="w-4 h-4 mr-2" />
                                         Government
                                     </Link>
@@ -108,7 +108,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
                         onClick={() => setIsOpen(false)}
                         className="w-full px-4 py-2 text-lg hover:text-muted-foreground font-normal transition transform rounded-md cursor-pointer text-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                     >
-                        <Link href="/" className="flex items-center w-full text-start">
+                        <Link href="/blog" className="flex items-center w-full text-start">
                             <NotebookPen className="w-4 h-4 mr-2" />
                             Blog
                         </Link>
@@ -117,7 +117,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
                         onClick={() => setIsOpen(false)}
                         className="w-full px-4 py-2 text-lg hover:text-muted-foreground font-normal transition transform rounded-md cursor-pointer text-foreground text-start active:scale-95 hover:bg-muted/20 active:opacity-80"
                     >
-                        <Link href="/" className="flex items-center w-full text-start">
+                        <Link href="/about-us" className="flex items-center w-full text-start">
                             <BadgeCheck className="w-4 h-4 mr-2" />
                             About Us
                         </Link>
