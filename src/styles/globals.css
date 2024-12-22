@@ -229,3 +229,116 @@
     height: 100%;
   }
 }
+
+.cards {
+  --cards: 4;
+  --cardHeight: 70vh;
+  --cardTopPadding: 2em;
+  --cardMargin: 4vw;
+  list-style: none;
+  padding-left: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(var(--cards), var(--cardHeight));
+  gap: var(--cardMargin);
+  padding-bottom: calc(var(--cards) * var(--cardTopPadding));
+  margin-bottom: var(--cardMargin);
+}
+
+.card {
+  position: sticky;
+  top: 0;
+}
+
+.card:nth-child(1) {
+  padding-top: calc(1 * var(--cardTopPadding));
+}
+
+.card:nth-child(2) {
+  padding-top: calc(2 * var(--cardTopPadding));
+}
+
+.card:nth-child(3) {
+  padding-top: calc(3 * var(--cardTopPadding));
+}
+
+.card:nth-child(4) {
+  padding-top: calc(4 * var(--cardTopPadding));
+}
+
+.cardBody {
+  box-sizing: border-box;
+  border-radius: 50px;
+  box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.3);
+  height: var(--cardHeight);
+  display: flex;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+
+.card:nth-child(1) .cardBody {
+  background-color: #52B2CF;
+}
+
+.card:nth-child(2) .cardBody {
+  background-color: #E5A36F;
+}
+
+.card:nth-child(3) .cardBody {
+  background-color: #9CADCE;
+}
+
+.card:nth-child(4) .cardBody {
+  background-color: #D4AFB9;
+}
+
+.imageHalf {
+  flex: 1;
+  background-size: cover;
+  background-position: center;
+}
+
+.textHalf {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.textHalf h2 {
+  font-size: 2.5em;
+  margin-bottom: 0.5em;
+}
+
+.textHalf h3 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  font-weight: normal;
+}
+
+.textHalf p {
+  font-size: 1em;
+  line-height: 1.6;
+}
+
+@media (max-width: 768px) {
+  .cardBody {
+    flex-direction: column;
+  }
+
+  .imageHalf,
+  .textHalf {
+    flex: none;
+    width: 100%;
+  }
+
+  .imageHalf {
+    height: 40%;
+  }
+
+  .textHalf {
+    height: 60%;
+  }
+}

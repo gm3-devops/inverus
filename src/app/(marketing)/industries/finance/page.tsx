@@ -1,7 +1,7 @@
 import Container from "@/components/global/container";
 import Wrapper from "@/components/global/wrapper";
 import MagicBadge from "@/components/ui/magic-badge";
-import { finance, fincnanceImplementation, fraud, implementation } from "@/constants/industries";
+import { finance, fincnanceImplementation } from "@/constants/industries";
 import { Icons } from "@/components";
 import { ScheduleCall } from "@/components/ui/cal";
 import { Calendar, Rocket } from "lucide-react";
@@ -90,7 +90,7 @@ const FinancePage = () => {
                 <Container delay={0.2} className="w-full">
                     <div className="max-w-2xl mx-auto mx-auto text-start md:text-center">
                         <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
-                            The Growing Threat of Financial Identity Frau
+                            The Growing Threat of Financial Identity Fraud
                         </h2>
                         <p className="text-muted-foreground mt-6">
                             Uncovering vulnerabilities across the automotive landscape, from dealerships to DMS providers and car brands, and the strategies needed to combat them.

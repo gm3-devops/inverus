@@ -1,10 +1,26 @@
 "use client";
 
-import { Accordion, AccordionContent, AccordionItem, AccordionTrigger } from "@/components/ui/accordion";
+import {
+    Accordion,
+    AccordionContent,
+    AccordionItem,
+    AccordionTrigger
+} from "@/components/ui/accordion";
 import { cn } from "@/functions";
 import { useClickOutside } from "@/hooks";
 import { motion } from "framer-motion";
-import { BadgeCheck, Box, CalendarClock, Captions, CarFront, CircleHelp, CopyCheck, DollarSign, FileText, Gem, Home, HospitalIcon, Landmark, Layers3, LineChart, Newspaper, NotebookPen, Radar, Scan, Send, Waypoints } from "lucide-react";
+import {
+    BadgeCheck,
+    CarFront,
+    DollarSign,
+    Home,
+    HospitalIcon,
+    Landmark,
+    NotebookPen,
+    Radar,
+    Scan,
+    Send
+} from "lucide-react";
 import Link from "next/link";
 import React from 'react';
 

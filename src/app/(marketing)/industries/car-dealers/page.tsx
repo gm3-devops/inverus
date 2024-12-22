@@ -1,3 +1,4 @@
+import React from 'react';
 import Container from "@/components/global/container";
 import Wrapper from "@/components/global/wrapper";
 import MagicBadge from "@/components/ui/magic-badge";
@@ -13,6 +14,64 @@ import GlobeAndStars from "@/components/ui/globe-and-stars";
 import RadarAnimation from '@/components/ui/radar';
 import { PillarsCard, PillarsGrid } from "@/components/ui/bento-grid-pillars";
 import MagicCard from "@/components/ui/magic-card";
+import { StickyScroll } from '@/components/sticky-scroll';
+
+interface CardData {
+    title: string;
+    description: string;
+    imageUrl: string;
+}
+
+const content = [
+    {
+        title: "Dealers",
+        description:
+            "Implement robust measures to protect against potential test drive fraud by leveraging advanced verification technologies, while also ensuring that buyer identities are thoroughly and accurately authenticated during vehicle purchase transactions to enhance security and trust.",
+        content: (
+            <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+                Dealers Illustration
+            </div>
+        ),
+    },
+    {
+        title: "DMS Providers ",
+        description:
+            "Deliver enhanced services to clients by seamlessly integrating sophisticated fraud prevention tools into your system offerings, providing measurable value that improves operational efficiency, strengthens client relationships, and builds long-term trust within the industry.",
+        content: (
+            <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
+                DMS Providers Illustration
+            </div>
+        ),
+    },
+    {
+        title: "Car Brands",
+        description:
+            "Utilize comprehensive data analytics and monitoring solutions to gain deeper insights into regional fraud patterns and trends, enabling you to proactively safeguard dealer networks while maintaining the integrity and reputation of your brand across diverse markets.",
+        content: (
+            <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
+                Car Brands Illustration
+            </div>
+        ),
+    },
+];
+
+const cardData: CardData[] = [
+    {
+        title: "Dealers",
+        description: "Implement robust measures to protect against potential test drive fraud by leveraging advanced verification technologies, while also ensuring that buyer identities are thoroughly and accurately authenticated during vehicle purchase transactions to enhance security and trust.",
+        imageUrl: "/placeholder.svg?height=800&width=600"
+    },
+    {
+        title: "DMS Providers",
+        description: "Deliver enhanced services to clients by seamlessly integrating sophisticated fraud prevention tools into your system offerings, providing measurable value that improves operational efficiency, strengthens client relationships, and builds long-term trust within the industry.",
+        imageUrl: "/placeholder.svg?height=800&width=600"
+    },
+    {
+        title: "Car Brands",
+        description: "Utilize comprehensive data analytics and monitoring solutions to gain deeper insights into regional fraud patterns and trends, enabling you to proactively safeguard dealer networks while maintaining the integrity and reputation of your brand across diverse markets.",
+        imageUrl: "/placeholder.svg?height=800&width=600"
+    }
+];
 
 const PillarContent = [
     {
@@ -60,6 +119,8 @@ const PillarContent = [
         ),
     },
 ];
+
+
 
 const DealersPage = () => {
     return (
@@ -178,6 +239,57 @@ const DealersPage = () => {
                             ))}
                         </div>
                     </div>
+                </Container>
+            </Wrapper >
+
+            {/* Use Cases */}
+            <Wrapper className="flex flex-col items-center justify-center md:py-12 w-full">
+                <Container delay={0.1} className="w-full">
+                    <div className="flex flex-col items-center justify-center py-40 max-w-2xl mx-auto">
+                        <MagicBadge title="Use Cases" />
+                        <h2 className="text-3xl lg:text-4xl font-semibold font-heading text-center mt-6 !leading-tight">
+                            Real Applications for Auto Dealers & DMS Providers
+                        </h2>
+                        <p className="text-base md:text-lg mt-6 text-center text-muted-foreground">
+                            Streamline operations and enhance security with cutting-edge fraud prevention tools. Tailored solutions for dealers, DMS providers, and car brands to safeguard against test drive fraud and identity risks.
+                        </p>
+                    </div>
+                </Container>
+                <Container>
+                    <ul className="cards">
+                        {cardData.map((card, index) => (
+                            <li key={index} className="card">
+                                <div className="cardBody">
+                                    <div
+                                        className="imageHalf"
+                                        style={{ backgroundImage: `url(${card.imageUrl})` }}
+                                    />
+                                    <div className="textHalf">
+                                        <h2>{card.title}</h2>
+                                        <p>{card.description}</p>
+                                    </div>
+                                </div>
+                            </li>
+                        ))}
+                    </ul>
+                </Container>
+            </Wrapper >
+
+            {/* Use Cases */}
+            <Wrapper className="flex flex-col items-center justify-center md:py-12 w-full">
+                <Container delay={0.1} className="w-full">
+                    <div className="flex flex-col items-center justify-center py-40 max-w-2xl mx-auto">
+                        <MagicBadge title="Use Cases" />
+                        <h2 className="text-3xl lg:text-4xl font-semibold font-heading text-center mt-6 !leading-tight">
+                            Real Applications for Auto Dealers & DMS Providers
+                        </h2>
+                        <p className="text-base md:text-lg mt-6 text-center text-muted-foreground">
+                            Streamline operations and enhance security with cutting-edge fraud prevention tools. Tailored solutions for dealers, DMS providers, and car brands to safeguard against test drive fraud and identity risks.
+                        </p>
+                    </div>
+                </Container>
+                <Container>
+                    <StickyScroll content={content} />
                 </Container>
             </Wrapper >
 
