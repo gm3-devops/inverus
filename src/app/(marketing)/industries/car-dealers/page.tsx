@@ -130,7 +130,7 @@ const DealersPage = () => {
                         <Icons.feature className="w-auto h-80" />
                     </div>
                 </Container>
-                <div className="grid w-full grid-cols-1 gap-4 py-8 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
+                <div className="grid w-full grid-cols-1 gap-4 py-8 pb-10 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
                     {fraud.map((target, id) => (
                         <Container delay={0.2 * id} key={id}>
                             <MagicCard className="group md:py-8">
@@ -157,7 +157,7 @@ const DealersPage = () => {
             {/* Solution Section */}
             <Wrapper className="flex flex-col items-center justify-center py-18 md:py-12 w-full">
                 <Container delay={0.3}>
-                    <div className="flex w-full flex-col items-center justify-center py-8 lg:items-center">
+                    <div className="flex w-full flex-col items-center justify-center py-20 md:py-8 lg:items-center">
                         <MagicBadge title="Our Unique Patented Solution" />
                         <h2 className="!leading-[1.1] mt-6 max-w-3xl text-center font-heading font-medium text-3xl text-foreground md:text-4xl lg:text-center">
                             How InVerus Delivers for Auto Industry Leaders
@@ -168,7 +168,7 @@ const DealersPage = () => {
                     </div>
                 </Container>
                 <Container delay={0.2}>
-                    <PillarsGrid className="py-8 pb-8">
+                    <PillarsGrid className="py-8">
                         {PillarContent.map((feature, idx) => (
                             <PillarsCard key={idx} {...feature} />
                         ))}
