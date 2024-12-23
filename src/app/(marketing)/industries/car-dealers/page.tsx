@@ -14,46 +14,12 @@ import GlobeAndStars from "@/components/ui/globe-and-stars";
 import RadarAnimation from '@/components/ui/radar';
 import { PillarsCard, PillarsGrid } from "@/components/ui/bento-grid-pillars";
 import MagicCard from "@/components/ui/magic-card";
-import { StickyScroll } from '@/components/sticky-scroll';
 
 interface CardData {
     title: string;
     description: string;
     imageUrl: string;
 }
-
-const content = [
-    {
-        title: "Dealers",
-        description:
-            "Implement robust measures to protect against potential test drive fraud by leveraging advanced verification technologies, while also ensuring that buyer identities are thoroughly and accurately authenticated during vehicle purchase transactions to enhance security and trust.",
-        content: (
-            <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-                Dealers Illustration
-            </div>
-        ),
-    },
-    {
-        title: "DMS Providers ",
-        description:
-            "Deliver enhanced services to clients by seamlessly integrating sophisticated fraud prevention tools into your system offerings, providing measurable value that improves operational efficiency, strengthens client relationships, and builds long-term trust within the industry.",
-        content: (
-            <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--orange-500),var(--yellow-500))] flex items-center justify-center text-white">
-                DMS Providers Illustration
-            </div>
-        ),
-    },
-    {
-        title: "Car Brands",
-        description:
-            "Utilize comprehensive data analytics and monitoring solutions to gain deeper insights into regional fraud patterns and trends, enabling you to proactively safeguard dealer networks while maintaining the integrity and reputation of your brand across diverse markets.",
-        content: (
-            <div className="h-full w-full bg-[linear-gradient(to_bottom_right,var(--cyan-500),var(--emerald-500))] flex items-center justify-center text-white">
-                Car Brands Illustration
-            </div>
-        ),
-    },
-];
 
 const cardData: CardData[] = [
     {
@@ -149,7 +115,7 @@ const DealersPage = () => {
             {/* Fraud Challenge Section */}
             <Wrapper className="flex flex-col items-center justify-center w-full">
                 <Container delay={0.2} className="w-full">
-                    <div className="max-w-2xl mx-auto mx-auto text-start md:text-center">
+                    <div className="max-w-2xl mx-auto mx-auto justify-center text-center">
                         <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
                             The Fraud Challenge Across Automotive Ecosystem
                         </h2>
@@ -167,16 +133,16 @@ const DealersPage = () => {
                     {fraud.map((target, id) => (
                         <Container delay={0.2 * id} key={id}>
                             <MagicCard className="group md:py-8">
-                                <div className="flex w-full flex-col items-start justify-start"> {/* Updated alignment */}
+                                <div className="flex w-full flex-col items-center justify-center"> {/* Updated alignment */}
                                     <target.icon
                                         strokeWidth={1.5}
                                         className="h-10 w-10 text-primary"
                                     />
-                                    <div className="relative flex flex-col items-start"> {/* Ensures left alignment */}
+                                    <div className="relative flex flex-col items-center justify-center"> {/* Ensures left alignment */}
                                         <h3 className="mt-6 font-medium text-base text-foreground">
                                             {target.title}
                                         </h3>
-                                        <p className="mt-2 text-left text-muted-foreground text-sm"> {/* Added text-left */}
+                                        <p className="mt-2 text-left text-muted-foreground text-sm text-center justify-center"> {/* Added text-left */}
                                             {target.info}
                                         </p>
                                     </div>
@@ -215,7 +181,7 @@ const DealersPage = () => {
             {/* Implementation */}
             <Wrapper className="flex flex-col items-center justify-center md:py-12 w-full">
                 <Container delay={0.2} className="w-full">
-                    <div className="max-w-md mx-auto text-start md:text-center">
+                    <div className="max-w-md mx-auto text-center justify-center md:text-center">
                         <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
                             Ease of Implementation
                         </h2>
@@ -225,14 +191,14 @@ const DealersPage = () => {
                     <div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full divide-x-0 md:divide-x divide-y md:divide-y-0 divide-gray-900 first:border-l-2 lg:first:border-none first:border-gray-900">
                             {implementation.map((step) => (
-                                <div key={step.title} className="flex flex-col items-start px-4 md:px-6 lg:px-8 lg:py-6 py-4">
+                                <div key={step.title} className="flex flex-col items-center justify-center px-4 md:px-6 lg:px-8 lg:py-6 py-4">
                                     <div className="flex items-center justify-center">
                                         <step.icon className="w-8 h-8 text-primary" />
                                     </div>
                                     <h3 className="text-lg font-medium mt-4">
                                         {step.title}
                                     </h3>
-                                    <p className="text-muted-foreground mt-2 text-start lg:text-start">
+                                    <p className="text-muted-foreground mt-2 text-center justify-center">
                                         {step.info}
                                     </p>
                                 </div>
@@ -245,7 +211,7 @@ const DealersPage = () => {
             {/* Use Cases */}
             <Wrapper className="flex flex-col items-center justify-center md:py-12 w-full">
                 <Container delay={0.1} className="w-full">
-                    <div className="flex flex-col items-center justify-center py-40 max-w-2xl mx-auto">
+                    <div className="flex flex-col items-center justify-center py-8 max-w-2xl mx-auto">
                         <MagicBadge title="Use Cases" />
                         <h2 className="text-3xl lg:text-4xl font-semibold font-heading text-center mt-6 !leading-tight">
                             Real Applications for Auto Dealers & DMS Providers
@@ -272,24 +238,6 @@ const DealersPage = () => {
                             </li>
                         ))}
                     </ul>
-                </Container>
-            </Wrapper >
-
-            {/* Use Cases */}
-            <Wrapper className="flex flex-col items-center justify-center md:py-12 w-full">
-                <Container delay={0.1} className="w-full">
-                    <div className="flex flex-col items-center justify-center py-40 max-w-2xl mx-auto">
-                        <MagicBadge title="Use Cases" />
-                        <h2 className="text-3xl lg:text-4xl font-semibold font-heading text-center mt-6 !leading-tight">
-                            Real Applications for Auto Dealers & DMS Providers
-                        </h2>
-                        <p className="text-base md:text-lg mt-6 text-center text-muted-foreground">
-                            Streamline operations and enhance security with cutting-edge fraud prevention tools. Tailored solutions for dealers, DMS providers, and car brands to safeguard against test drive fraud and identity risks.
-                        </p>
-                    </div>
-                </Container>
-                <Container>
-                    <StickyScroll content={content} />
                 </Container>
             </Wrapper >
 

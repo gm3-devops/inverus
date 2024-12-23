@@ -1,4 +1,3 @@
-import Container from "@/components/global/container";
 import Icons from '../global/icons';
 import Link from "next/link";
 import { ShieldCheckIcon } from 'lucide-react';
@@ -36,22 +35,22 @@ const Footer = () => {
                                     <h3 className="text-base font-medium text-white">Industries</h3>
                                     <ul className="mt-4 text-sm text-muted-foreground">
                                         <li className="mt-2">
-                                            <Link href="" className="hover:text-foreground transition-all duration-300">
+                                            <Link href="/industries/car-dealers" className="hover:text-foreground transition-all duration-300">
                                                 Car Dealers
                                             </Link>
                                         </li>
                                         <li className="mt-2">
-                                            <Link href="" className="hover:text-foreground transition-all duration-300">
+                                            <Link href="/industries/finance" className="hover:text-foreground transition-all duration-300">
                                                 Financial Institutions
                                             </Link>
                                         </li>
                                         <li className="mt-2">
-                                            <Link href="" className="hover:text-foreground transition-all duration-300">
+                                            <Link href="/industries/healthcare" className="hover:text-foreground transition-all duration-300">
                                                 Healthcare Providers
                                             </Link>
                                         </li>
                                         <li className="mt-2">
-                                            <Link href="" className="hover:text-foreground transition-all duration-300">
+                                            <Link href="/industries/government" className="hover:text-foreground transition-all duration-300">
                                                 Government
                                             </Link>
                                         </li>
@@ -64,12 +63,12 @@ const Footer = () => {
                                     <h3 className="text-base font-medium text-white">Company</h3>
                                     <ul className="mt-4 text-sm text-muted-foreground">
                                         <li className="mt-2">
-                                            <Link href="/resources/blog" className="hover:text-foreground transition-all duration-300">
+                                            <Link href="/blog" className="hover:text-foreground transition-all duration-300">
                                                 Blog
                                             </Link>
                                         </li>
                                         <li className="mt-2">
-                                            <Link href="/resources/help" className="hover:text-foreground transition-all duration-300">
+                                            <Link href="/about-us" className="hover:text-foreground transition-all duration-300">
                                                 About Us
                                             </Link>
                                         </li>

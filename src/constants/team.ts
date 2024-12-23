@@ -81,7 +81,7 @@ export const advisorMember = [
   {
     key: 4,
     name: "Andrew O’Doherty",
-    title: "Blockchain & Digital Transformation Expert",
+    title: "Capital & Digital Transformation Exper",
     avatar: "/images/team/andrew_odoherty.png",
     description: [
       "Founder/Managing Partner @ gm3: A Business & Technology Advisory firm.",
@@ -96,12 +96,12 @@ export const teamMembers = [
   {
     key: 1,
     name: "Andrew O’Doherty",
-    title: "Blockchain & Digital Transformation Expert",
+    title: "Acting Chief Revenue Officer",
     avatar: "/images/team/andrew_odoherty.png",
     description: [
-      "Founder/Managing Partner @ gm3: A Business & Technology Advisory firm.",
-      "Founder @ My Data Hub: An early-stage decentralized data marketplace platform leveraging blockchain technology.",
-      "Global Head of Ops & Onboarding Digital Transformation @ Citigroup Securities Services (NYSE: C).",
+      "Managing Partner @ gm3.",
+      "Founder @ My Data Hub.",
+      "Global Head of Ops & Digital Transformation @ Citi Securities Services (NYSE: C).",
     ],
     companies: ["/images/companies/1.svg", "/images/companies/20.svg"],
   },
@@ -137,7 +137,7 @@ export const teamMembers = [
     description: [
       "Co-Founder/Managing Partner at Centripetal Capital Partners.",
     ],
-    companies: ["/images/companies/21.svg", "/images/companies/22.svg"],
+    companies: ["/images/companies/21.svg", "/images/companies/19.svg"],
   },
   {
     key: 5,

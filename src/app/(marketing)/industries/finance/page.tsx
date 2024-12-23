@@ -14,6 +14,30 @@ import RadarAnimation from '@/components/ui/radar';
 import { PillarsCard, PillarsGrid } from "@/components/ui/bento-grid-pillars";
 import MagicCard from "@/components/ui/magic-card";
 
+interface CardData {
+    title: string;
+    description: string;
+    imageUrl: string;
+}
+
+const cardData: CardData[] = [
+    {
+        title: "Account Opening",
+        description: "Validate identities before account creation with advanced fraud detection tools. Ensure that every new account belongs to a legitimate individual, minimizing the risk of onboarding fraudulent or synthetic identities. Build trust with your customers while protecting your institution from potential fraud.",
+        imageUrl: "/placeholder.svg?height=800&width=600"
+    },
+    {
+        title: "Loan Approvals",
+        description: "Detect fraudulent loan applications early by analyzing patterns and behaviors indicative of identity manipulation. Prevent approval delays for genuine applicants while ensuring your institution isn’t exposed to high-risk individuals or synthetic identities.",
+        imageUrl: "/placeholder.svg?height=800&width=600"
+    },
+    {
+        title: "Transaction Monitoring",
+        description: "Enable real-time risk detection across all banking activities to identify suspicious transactions as they occur. By monitoring geographic activity, transactional irregularities, and account behavior, financial institutions can reduce false positives and focus on truly fraudulent activity.",
+        imageUrl: "/placeholder.svg?height=800&width=600"
+    }
+];
+
 const PillarContent = [
     {
         Icon: Share2,
@@ -88,12 +112,12 @@ const FinancePage = () => {
             {/* Fraud Challenge Section */}
             <Wrapper className="flex flex-col items-center justify-center w-full">
                 <Container delay={0.2} className="w-full">
-                    <div className="max-w-2xl mx-auto mx-auto text-start md:text-center">
+                    <div className="max-w-2xl mx-auto mx-auto text-center justify-center">
                         <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
                             The Growing Threat of Financial Identity Fraud
                         </h2>
                         <p className="text-muted-foreground mt-6">
-                            Uncovering vulnerabilities across the automotive landscape, from dealerships to DMS providers and car brands, and the strategies needed to combat them.
+                            Addressing vulnerabilities in financial institutions with innovative identity validation and fraud prevention solutions.
                         </p>
                     </div>
                 </Container>
@@ -106,16 +130,16 @@ const FinancePage = () => {
                     {finance.map((target, id) => (
                         <Container delay={0.2 * id} key={id}>
                             <MagicCard className="group md:py-8">
-                                <div className="flex w-full flex-col items-start justify-start"> {/* Updated alignment */}
+                                <div className="flex w-full flex-col items-center justify-start"> {/* Updated alignment */}
                                     <target.icon
                                         strokeWidth={1.5}
                                         className="h-10 w-10 text-primary"
                                     />
-                                    <div className="relative flex flex-col items-start"> {/* Ensures left alignment */}
+                                    <div className="relative flex flex-col text-center justify-start "> {/* Ensures left alignment */}
                                         <h3 className="mt-6 font-medium text-base text-foreground">
                                             {target.title}
                                         </h3>
-                                        <p className="mt-2 text-left text-muted-foreground text-sm"> {/* Added text-left */}
+                                        <p className="mt-2 text-left text-muted-foreground text-sm text-center justify-start" > {/* Added text-left */}
                                             {target.info}
                                         </p>
                                     </div>
@@ -154,7 +178,7 @@ const FinancePage = () => {
             {/* Implementation */}
             <Wrapper className="flex flex-col items-center justify-center md:py-12 w-full">
                 <Container delay={0.2} className="w-full">
-                    <div className="max-w-md mx-auto text-start md:text-center">
+                    <div className="max-w-md mx-auto text-center justify-center md:text-center">
                         <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
                             Ease of Implementation
                         </h2>
@@ -164,20 +188,53 @@ const FinancePage = () => {
                     <div className="flex flex-col items-center justify-center py-10 md:py-20 w-full">
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full divide-x-0 md:divide-x divide-y md:divide-y-0 divide-gray-900 first:border-l-2 lg:first:border-none first:border-gray-900">
                             {fincnanceImplementation.map((step) => (
-                                <div key={step.title} className="flex flex-col items-start px-4 md:px-6 lg:px-8 lg:py-6 py-4">
+                                <div key={step.title} className="flex flex-col items-center justify-center px-4 md:px-6 lg:px-8 lg:py-6 py-4">
                                     <div className="flex items-center justify-center">
                                         <step.icon className="w-8 h-8 text-primary" />
                                     </div>
                                     <h3 className="text-lg font-medium mt-4">
                                         {step.title}
                                     </h3>
-                                    <p className="text-muted-foreground mt-2 text-start lg:text-start">
+                                    <p className="text-muted-foreground mt-2 text-center justify-center">
                                         {step.info}
                                     </p>
                                 </div>
                             ))}
                         </div>
                     </div>
+                </Container>
+            </Wrapper >
+
+            {/* Use Cases */}
+            <Wrapper className="flex flex-col items-center justify-center md:py-12 w-full">
+                <Container delay={0.1} className="w-full">
+                    <div className="flex flex-col items-center justify-center py-8 max-w-2xl mx-auto">
+                        <MagicBadge title="Use Cases" />
+                        <h2 className="text-3xl lg:text-4xl font-semibold font-heading text-center mt-6 !leading-tight">
+                            Real Applications for Auto Dealers & DMS Providers
+                        </h2>
+                        <p className="text-base md:text-lg mt-6 text-center text-muted-foreground">
+                            Streamline operations and enhance security with cutting-edge fraud prevention tools. Tailored solutions for dealers, DMS providers, and car brands to safeguard against test drive fraud and identity risks.
+                        </p>
+                    </div>
+                </Container>
+                <Container>
+                    <ul className="cards">
+                        {cardData.map((card, index) => (
+                            <li key={index} className="card">
+                                <div className="cardBody">
+                                    <div
+                                        className="imageHalf"
+                                        style={{ backgroundImage: `url(${card.imageUrl})` }}
+                                    />
+                                    <div className="textHalf">
+                                        <h2>{card.title}</h2>
+                                        <p>{card.description}</p>
+                                    </div>
+                                </div>
+                            </li>
+                        ))}
+                    </ul>
                 </Container>
             </Wrapper >
 
