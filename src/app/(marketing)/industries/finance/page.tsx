@@ -89,7 +89,7 @@ const FinancePage = () => {
     return (
         <>
             {/* Section Landing */}
-            <Wrapper className="flex flex-col items-center justify-center py-8 md:py-12 w-full">
+            <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
                 <Container delay={0.1} className="w-full">
                     <div className="flex flex-col items-center justify-center py-40 max-w-2xl mx-auto">
                         <MagicBadge title="Financial Institutions" />
@@ -110,7 +110,7 @@ const FinancePage = () => {
             </Wrapper>
 
             {/* Fraud Challenge Section */}
-            <Wrapper className="flex flex-col items-center justify-center w-full">
+            <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
                 <Container delay={0.2} className="w-full">
                     <div className="max-w-2xl mx-auto mx-auto text-center justify-center">
                         <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
@@ -151,7 +151,7 @@ const FinancePage = () => {
             </Wrapper>
 
             {/* Solution Section */}
-            <Wrapper className="flex flex-col items-center justify-center py-8 md:py-12 w-full">
+            <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
                 <Container delay={0.3}>
                     <div
                         id="features"
@@ -176,7 +176,7 @@ const FinancePage = () => {
             </Wrapper >
 
             {/* Implementation */}
-            <Wrapper className="flex flex-col items-center justify-center md:py-12 w-full">
+            <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
                 <Container delay={0.2} className="w-full">
                     <div className="max-w-md mx-auto text-center justify-center md:text-center py-20" >
                         <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
@@ -206,7 +206,7 @@ const FinancePage = () => {
             </Wrapper >
 
             {/* Use Cases */}
-            <Wrapper className="flex flex-col items-center justify-center md:py-12 w-full">
+            <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
                 <Container delay={0.1} className="w-full">
                     <div className="flex flex-col items-center justify-center py-20 max-w-2xl mx-auto">
                         <MagicBadge title="Use Cases" />
@@ -239,7 +239,7 @@ const FinancePage = () => {
             </Wrapper >
 
             {/* CTA */}
-            <Wrapper className="flex flex-col items-center justify-center py-8 md:py-12 w-full">
+            <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
                 <Container delay={0.2} className="w-full">
                     <div className="flex flex-col items-center justify-center text-center w-full px-4 md:px-0 mx-auto h-[500px] border border-border rounded-3xl overflow-hidden relative">
                         <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-full h-12 bg-violet-500 blur-[10rem]"></div>
