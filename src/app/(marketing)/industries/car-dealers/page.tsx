@@ -160,7 +160,7 @@ const DealersPage = () => {
                     <div className="flex w-full flex-col items-center justify-center py-20 md:py-8 lg:items-center">
                         <MagicBadge title="Our Unique Patented Solution" />
                         <h2 className="!leading-[1.1] mt-6 max-w-3xl text-center font-heading font-medium text-3xl text-foreground md:text-4xl lg:text-center">
-                            How InVerus Delivers for Auto Industry Leaders
+                            How inVerus Delivers for Auto Industry Leaders
                         </h2>
                         <p className="mt-4 max-w-lg text-center text-lg text-muted-foreground lg:text-center">
                             inVerus equips automotive dealerships, DMS providers, and car brands with innovative fraud prevention tools, enhancing trust, safeguarding transactions, and ensuring seamless operations across the automotive network.
@@ -223,14 +223,18 @@ const DealersPage = () => {
                     <ul className="cards">
                         {cardData.map((card, index) => (
                             <li key={index} className="card">
-                                <div className="cardBody border border-border bg-background">
+                                <div className="cardBody border border-border">
                                     <div
                                         className="imageHalf"
                                         style={{ backgroundImage: `url(${card.imageUrl})` }}
                                     />
                                     <div className="textHalf">
-                                        <h2>{card.title}</h2>
-                                        <p>{card.description}</p>
+                                        <h2 className="!leading-[1.1] mt-6 max-w-3xl text-center font-heading font-medium text-3xl text-foreground md:text-4xl lg:text-center">
+                                            {card.title}
+                                        </h2>
+                                        <p className="mt-4 max-w-lg text-center text-lg text-muted-foreground lg:text-center">
+                                            {card.description}
+                                        </p>
                                     </div>
                                 </div>
                             </li>

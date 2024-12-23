@@ -88,14 +88,14 @@ const GovernmentPage = () => {
     return (
         <>
             {/* Section Landing */}
-            <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
+            <Wrapper className="flex flex-col items-center justify-center py-40 pb-10 w-full">
                 <Container delay={0.1} className="w-full">
-                    <div className="flex flex-col items-center justify-center py-40 max-w-2xl mx-auto">
+                    <div className="flex w-full flex-col items-center justify-center py-8 lg:items-center">
                         <MagicBadge title="Government" />
-                        <h2 className="text-3xl lg:text-4xl font-semibold font-heading text-center mt-6 !leading-tight">
+                        <h2 className="!leading-[1.1] mt-6 max-w-3xl text-center font-heading font-medium text-3xl text-foreground md:text-4xl lg:text-center">
                             Strengthening Systems, Safeguarding Public Trust
                         </h2>
-                        <p className="text-base md:text-lg mt-6 text-center text-muted-foreground">
+                        <p className="mt-4 max-w-lg text-center text-lg text-muted-foreground lg:text-center">
                             Proactively combat identity fraud to protect government services and citizens.
                         </p>
                         <div className="flex items-center justify-center gap-x-4 mt-8">
@@ -107,7 +107,7 @@ const GovernmentPage = () => {
                     </div>
                 </Container>
                 <Container delay={0.2} className="w-full">
-                    <div className="w-full flex max-w-4xl py-2 mx-auto items-center justify-center">
+                    <div className="w-full flex max-w-4xl py-18 mx-auto items-center justify-center">
                         <div className="fingerprint-box flex items-center justify-center">
                             <div className="svg-box flex items-center justify-center">
                                 <Icons.fingerprint />
@@ -118,13 +118,14 @@ const GovernmentPage = () => {
             </Wrapper>
 
             {/* Fraud Challenge Section */}
-            <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
+            <Wrapper className="flex flex-col items-center justify-center py-4 md:py-12 w-full">
                 <Container delay={0.2} className="w-full">
-                    <div className="max-w-2xl mx-auto mx-auto text-center justify-center">
-                        <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
+                    <div className="flex w-full flex-col items-center justify-center py-8 lg:items-center">
+                        <MagicBadge title="Fraud in Government Services" />
+                        <h2 className="!leading-[1.1] mt-6 max-w-3xl text-center font-heading font-medium text-3xl text-foreground md:text-4xl lg:text-center">
                             Fraud in Government Services: A Growing Concern
                         </h2>
-                        <p className="text-muted-foreground mt-6">
+                        <p className="mt-4 max-w-lg text-center text-lg text-muted-foreground lg:text-center">
                             As fraudulent claims, data breaches, and identity theft escalate, governments must act swiftly to protect public resources, restore trust, and minimize financial damage.
                         </p>
                     </div>
@@ -134,7 +135,7 @@ const GovernmentPage = () => {
                         <Icons.feature className="w-auto h-80" />
                     </div>
                 </Container>
-                <div className="grid w-full grid-cols-1 gap-4 py-8 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
+                <div className="grid w-full grid-cols-1 gap-4 py-8 pb-18 md:pb-10 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
                     {governmentProblems.map((target, id) => (
                         <Container delay={0.2 * id} key={id}>
                             <MagicCard className="group md:py-8">
@@ -159,11 +160,11 @@ const GovernmentPage = () => {
             </Wrapper>
 
             {/* Solution Section */}
-            <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
+            <Wrapper className="flex flex-col items-center justify-center py-18 md:py-12 w-full">
                 <Container delay={0.3}>
-                    <div className="flex w-full flex-col items-center justify-center py-12 sm:py-16 lg:py-20 lg:items-center">
+                    <div className="flex w-full flex-col items-center justify-center py-20 md:py-8 lg:items-center">
                         <MagicBadge title="Our Unique Patented Solution" />
-                        <h2 className="!leading-[1.1] mt-6 text-center font-heading font-medium text-3xl text-foreground md:text-5xl lg:text-center">
+                        <h2 className="!leading-[1.1] mt-6 max-w-3xl text-center font-heading font-medium text-3xl text-foreground md:text-4xl lg:text-center">
                             How inVerus Enhances Public Sector Integrity
                         </h2>
                         <p className="mt-4 max-w-lg text-center text-lg text-muted-foreground lg:text-center">
@@ -180,10 +181,10 @@ const GovernmentPage = () => {
             </Wrapper >
 
             {/* Implementation */}
-            <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
+            <Wrapper className="flex flex-col items-center justify-center py-4 md:py-12 w-full">
                 <Container delay={0.2} className="w-full">
-                    <div className="max-w-md mx-auto text-center justify-center md:text-center py-20">
-                        <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
+                    <div className="flex w-full flex-col items-center justify-center py-8 lg:items-center">
+                        <h2 className="!leading-[1.1] mt-6 max-w-3xl text-center font-heading font-medium text-3xl text-foreground md:text-4xl lg:text-center">
                             Ease of Implementation
                         </h2>
                     </div>
@@ -210,15 +211,15 @@ const GovernmentPage = () => {
             </Wrapper >
 
             {/* Use Cases */}
-            <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
+            <Wrapper className="flex flex-col items-center justify-center py-4 md:py-12 w-full">
                 <Container delay={0.1} className="w-full">
-                    <div className="flex flex-col items-center justify-center py-20 max-w-2xl mx-auto">
+                    <div className="flex w-full flex-col items-center justify-center py-8 lg:items-center">
                         <MagicBadge title="Use Cases" />
-                        <h2 className="text-3xl lg:text-4xl font-semibold font-heading text-center mt-6 !leading-tight">
-                            Real Applications for Auto Dealers & DMS Providers
+                        <h2 className="!leading-[1.1] mt-6 max-w-3xl text-center font-heading font-medium text-3xl text-foreground md:text-4xl lg:text-center">
+                            Secure Governance, Trusted Services
                         </h2>
-                        <p className="text-base md:text-lg mt-6 text-center text-muted-foreground">
-                            Streamline operations and enhance security with cutting-edge fraud prevention tools. Tailored solutions for dealers, DMS providers, and car brands to safeguard against test drive fraud and identity risks.
+                        <p className="mt-4 max-w-lg text-center text-lg text-muted-foreground lg:text-center">
+                            Protect government systems and citizens from identity fraud with advanced solutions. Enhance operational efficiency, reduce financial waste, and restore trust in public services. Build a fraud-free future with scalable, secure tools.
                         </p>
                     </div>
                 </Container>
@@ -232,8 +233,12 @@ const GovernmentPage = () => {
                                         style={{ backgroundImage: `url(${card.imageUrl})` }}
                                     />
                                     <div className="textHalf">
-                                        <h2>{card.title}</h2>
-                                        <p>{card.description}</p>
+                                        <h2 className="!leading-[1.1] mt-6 max-w-3xl text-center font-heading font-medium text-3xl text-foreground md:text-4xl lg:text-center">
+                                            {card.title}
+                                        </h2>
+                                        <p className="mt-4 max-w-lg text-center text-lg text-muted-foreground lg:text-center">
+                                            {card.description}
+                                        </p>
                                     </div>
                                 </div>
                             </li>

@@ -88,14 +88,14 @@ const HealthcarePage = () => {
     return (
         <>
             {/* Section Landing */}
-            <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
+            <Wrapper className="flex flex-col items-center justify-center py-40 pb-10 w-full">
                 <Container delay={0.1} className="w-full">
-                    <div className="flex flex-col items-center justify-center py-30 sm:py-34 md:py-40 max-w-2xl mx-auto">
+                    <div className="flex w-full flex-col items-center justify-center py-8 lg:items-center">
                         <MagicBadge title="Healthcare Providers" />
-                        <h2 className="text-3xl lg:text-4xl font-semibold font-heading text-center mt-6 !leading-tight">
+                        <h2 className="!leading-[1.1] mt-6 max-w-3xl text-center font-heading font-medium text-3xl text-foreground md:text-4xl lg:text-center">
                             Safeguarding Medical Practices and Patient Data from Identity Fraud
                         </h2>
-                        <p className="text-base md:text-lg mt-6 text-center text-muted-foreground">
+                        <p className="mt-4 max-w-lg text-center text-lg text-muted-foreground lg:text-center">
                             Prevent medical identity theft, protect patient trust, and reduce financial loss.
                         </p>
                         <div className="flex items-center justify-center gap-x-4 mt-8">
@@ -109,14 +109,14 @@ const HealthcarePage = () => {
             </Wrapper>
 
             {/* Fraud Challenge Section */}
-            <Wrapper className="flex flex-col items-center justify-center w-full">
+            <Wrapper className="flex flex-col items-center justify-center py-4 md:py-12 w-full">
                 <Container delay={0.2} className="w-full">
-                    <div className="flex flex-col items-center justify-center py-30 sm:py-34 md:py-40 max-w-2xl mx-auto">
+                    <div className="flex w-full flex-col items-center justify-center py-8 lg:items-center">
                         <MagicBadge title="Healthcare Fraud Epidemic" />
-                        <h2 className="text-3xl lg:text-4xl font-semibold font-heading text-center mt-6 !leading-tight">
+                        <h2 className="!leading-[1.1] mt-6 max-w-3xl text-center font-heading font-medium text-3xl text-foreground md:text-4xl lg:text-center">
                             Medical Identity Theft: A Unique Vulnerability
                         </h2>
-                        <p className="text-base md:text-lg mt-6 text-center text-muted-foreground">
+                        <p className="mt-4 max-w-lg text-center text-lg text-muted-foreground lg:text-center">
                             Protecting patient data and combating medical identity theft with advanced fraud prevention solutions.
                         </p>
                     </div>
@@ -126,20 +126,20 @@ const HealthcarePage = () => {
                         <Icons.feature className="w-auto h-80" />
                     </div>
                 </Container>
-                <div className="grid w-full grid-cols-1 gap-4 py-6 sm:py-8 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
+                <div className="grid w-full grid-cols-1 gap-4 py-8 pb-18 md:pb-10 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
                     {healthcareRisks.map((target, id) => (
                         <Container delay={0.2 * id} key={id}>
                             <MagicCard className="group md:py-8">
-                                <div className="flex w-full flex-col items-center justify-start">
+                                <div className="flex w-full flex-col items-center justify-center"> {/* Updated alignment */}
                                     <target.icon
                                         strokeWidth={1.5}
                                         className="h-10 w-10 text-primary"
                                     />
-                                    <div className="relative flex flex-col items-center">
-                                        <h3 className="mt-6 font-medium text-base text-foreground text-center justify-center">
+                                    <div className="relative flex flex-col items-center justify-center"> {/* Ensures left alignment */}
+                                        <h3 className="mt-6 font-medium text-base text-foreground">
                                             {target.title}
                                         </h3>
-                                        <p className="mt-2 text-left text-muted-foreground text-sm text-center justify-center">
+                                        <p className="mt-2 text-left text-muted-foreground text-sm text-center justify-center"> {/* Added text-left */}
                                             {target.info}
                                         </p>
                                     </div>
@@ -151,11 +151,11 @@ const HealthcarePage = () => {
             </Wrapper>
 
             {/* Solution Section */}
-            <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
+            <Wrapper className="flex flex-col items-center justify-center py-18 md:py-12 w-full">
                 <Container delay={0.3}>
-                    <div className="flex w-full flex-col items-center justify-center py-12 sm:py-16 lg:py-20 lg:items-center">
+                    <div className="flex w-full flex-col items-center justify-center py-20 md:py-8 lg:items-center">
                         <MagicBadge title="Our Unique Patented Solution" />
-                        <h2 className="!leading-[1.1] mt-6 text-center font-heading font-medium text-3xl text-foreground md:text-5xl lg:text-center">
+                        <h2 className="!leading-[1.1] mt-6 max-w-3xl text-center font-heading font-medium text-3xl text-foreground md:text-4xl lg:text-center">
                             How inVerus Supports Healthcare Providers
                         </h2>
                         <p className="mt-4 max-w-lg text-center text-lg text-muted-foreground lg:text-center">
@@ -173,10 +173,10 @@ const HealthcarePage = () => {
             </Wrapper >
 
             {/* Implementation */}
-            <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
+            <Wrapper className="flex flex-col items-center justify-center py-4 md:py-12 w-full">
                 <Container delay={0.2} className="w-full">
-                    <div className="max-w-md mx-auto text-center justify-center md:text-center py-20">
-                        <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
+                    <div className="flex w-full flex-col items-center justify-center py-8 lg:items-center">
+                        <h2 className="!leading-[1.1] mt-6 max-w-3xl text-center font-heading font-medium text-3xl text-foreground md:text-4xl lg:text-center">
                             Ease of Implementation
                         </h2>
                     </div>
@@ -203,15 +203,15 @@ const HealthcarePage = () => {
             </Wrapper >
 
             {/* Use Cases */}
-            <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
+            <Wrapper className="flex flex-col items-center justify-center py-4 md:py-12 w-full">
                 <Container delay={0.1} className="w-full">
-                    <div className="flex flex-col items-center justify-center py-20 max-w-2xl mx-auto">
+                    <div className="flex w-full flex-col items-center justify-center py-8 lg:items-center">
                         <MagicBadge title="Use Cases" />
-                        <h2 className="text-3xl lg:text-4xl font-semibold font-heading text-center mt-6 !leading-tight">
-                            Real Applications for Auto Dealers & DMS Providers
+                        <h2 className="!leading-[1.1] mt-6 max-w-3xl text-center font-heading font-medium text-3xl text-foreground md:text-4xl lg:text-center">
+                            Protecting Patients and Practices
                         </h2>
-                        <p className="text-base md:text-lg mt-6 text-center text-muted-foreground">
-                            Streamline operations and enhance security with cutting-edge fraud prevention tools. Tailored solutions for dealers, DMS providers, and car brands to safeguard against test drive fraud and identity risks.
+                        <p className="mt-4 max-w-lg text-center text-lg text-muted-foreground lg:text-center">
+                            Defend against medical identity fraud with innovative solutions designed for healthcare providers. Ensure HIPAA compliance, secure patient data, and reduce financial risks. Build trust and efficiency with advanced fraud prevention tools.
                         </p>
                     </div>
                 </Container>
@@ -225,8 +225,12 @@ const HealthcarePage = () => {
                                         style={{ backgroundImage: `url(${card.imageUrl})` }}
                                     />
                                     <div className="textHalf">
-                                        <h2>{card.title}</h2>
-                                        <p>{card.description}</p>
+                                        <h2 className="!leading-[1.1] mt-6 max-w-3xl text-center font-heading font-medium text-3xl text-foreground md:text-4xl lg:text-center">
+                                            {card.title}
+                                        </h2>
+                                        <p className="mt-4 max-w-lg text-center text-lg text-muted-foreground lg:text-center">
+                                            {card.description}
+                                        </p>
                                     </div>
                                 </div>
                             </li>

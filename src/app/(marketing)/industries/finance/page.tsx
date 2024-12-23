@@ -89,14 +89,14 @@ const FinancePage = () => {
     return (
         <>
             {/* Section Landing */}
-            <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
+            <Wrapper className="flex flex-col items-center justify-center py-40 pb-10 w-full">
                 <Container delay={0.1} className="w-full">
-                    <div className="flex flex-col items-center justify-center py-40 max-w-2xl mx-auto">
+                    <div className="flex w-full flex-col items-center justify-center py-8 lg:items-center">
                         <MagicBadge title="Financial Institutions" />
-                        <h2 className="text-3xl lg:text-4xl font-semibold font-heading text-center mt-6 !leading-tight">
+                        <h2 className="!leading-[1.1] mt-6 max-w-3xl text-center font-heading font-medium text-3xl text-foreground md:text-4xl lg:text-center">
                             Securing Financial Transactions with Trusted Identity Validation
                         </h2>
-                        <p className="text-base md:text-lg mt-6 text-center text-muted-foreground">
+                        <p className="mt-4 max-w-lg text-center text-lg text-muted-foreground lg:text-center">
                             Stop identity fraud before it starts. Protect your customers, reduce costs, and ensure compliance with ease.
                         </p>
                         <div className="flex items-center justify-center gap-x-4 mt-8">
@@ -110,13 +110,14 @@ const FinancePage = () => {
             </Wrapper>
 
             {/* Fraud Challenge Section */}
-            <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
+            <Wrapper className="flex flex-col items-center justify-center py-4 md:py-12 w-full">
                 <Container delay={0.2} className="w-full">
-                    <div className="max-w-2xl mx-auto mx-auto text-center justify-center">
-                        <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
+                    <div className="flex w-full flex-col items-center justify-center py-8 lg:items-center">
+                        <MagicBadge title="Fraud in Financial Identity" />
+                        <h2 className="!leading-[1.1] mt-6 max-w-3xl text-center font-heading font-medium text-3xl text-foreground md:text-4xl lg:text-center">
                             The Growing Threat of Financial Identity Fraud
                         </h2>
-                        <p className="text-muted-foreground mt-6">
+                        <p className="mt-4 max-w-lg text-center text-lg text-muted-foreground lg:text-center">
                             Addressing vulnerabilities in financial institutions with innovative identity validation and fraud prevention solutions.
                         </p>
                     </div>
@@ -126,7 +127,7 @@ const FinancePage = () => {
                         <Icons.feature className="w-auto h-80" />
                     </div>
                 </Container>
-                <div className="grid w-full grid-cols-1 gap-4 py-8 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
+                <div className="grid w-full grid-cols-1 gap-4 py-8 pb-18 md:pb-10 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
                     {finance.map((target, id) => (
                         <Container delay={0.2 * id} key={id}>
                             <MagicCard className="group md:py-8">
@@ -151,11 +152,11 @@ const FinancePage = () => {
             </Wrapper>
 
             {/* Solution Section */}
-            <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
+            <Wrapper className="flex flex-col items-center justify-center py-18 md:py-12 w-full">
                 <Container delay={0.3}>
-                    <div className="flex w-full flex-col items-center justify-center py-12 sm:py-16 lg:py-20 lg:items-center">
+                    <div className="flex w-full flex-col items-center justify-center py-20 md:py-8 lg:items-center">
                         <MagicBadge title="Our Unique Patented Solution" />
-                        <h2 className="!leading-[1.1] mt-6 text-center font-heading font-medium text-3xl text-foreground md:text-5xl lg:text-center">
+                        <h2 className="!leading-[1.1] mt-6 max-w-3xl text-center font-heading font-medium text-3xl text-foreground md:text-4xl lg:text-center">
                             How inVerus Supports Financial Institutions
                         </h2>
                         <p className="mt-4 max-w-lg text-center text-lg text-muted-foreground lg:text-center">
@@ -173,10 +174,10 @@ const FinancePage = () => {
             </Wrapper >
 
             {/* Implementation */}
-            <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
+            <Wrapper className="flex flex-col items-center justify-center py-4 md:py-12 w-full">
                 <Container delay={0.2} className="w-full">
-                    <div className="max-w-md mx-auto text-center justify-center md:text-center py-20" >
-                        <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
+                    <div className="flex w-full flex-col items-center justify-center py-8 lg:items-center">
+                        <h2 className="!leading-[1.1] mt-6 max-w-3xl text-center font-heading font-medium text-3xl text-foreground md:text-4xl lg:text-center">
                             Ease of Implementation
                         </h2>
                     </div>
@@ -203,15 +204,15 @@ const FinancePage = () => {
             </Wrapper >
 
             {/* Use Cases */}
-            <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
+            <Wrapper className="flex flex-col items-center justify-center py-4 md:py-12 w-full">
                 <Container delay={0.1} className="w-full">
-                    <div className="flex flex-col items-center justify-center py-20 max-w-2xl mx-auto">
+                    <div className="flex w-full flex-col items-center justify-center py-8 lg:items-center">
                         <MagicBadge title="Use Cases" />
-                        <h2 className="text-3xl lg:text-4xl font-semibold font-heading text-center mt-6 !leading-tight">
-                            Real Applications for Auto Dealers & DMS Providers
+                        <h2 className="!leading-[1.1] mt-6 max-w-3xl text-center font-heading font-medium text-3xl text-foreground md:text-4xl lg:text-center">
+                            Fraud Prevention for Financial Growth
                         </h2>
-                        <p className="text-base md:text-lg mt-6 text-center text-muted-foreground">
-                            Streamline operations and enhance security with cutting-edge fraud prevention tools. Tailored solutions for dealers, DMS providers, and car brands to safeguard against test drive fraud and identity risks.
+                        <p className="mt-4 max-w-lg text-center text-lg text-muted-foreground lg:text-center">
+                            Enhance security with real-time fraud detection and compliance tools tailored for financial institutions. Proactively address identity fraud, reduce costs, and safeguard transactions. Trust in cutting-edge technology to protect your business and customers.
                         </p>
                     </div>
                 </Container>
@@ -225,8 +226,12 @@ const FinancePage = () => {
                                         style={{ backgroundImage: `url(${card.imageUrl})` }}
                                     />
                                     <div className="textHalf">
-                                        <h2>{card.title}</h2>
-                                        <p>{card.description}</p>
+                                        <h2 className="!leading-[1.1] mt-6 max-w-3xl text-center font-heading font-medium text-3xl text-foreground md:text-4xl lg:text-center">
+                                            {card.title}
+                                        </h2>
+                                        <p className="mt-4 max-w-lg text-center text-lg text-muted-foreground lg:text-center">
+                                            {card.description}
+                                        </p>
                                     </div>
                                 </div>
                             </li>
