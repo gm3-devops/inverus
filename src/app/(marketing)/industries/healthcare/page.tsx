@@ -90,7 +90,7 @@ const HealthcarePage = () => {
             {/* Section Landing */}
             <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
                 <Container delay={0.1} className="w-full">
-                    <div className="flex flex-col items-center justify-center py-20 sm:py-24 md:py-40 max-w-2xl mx-auto">
+                    <div className="flex flex-col items-center justify-center py-30 sm:py-34 md:py-40 max-w-2xl mx-auto">
                         <MagicBadge title="Healthcare Providers" />
                         <h2 className="text-3xl lg:text-4xl font-semibold font-heading text-center mt-6 !leading-tight">
                             Safeguarding Medical Practices and Patient Data from Identity Fraud
@@ -111,7 +111,7 @@ const HealthcarePage = () => {
             {/* Fraud Challenge Section */}
             <Wrapper className="flex flex-col items-center justify-center w-full">
                 <Container delay={0.2} className="w-full">
-                    <div className="flex flex-col items-center justify-center py-12 sm:py-16 md:py-20 max-w-2xl mx-auto">
+                    <div className="flex flex-col items-center justify-center py-30 sm:py-34 md:py-40 max-w-2xl mx-auto">
                         <MagicBadge title="Healthcare Fraud Epidemic" />
                         <h2 className="text-3xl lg:text-4xl font-semibold font-heading text-center mt-6 !leading-tight">
                             Medical Identity Theft: A Unique Vulnerability

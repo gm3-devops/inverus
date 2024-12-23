@@ -94,7 +94,7 @@ const DealersPage = () => {
             {/* Section Landing */}
             <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
                 <Container delay={0.1} className="w-full">
-                    <div className="flex flex-col items-center justify-center py-20 sm:py-24 md:py-40 max-w-2xl mx-auto">
+                    <div className="flex flex-col items-center justify-center py-30 sm:py-34 md:py-40 max-w-2xl mx-auto">
                         <MagicBadge title="Car Dealers" />
                         <h2 className="text-3xl lg:text-4xl font-semibold font-heading text-center mt-6 !leading-tight">
                             Protect Your Dealerships, Empower Your Systems, Secure Your Brand
@@ -115,11 +115,12 @@ const DealersPage = () => {
             {/* Fraud Challenge Section */}
             <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
                 <Container delay={0.2} className="w-full">
-                    <div className="flex flex-col items-center justify-center py-12 sm:py-16 md:py-20 max-w-2xl mx-auto">
-                        <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
+                    <div className="flex flex-col items-center justify-center py-30 sm:py-34 md:py-40 max-w-2xl mx-auto">
+                        <MagicBadge title="Fraud in Dealership Operations" />
+                        <h2 className="text-3xl lg:text-4xl font-semibold font-heading text-center mt-6 !leading-tight">
                             The Fraud Challenge Across Automotive Ecosystem
                         </h2>
-                        <p className="text-muted-foreground mt-6">
+                        <p className="text-base md:text-lg mt-6 text-center text-muted-foreground">
                             Uncovering vulnerabilities across the automotive landscape, from dealerships to DMS providers and car brands, and the strategies needed to combat them.
                         </p>
                     </div>
