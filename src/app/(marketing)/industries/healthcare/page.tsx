@@ -90,7 +90,7 @@ const HealthcarePage = () => {
             {/* Section Landing */}
             <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
                 <Container delay={0.1} className="w-full">
-                    <div className="flex flex-col items-center justify-center py-40 max-w-2xl mx-auto">
+                    <div className="flex flex-col items-center justify-center py-20 sm:py-24 md:py-40 max-w-2xl mx-auto">
                         <MagicBadge title="Healthcare Providers" />
                         <h2 className="text-3xl lg:text-4xl font-semibold font-heading text-center mt-6 !leading-tight">
                             Safeguarding Medical Practices and Patient Data from Identity Fraud
@@ -111,11 +111,12 @@ const HealthcarePage = () => {
             {/* Fraud Challenge Section */}
             <Wrapper className="flex flex-col items-center justify-center w-full">
                 <Container delay={0.2} className="w-full">
-                    <div className="max-w-2xl mx-auto mx-auto text-center justify-center">
-                        <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
+                    <div className="flex flex-col items-center justify-center py-12 sm:py-16 md:py-20 max-w-2xl mx-auto">
+                        <MagicBadge title="Healthcare Fraud Epidemic" />
+                        <h2 className="text-3xl lg:text-4xl font-semibold font-heading text-center mt-6 !leading-tight">
                             Medical Identity Theft: A Unique Vulnerability
                         </h2>
-                        <p className="text-muted-foreground mt-6">
+                        <p className="text-base md:text-lg mt-6 text-center text-muted-foreground">
                             Protecting patient data and combating medical identity theft with advanced fraud prevention solutions.
                         </p>
                     </div>
@@ -125,20 +126,20 @@ const HealthcarePage = () => {
                         <Icons.feature className="w-auto h-80" />
                     </div>
                 </Container>
-                <div className="grid w-full grid-cols-1 gap-4 py-8 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
+                <div className="grid w-full grid-cols-1 gap-4 py-6 sm:py-8 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
                     {healthcareRisks.map((target, id) => (
                         <Container delay={0.2 * id} key={id}>
                             <MagicCard className="group md:py-8">
-                                <div className="flex w-full flex-col items-center justify-start"> {/* Updated alignment */}
+                                <div className="flex w-full flex-col items-center justify-start">
                                     <target.icon
                                         strokeWidth={1.5}
                                         className="h-10 w-10 text-primary"
                                     />
-                                    <div className="relative flex flex-col items-center"> {/* Ensures left alignment */}
+                                    <div className="relative flex flex-col items-center">
                                         <h3 className="mt-6 font-medium text-base text-foreground text-center justify-center">
                                             {target.title}
                                         </h3>
-                                        <p className="mt-2 text-left text-muted-foreground text-sm text-center justify-center"> {/* Added text-left */}
+                                        <p className="mt-2 text-left text-muted-foreground text-sm text-center justify-center">
                                             {target.info}
                                         </p>
                                     </div>

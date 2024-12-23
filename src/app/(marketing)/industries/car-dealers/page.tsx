@@ -94,7 +94,7 @@ const DealersPage = () => {
             {/* Section Landing */}
             <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
                 <Container delay={0.1} className="w-full">
-                    <div className="flex flex-col items-center justify-center py-40 max-w-2xl mx-auto">
+                    <div className="flex flex-col items-center justify-center py-20 sm:py-24 md:py-40 max-w-2xl mx-auto">
                         <MagicBadge title="Car Dealers" />
                         <h2 className="text-3xl lg:text-4xl font-semibold font-heading text-center mt-6 !leading-tight">
                             Protect Your Dealerships, Empower Your Systems, Secure Your Brand
@@ -115,7 +115,7 @@ const DealersPage = () => {
             {/* Fraud Challenge Section */}
             <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
                 <Container delay={0.2} className="w-full">
-                    <div className="max-w-2xl mx-auto mx-auto justify-center text-center">
+                    <div className="flex flex-col items-center justify-center py-12 sm:py-16 md:py-20 max-w-2xl mx-auto">
                         <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
                             The Fraud Challenge Across Automotive Ecosystem
                         </h2>
