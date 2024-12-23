@@ -155,7 +155,7 @@ const FinancePage = () => {
                 <Container delay={0.3}>
                     <div
                         id="features"
-                        className="flex w-full flex-col items-center justify-center py-8 lg:items-center"
+                        className="flex w-full flex-col items-center justify-center py-20 lg:items-center"
                     >
                         <MagicBadge title="Our Unique Patented Solution" />
                         <h2 className="!leading-[1.1] mt-6 text-center font-heading font-medium text-3xl text-foreground md:text-5xl lg:text-center">
@@ -178,7 +178,7 @@ const FinancePage = () => {
             {/* Implementation */}
             <Wrapper className="flex flex-col items-center justify-center md:py-12 w-full">
                 <Container delay={0.2} className="w-full">
-                    <div className="max-w-md mx-auto text-center justify-center md:text-center">
+                    <div className="max-w-md mx-auto text-center justify-center md:text-center py-20" >
                         <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
                             Ease of Implementation
                         </h2>
@@ -208,7 +208,7 @@ const FinancePage = () => {
             {/* Use Cases */}
             <Wrapper className="flex flex-col items-center justify-center md:py-12 w-full">
                 <Container delay={0.1} className="w-full">
-                    <div className="flex flex-col items-center justify-center py-8 max-w-2xl mx-auto">
+                    <div className="flex flex-col items-center justify-center py-20 max-w-2xl mx-auto">
                         <MagicBadge title="Use Cases" />
                         <h2 className="text-3xl lg:text-4xl font-semibold font-heading text-center mt-6 !leading-tight">
                             Real Applications for Auto Dealers & DMS Providers
