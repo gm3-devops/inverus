@@ -152,10 +152,7 @@ const HealthcarePage = () => {
             {/* Solution Section */}
             <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
                 <Container delay={0.3}>
-                    <div
-                        id="features"
-                        className="flex w-full flex-col items-center justify-center py-20 lg:items-center"
-                    >
+                    <div className="flex w-full flex-col items-center justify-center py-12 sm:py-16 lg:py-20 lg:items-center">
                         <MagicBadge title="Our Unique Patented Solution" />
                         <h2 className="!leading-[1.1] mt-6 text-center font-heading font-medium text-3xl text-foreground md:text-5xl lg:text-center">
                             How inVerus Supports Healthcare Providers
