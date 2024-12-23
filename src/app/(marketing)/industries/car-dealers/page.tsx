@@ -92,14 +92,14 @@ const DealersPage = () => {
     return (
         <>
             {/* Section Landing */}
-            <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
+            <Wrapper className="flex flex-col items-center justify-center py-40 pb-10 w-full">
                 <Container delay={0.1} className="w-full">
-                    <div className="flex flex-col items-center justify-center py-30 sm:py-34 md:py-40 max-w-2xl mx-auto">
+                    <div className="flex w-full flex-col items-center justify-center py-8 lg:items-center">
                         <MagicBadge title="Car Dealers" />
-                        <h2 className="text-3xl lg:text-4xl font-semibold font-heading text-center mt-6 !leading-tight">
+                        <h2 className="!leading-[1.1] mt-6 max-w-3xl text-center font-heading font-medium text-3xl text-foreground md:text-4xl lg:text-center">
                             Protect Your Dealerships, Empower Your Systems, Secure Your Brand
                         </h2>
-                        <p className="text-base md:text-lg mt-6 text-center text-muted-foreground">
+                        <p className="mt-4 max-w-lg text-center text-lg text-muted-foreground lg:text-center">
                             Fraud is costing auto dealers billions annually. inVerus delivers advanced solutions to safeguard every step of the process.
                         </p>
                         <div className="flex items-center justify-center gap-x-4 mt-8">
@@ -113,14 +113,14 @@ const DealersPage = () => {
             </Wrapper>
 
             {/* Fraud Challenge Section */}
-            <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
+            <Wrapper className="flex flex-col items-center justify-center py-4 md:py-12 w-full">
                 <Container delay={0.2} className="w-full">
-                    <div className="flex flex-col items-center justify-center py-30 sm:py-34 md:py-40 max-w-2xl mx-auto">
+                    <div className="flex w-full flex-col items-center justify-center py-8 lg:items-center">
                         <MagicBadge title="Fraud in Dealership Operations" />
-                        <h2 className="text-3xl lg:text-4xl font-semibold font-heading text-center mt-6 !leading-tight">
+                        <h2 className="!leading-[1.1] mt-6 max-w-3xl text-center font-heading font-medium text-3xl text-foreground md:text-4xl lg:text-center">
                             The Fraud Challenge Across Automotive Ecosystem
                         </h2>
-                        <p className="text-base md:text-lg mt-6 text-center text-muted-foreground">
+                        <p className="mt-4 max-w-lg text-center text-lg text-muted-foreground lg:text-center">
                             Uncovering vulnerabilities across the automotive landscape, from dealerships to DMS providers and car brands, and the strategies needed to combat them.
                         </p>
                     </div>
@@ -155,11 +155,11 @@ const DealersPage = () => {
             </Wrapper>
 
             {/* Solution Section */}
-            <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
+            <Wrapper className="flex flex-col items-center justify-center py-4 md:py-12 w-full">
                 <Container delay={0.3}>
-                    <div className="flex w-full flex-col items-center justify-center py-12 sm:py-16 lg:py-20 lg:items-center">
+                    <div className="flex w-full flex-col items-center justify-center py-8 lg:items-center">
                         <MagicBadge title="Our Unique Patented Solution" />
-                        <h2 className="!leading-[1.1] mt-6 text-center font-heading font-medium text-3xl text-foreground md:text-5xl lg:text-center">
+                        <h2 className="!leading-[1.1] mt-6 max-w-3xl text-center font-heading font-medium text-3xl text-foreground md:text-4xl lg:text-center">
                             How InVerus Delivers for Auto Industry Leaders
                         </h2>
                         <p className="mt-4 max-w-lg text-center text-lg text-muted-foreground lg:text-center">
@@ -177,10 +177,10 @@ const DealersPage = () => {
             </Wrapper >
 
             {/* Implementation */}
-            <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
+            <Wrapper className="flex flex-col items-center justify-center py-4 md:py-12 w-full">
                 <Container delay={0.2} className="w-full">
-                    <div className="max-w-md mx-auto text-center justify-center md:text-center">
-                        <h2 className="text-3xl lg:text-4xl font-semibold mt-6">
+                    <div className="flex w-full flex-col items-center justify-center py-8 lg:items-center">
+                        <h2 className="!leading-[1.1] mt-6 max-w-3xl text-center font-heading font-medium text-3xl text-foreground md:text-4xl lg:text-center">
                             Ease of Implementation
                         </h2>
                     </div>
@@ -207,14 +207,14 @@ const DealersPage = () => {
             </Wrapper >
 
             {/* Use Cases */}
-            <Wrapper className="flex flex-col items-center justify-center py-12 md:py-8 w-full">
+            <Wrapper className="flex flex-col items-center justify-center py-4 md:py-12 w-full">
                 <Container delay={0.1} className="w-full">
-                    <div className="flex flex-col items-center justify-center py-8 max-w-2xl mx-auto">
+                    <div className="flex w-full flex-col items-center justify-center py-8 lg:items-center">
                         <MagicBadge title="Use Cases" />
-                        <h2 className="text-3xl lg:text-4xl font-semibold font-heading text-center mt-6 !leading-tight">
+                        <h2 className="!leading-[1.1] mt-6 max-w-3xl text-center font-heading font-medium text-3xl text-foreground md:text-4xl lg:text-center">
                             Real Applications for Auto Dealers & DMS Providers
                         </h2>
-                        <p className="text-base md:text-lg mt-6 text-center text-muted-foreground">
+                        <p className="mt-4 max-w-lg text-center text-lg text-muted-foreground lg:text-center">
                             Streamline operations and enhance security with cutting-edge fraud prevention tools. Tailored solutions for dealers, DMS providers, and car brands to safeguard against test drive fraud and identity risks.
                         </p>
                     </div>

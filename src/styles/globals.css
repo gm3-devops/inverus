@@ -277,15 +277,15 @@
 }
 
 .card:nth-child(1) .cardBody {
-  background-color: #004be0;
+  background-color: #52B2CF;
 }
 
 .card:nth-child(2) .cardBody {
-  background-color: #004be0;
+  background-color: #E5A36F;
 }
 
 .card:nth-child(3) .cardBody {
-  background-color: #004be0;
+  background-color: #9CADCE;
 }
 
 /* .card:nth-child(4) .cardBody {
