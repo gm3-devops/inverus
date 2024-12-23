@@ -155,7 +155,7 @@ const DealersPage = () => {
             </Wrapper>
 
             {/* Solution Section */}
-            <Wrapper className="flex flex-col items-center justify-center py-4 md:py-12 w-full">
+            <Wrapper className="flex flex-col items-center justify-center py-18 md:py-12 w-full">
                 <Container delay={0.3}>
                     <div className="flex w-full flex-col items-center justify-center py-8 lg:items-center">
                         <MagicBadge title="Our Unique Patented Solution" />
@@ -168,7 +168,7 @@ const DealersPage = () => {
                     </div>
                 </Container>
                 <Container delay={0.2}>
-                    <PillarsGrid className="py-8">
+                    <PillarsGrid className="py-8 pb-8">
                         {PillarContent.map((feature, idx) => (
                             <PillarsCard key={idx} {...feature} />
                         ))}
