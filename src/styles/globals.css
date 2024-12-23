@@ -277,15 +277,21 @@
 }
 
 .card:nth-child(1) .cardBody {
-  background-color: #52B2CF;
-}
+  background: hsl(220 65% 3.52%);
+    box-shadow: 0 -20px 80px -20px rgba(255, 255, 255, 0.12) inset,
+      0 4px 20px rgba(102, 91, 91, 0.5);
+    }
 
 .card:nth-child(2) .cardBody {
-  background-color: #E5A36F;
-}
+  background: hsl(220 65% 3.52%);
+    box-shadow: 0 -20px 80px -20px rgba(255, 255, 255, 0.12) inset,
+      0 4px 20px rgba(0, 0, 0, 0.5);
+    }
 
 .card:nth-child(3) .cardBody {
-  background-color: #9CADCE;
+  background: hsl(220 65% 3.52%);
+    box-shadow: 0 -20px 80px -20px rgba(255, 255, 255, 0.12) inset,
+      0 4px 20px rgba(0, 0, 0, 0.5);
 }
 
 /* .card:nth-child(4) .cardBody {

@@ -130,7 +130,7 @@ const DealersPage = () => {
                         <Icons.feature className="w-auto h-80" />
                     </div>
                 </Container>
-                <div className="grid w-full grid-cols-1 gap-4 py-8 pb-24 md:pb-10 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
+                <div className="grid w-full grid-cols-1 gap-4 py-8 pb-18 md:pb-10 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
                     {fraud.map((target, id) => (
                         <Container delay={0.2 * id} key={id}>
                             <MagicCard className="group md:py-8">
@@ -223,7 +223,7 @@ const DealersPage = () => {
                     <ul className="cards">
                         {cardData.map((card, index) => (
                             <li key={index} className="card">
-                                <div className="cardBody">
+                                <div className="cardBody border border-border bg-background">
                                     <div
                                         className="imageHalf"
                                         style={{ backgroundImage: `url(${card.imageUrl})` }}
