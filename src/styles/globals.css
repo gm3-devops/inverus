@@ -41,6 +41,9 @@
     --ring: 220 100% 44%;
 
     --radius: 0.5rem;
+
+    --particles-bg: rgb(3 7 18);
+  
   }
 
   .dark {
@@ -73,6 +76,9 @@
     --ring: 214.12 100% 50%;
 
     --radius: 0.5rem;
+
+    --particles-bg: rgb(3 7 18);
+
   }
 }
 

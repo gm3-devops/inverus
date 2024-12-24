@@ -48,7 +48,7 @@ const PillarContent = [
         cta: "Learn more",
         className: "col-span-3 lg:col-span-2",
         background: (
-            <div className="absolute w-full h-full right-0 top-0 origin-top rounded-md transition-all duration-300 ease-out  [mask-image:linear-gradient(to_top,transparent_20%,#000_100%)] md:[mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105 group-hover:-translate-y-4">
+            <div className="absolute w-full h-full right-0 top-0 origin-top rounded-md transition-all duration-300 ease-out [mask-image:linear-gradient(to_top,transparent_20%,#000_100%)] md:[mask-image:linear-gradient(to_top,transparent_10%,#000_100%)] group-hover:scale-105 group-hover:-translate-y-4">
                 <GlobeAndStars />
             </div>
         ),
@@ -85,7 +85,6 @@ const PillarContent = [
         ),
     },
 ];
-
 
 
 const DealersPage = () => {

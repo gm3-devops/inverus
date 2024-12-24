@@ -1,6 +1,8 @@
 import {
   BadgeCheck,
+  BadgeDollarSign,
   Blocks,
+  Bug,
   Car,
   Code,
   DollarSign,
@@ -13,6 +15,7 @@ import {
   Lock,
   Scale,
   ScanEye,
+  ShieldAlert,
   ShieldCheck,
   ShieldMinus,
   Siren,
@@ -26,12 +29,29 @@ import {
   Workflow,
 } from "lucide-react";
 
+export const identityFraud = [
+  {
+    icon: BadgeDollarSign,
+    title: "Skyrocketing Losses",
+    info: "Identity fraud costs businesses $43 billion annually, growing at a rate of 13% year-over-year.",
+  },
+  {
+    icon: ShieldAlert,
+    title: "Evolving Threats",
+    info: "AI-driven fraud and sophisticated Deep Fakes now render traditional validation methods completely ineffective.",
+  },
+  {
+    icon: Bug,
+    title: "Universal Vulnerability",
+    info: "Every business sector is at risk: Auto Dealers, Banks, Healthcare, Government, and more.",
+  },
+];
+
 export const fraud = [
   {
     icon: Car,
     title: "Dealers",
     info: "Facing fraud risks at test drives, points-of-sale, and during warranty claims",
-    imgsrc: "",
   },
   {
     icon: Handshake,
