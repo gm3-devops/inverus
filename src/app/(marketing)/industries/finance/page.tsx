@@ -127,7 +127,7 @@ const FinancePage = () => {
                         <Icons.feature className="w-auto h-80" />
                     </div>
                 </Container>
-                <div className="grid w-full grid-cols-1 gap-4 py-8 pb-18 md:pb-10 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
+                <div className="grid w-full grid-cols-1 gap-4 py-8 pb-24 md:pb-10 md:grid-cols-2 md:gap-8 lg:grid-cols-3">
                     {finance.map((target, id) => (
                         <Container delay={0.2 * id} key={id}>
                             <MagicCard className="group md:py-8">
