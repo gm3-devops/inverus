@@ -17,7 +17,7 @@ export const CARDS = [
         Icon: CarFrontIcon,
         name: "Auto Dealers",
         description: "Safeguard dealerships with seamless identity verification, prevent fraudulent activities, and protect high-value transactions in real-time.",
-        href: "/auto-dealers",
+        href: "/industries/car-dealers",
         cta: "Learn more",
         className: "col-span-3 lg:col-span-1",
         background: (
@@ -35,7 +35,7 @@ export const CARDS = [
         name: "Financial Institutions",
         description:
             "Strengthen fraud prevention, maintain regulatory compliance, and reduce risk exposure with accurate identity verification solutions.",
-        href: "/financial-institutions",
+        href: "/industries//finance",
         cta: "Learn more",
         className: "col-span-3 lg:col-span-2",
         background: (
@@ -52,7 +52,7 @@ export const CARDS = [
         Icon: Landmark,
         name: "Government",
         description: "Enhance public sector systems with robust identity verification to prevent fraud and maintain citizen trust.",
-        href: "/government",
+        href: "/industries/government",
         cta: "Learn more",
         className: "col-span-3 lg:col-span-2 max-w-full overflow-hidden",
         background: (
@@ -64,7 +64,7 @@ export const CARDS = [
         name: "Healthcare Providers",
         description: "Ensure patient identity accuracy, prevent medical fraud, and safeguard sensitive health data.",
         className: "col-span-3 lg:col-span-1",
-        href: "/healthcare-providers",
+        href: "/industries/healthcare",
         cta: "Learn more",
         background: (
             <Image

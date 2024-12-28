@@ -42,7 +42,7 @@ const items = [
     },
     {
         title: "Accurate Decision-Making",
-        description: "Prevent false positives and false negatives with confidence.",
+        description: "Reduce false positives and false negatives with confidence.",
         header: <Skeleton />,
         icon: <Target className="h-6 w-6 text-primary" />,
     },

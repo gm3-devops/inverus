@@ -86,7 +86,7 @@ export const HarvestorBenefits = [
     icon: Fingerprint,
     title: "Anomaly Precision",
     description:
-      "Flags anomalies with unmatched precision, identifying such as tolen or synthetic identities and fake records or falsified credentials.",
+      "Flags anomalies with unmatched precision, identifying stolen or synthetic identities and fake records or falsified credentials.",
   },
   {
     icon: ExpandIcon,

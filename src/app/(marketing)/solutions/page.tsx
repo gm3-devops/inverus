@@ -60,7 +60,7 @@ const SolutionsPage = () => {
                             The Global Rise of Identity Fraud
                         </h2>
                         <p className="mt-4 max-w-xl text-center text-lg text-muted-foreground lg:text-center">
-                            As identity fraud escalates, costing $43 billion annually, traditional defenses fall short against AI-driven threats and Deep Fakes. Businesses across all sectors must act now to safeguard their operations and customers.
+                            As identity fraud escalates, costing $43 billion annually, traditional defenses fall short against AI-driven threats and Deep Fakes.
                         </p>
                     </div>
                 </Container>
@@ -104,7 +104,7 @@ const SolutionsPage = () => {
             <Wrapper className="flex flex-col items-center justify-center py-4 md:py-12 w-full">
                 <Container delay={0.2} className="w-full">
                     <div className="flex w-full flex-col items-center justify-center py-8 lg:items-center">
-                        <MagicBadge title="Consortium" />
+                        <MagicBadge title="Our Unique Patented Solution" />
                         <h2 className="!leading-[1.1] mt-6 max-w-2xl text-center font-heading font-medium text-3xl text-foreground md:text-4xl lg:text-center">
                             The inVerus Trust Ecosystem
                         </h2>
