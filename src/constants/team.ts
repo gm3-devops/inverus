@@ -15,11 +15,12 @@ export const leadershipTeam = [
       "Inventor & author of 25+ U.S. patents in security, AI/ML, telecommunications, and mobile solutions.",
     ],
     companies: ["/images/companies/10.svg", "/images/companies/5.svg"],
+    linkedinUrl: "https://www.linkedin.com/in/jimcto",
   },
   {
     key: 2,
     name: "Steven G Chrust",
-    title: "Co-Founder & Vice Chairman ",
+    title: "Executive Vice Chairman & Co-Founder",
     avatar: "/images/team/SGC.png",
     description: [
       "Co-Founder of Winstar Communications (Nasdaq: WCII), which merged into a $10bn enterprise.",
@@ -31,6 +32,7 @@ export const leadershipTeam = [
       "Lectured at Harvard Business School and testified before Congress on AT&T's break-up.",
     ],
     companies: ["/images/companies/19.svg", "/images/companies/6.svg"],
+    linkedinUrl: "https://www.linkedin.com/in/schrust",
   },
 ];
 
@@ -49,11 +51,12 @@ export const advisorMember = [
       "Founder & Chairman @ Gyro.",
     ],
     companies: ["/images/companies/4.svg", "/images/companies/12.svg"],
+    linkedinUrl: "https://www.linkedin.com/in/david-bell-01276a5",
   },
   {
     key: 2,
     name: "Lawrence Leibowitz",
-    title: "Growth & Marketing Leader",
+    title: "Senior Operating & Markets Leader",
     avatar: "/images/team/lawrence_leibowitz.png",
     description: [
       "COO & Head of Equity Markets @ NYSE Euronext (NYSE: NYX): Played a significant role during its $10.2 billion acquisition by Intercontinental Exchange (ICE) in 2013.",
@@ -62,11 +65,12 @@ export const advisorMember = [
       "Vice-Chairman of Xpansiv Markets.",
     ],
     companies: ["/images/companies/13.svg", "/images/companies/16.svg"],
+    linkedinUrl: "https://www.linkedin.com/in/lleibowitz",
   },
   {
     key: 3,
     name: "Keith Turco",
-    title: "Growth & Marketing Innovator",
+    title: "Growth and Marketing Leader",
     avatar: "/images/team/keith_turco.png",
     description: [
       "Board Member @ American Advertising Federation.",
@@ -77,11 +81,12 @@ export const advisorMember = [
       "President @ gyro NY: Acquired by Dentsu (Euronext: DNTUY).",
     ],
     companies: ["/images/companies/11.svg", "/images/companies/18.svg"],
+    linkedinUrl: "https://www.linkedin.com/in/keith-turco",
   },
   {
     key: 4,
     name: "Andrew O’Doherty",
-    title: "Capital & Digital Transformation Exper",
+    title: "Capital & Digital Transformation Expert",
     avatar: "/images/team/andrew_odoherty.png",
     description: [
       "Founder/Managing Partner @ gm3: A Business & Technology Advisory firm.",
@@ -89,6 +94,7 @@ export const advisorMember = [
       "Global Head of Ops & Onboarding Digital Transformation @ Citigroup Securities Services (NYSE: C).",
     ],
     companies: ["/images/companies/1.svg", "/images/companies/20.svg"],
+    linkedinUrl: "https://www.linkedin.com/in/andrewirl",
   },
 ];
 
@@ -104,11 +110,12 @@ export const teamMembers = [
       "Global Head of Ops & Digital Transformation @ Citi Securities Services (NYSE: C).",
     ],
     companies: ["/images/companies/1.svg", "/images/companies/20.svg"],
+    linkedinUrl: "https://www.linkedin.com/in/andrewirl",
   },
   {
     key: 2,
     name: "Laura Trumbull",
-    title: "COO",
+    title: "Chief Operating Officer",
     avatar: "/images/team/laura_trumbull.png",
     description: [
       "Served as CTO at American Real-Time Services.",
@@ -116,39 +123,43 @@ export const teamMembers = [
       "VP of Marketing App Tech at Meredith.",
     ],
     companies: ["/images/companies/3.svg", "/images/companies/9.svg"],
+    linkedinUrl: "https://www.linkedin.com/in/lauractrumbull",
   },
   {
     key: 3,
     name: "Tom Saleh",
-    title: "CIO",
+    title: "Chief Information Officer",
     bio: "Founder/CEO of XNET (acquired) and CTO at the Financial Accounting Standards Board.",
     avatar: "/images/team/tom_saleh.png",
     description: [
-      "Founder/CEO of XNET (acquired) .",
+      "Founder/CEO of XNET (acquired).",
       "CTO at the Financial Accounting Standards Board.",
     ],
     companies: ["/images/companies/7.svg", "/images/companies/13.svg"],
+    linkedinUrl: "https://www.linkedin.com/in/tom-saleh-5a56b03",
   },
   {
     key: 4,
     name: "Stephen Rossetter",
-    title: "CFO",
+    title: "Chief Financial Officer",
     avatar: "/images/team/stephen_rossetter.png",
     description: [
       "Co-Founder/Managing Partner at Centripetal Capital Partners.",
     ],
     companies: ["/images/companies/21.svg", "/images/companies/19.svg"],
+    linkedinUrl: "https://www.linkedin.com/in/steve-rossetter-a81a08a",
   },
   {
     key: 5,
     name: "Larry Rafsky, PhD",
-    title: "Head of Data Science",
+    title: "Head of Data Science, Machine Learning & Statistical Analysis",
     avatar: "/images/team/larry_rafsky.png",
     description: [
       "Founder/CEO of Acquire Media (acquired).",
       "IDD at Dow Jones.",
     ],
     companies: ["/images/companies/8.svg", "/images/companies/15.svg"],
+    linkedinUrl: "https://www.linkedin.com/in/rafsky",
   },
   {
     key: 6,
@@ -160,5 +171,6 @@ export const teamMembers = [
       "Principal at Boston Consulting Group.",
     ],
     companies: ["/images/companies/2.svg", "/images/companies/23.svg"],
+    linkedinUrl: "https://www.linkedin.com/in/jeff-brodlieb-07b18441",
   },
 ];

@@ -3,7 +3,7 @@ import Wrapper from "@/components/global/wrapper";
 import MagicBadge from "@/components/ui/magic-badge";
 import Image from "next/image";
 import { ScheduleCall } from "@/components/ui/cal";
-import { Rocket, X } from 'lucide-react';
+import { Rocket } from 'lucide-react';
 import { advisorMember, leadershipTeam, teamMembers } from "@/constants/team";
 import { BrainCircuit, ScanSearch, Share2 } from 'lucide-react';
 import BioCard from "@/components/ui/bio-card";
@@ -12,8 +12,6 @@ import RetroGrid from "@/components/ui/retro-grid";
 import GlobeAndStars from "@/components/ui/globe-and-stars";
 import RadarAnimation from '@/components/ui/radar';
 import { PillarsCard, PillarsGrid } from "@/components/ui/bento-grid-pillars";
-import Link from "next/link";
-import { Icons } from "@/components";
 
 const PillarContent = [
     {
@@ -123,6 +121,7 @@ const AboutUs = () => {
                                 avatar={member.avatar}
                                 bio={member.description}
                                 companies={member.companies}
+                                linkedinUrl={member.linkedinUrl}
                             />
                         ))}
                     </div>
@@ -151,6 +150,7 @@ const AboutUs = () => {
                                 avatar={member.avatar}
                                 bio={member.description}
                                 companies={member.companies}
+                                linkedinUrl={member.linkedinUrl}
                             />
                         ))}
                     </div>
@@ -178,6 +178,7 @@ const AboutUs = () => {
                                 avatar={member.avatar}
                                 bio={member.description}
                                 companies={member.companies}
+                                linkedinUrl={member.linkedinUrl}
                             />
                         ))}
                     </div>

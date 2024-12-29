@@ -1,33 +1,41 @@
 import React from "react";
 import Image from "next/image";
-import {
-    Card,
-    CardHeader,
-    CardTitle,
-    CardDescription,
-    CardContent,
-} from "@/components/ui/card"; // Adjust path as needed
-import { Zap } from "lucide-react";
+import { Card, CardHeader, CardTitle, CardDescription, CardContent } from "@/components/ui/card"; // Adjust path as needed
+import { Zap, Linkedin } from "lucide-react"; // Ensure you have Linkedin imported
+import Link from "next/link";
 
 interface BioCardProps {
     name: string;
     title: string;
     avatar: string;
     bio: string[];
-    companies: string[]; // Add a new prop to accept company logo paths
+    companies: string[];
+    linkedinUrl: string;
 }
 
-const BioCard = ({ name, title, avatar, bio, companies }: BioCardProps) => {
+const BioCard = ({ name, title, avatar, bio, companies, linkedinUrl }: BioCardProps) => {
     return (
         <Card className="max-w-lg">
             {/* Header with Avatar and Company Logos */}
-            <CardHeader className="flex items-center justify-between">
+            <CardHeader className="flex">
                 <div className="flex items-center space-x-4">
-                    <div className="relative h-16 w-16 rounded-full border-2 border-blue-500 overflow-hidden">
+                    <div className="relative h-16 w-16 rounded-full border-2 border-blue-500 overflow-hidden items-start">
                         <Image src={avatar} alt={name} layout="fill" objectFit="cover" />
                     </div>
                     <div>
-                        <CardTitle>{name}</CardTitle>
+                        <div className="flex items-center space-x-6">
+                            <CardTitle>
+                                {name}
+                            </CardTitle>
+                            {/* LinkedIn Icon */}
+                            <Link
+                                href={linkedinUrl}
+                                target="_blank"
+                                rel="noopener noreferrer"
+                                className="text-blue-500 hover:opacity-75">
+                                <Linkedin className="w-5 h-5" />
+                            </Link>
+                        </div>
                         <CardDescription>{title}</CardDescription>
                     </div>
                 </div>
