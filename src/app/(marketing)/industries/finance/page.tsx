@@ -24,17 +24,17 @@ const cardData: CardData[] = [
     {
         title: "Account Opening",
         description: "Validate identities before account creation with advanced fraud detection tools. Ensure that every new account belongs to a legitimate individual, minimizing the risk of onboarding fraudulent or synthetic identities. Build trust with your customers while protecting your institution from potential fraud.",
-        imageUrl: "/placeholder.svg?height=800&width=600"
+        imageUrl: "/images/industries/account-opening.jpg?height=800&width=600"
     },
     {
         title: "Loan Approvals",
         description: "Detect fraudulent loan applications early by analyzing patterns and behaviors indicative of identity manipulation. Prevent approval delays for genuine applicants while ensuring your institution isn’t exposed to high-risk individuals or synthetic identities.",
-        imageUrl: "/placeholder.svg?height=800&width=600"
+        imageUrl: "/images/industries/loan-approval.jpg?height=800&width=600"
     },
     {
         title: "Transaction Monitoring",
         description: "Enable real-time risk detection across all banking activities to identify suspicious transactions as they occur. By monitoring geographic activity, transactional irregularities, and account behavior, financial institutions can reduce false positives and focus on truly fraudulent activity.",
-        imageUrl: "/placeholder.svg?height=800&width=600"
+        imageUrl: "/images/industries/transaction-monitoring.jpg?height=800&width=600"
     }
 ];
 

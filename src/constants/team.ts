@@ -11,7 +11,6 @@ export const leadershipTeam = [
       "Advised US government and law enforcement on counter-terrorism and security.",
       "Developed tech solutions for U.S. Patriot Act, KYC, and AML compliance.",
       "Pioneer in IP and data security.",
-      "Led US Platform at Spotify (2011-2014): Contributed to launch and growth.",
       "Inventor & author of 25+ U.S. patents in security, AI/ML, telecommunications, and mobile solutions.",
     ],
     companies: ["/images/companies/10.svg", "/images/companies/5.svg"],
@@ -102,7 +101,7 @@ export const teamMembers = [
   {
     key: 1,
     name: "Andrew O’Doherty",
-    title: "Acting Chief Revenue Officer",
+    title: "Chief Revenue Officer",
     avatar: "/images/team/andrew_odoherty.png",
     description: [
       "Managing Partner @ gm3.",

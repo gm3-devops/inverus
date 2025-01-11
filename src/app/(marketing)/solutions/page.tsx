@@ -18,12 +18,12 @@ const problems = [
     {
         text:
             "Legacy systems rely on fragmented and outdated verification processes, leaving critical gaps that fraudsters exploit. These systems often fail to adapt to rapidly evolving threats like AI-generated Deep Fakes and advanced identity spoofing. The rise of sophisticated fraud schemes demands more than just isolated checks; it requires a holistic, proactive strategy.",
-        src: "/placeholder.svg",
+        src: "/images/industries/ai-cybersecurity.jpg",
     },
     {
         text:
             "inVerus offers a revolutionary solution by integrating advanced intelligence and real-time data from diverse industries. By fostering collaboration and leveraging AI-driven insights, InVerus empowers businesses to detect patterns, predict fraud, and prevent breaches before they occur. This unified approach not only minimizes risk but also restores trust in digital transactions.",
-        src: "/placeholder.svg",
+        src: "/images/industries/quality.jpg",
     },
 ];
 
@@ -146,7 +146,7 @@ const SolutionsPage = () => {
                             </div>
                             <div className="md:min-h-[24rem] lg:min-h-[28rem] xl:min-h-[32rem]">
                                 <img
-                                    src="/placeholder.svg"
+                                    src="/images/industries/consortium.jpg"
                                     alt="Consortium"
                                     className="aspect-[16/9] h-full w-full object-cover object-center"
                                 />
@@ -163,7 +163,7 @@ const SolutionsPage = () => {
                         <div className="flex flex-col overflow-clip rounded-xl border border-border md:col-span-2 md:grid md:grid-cols-2 md:gap-6 lg:gap-8">
                             <div className="md:min-h-[24rem] lg:min-h-[28rem] xl:min-h-[32rem]">
                                 <img
-                                    src="/placeholder.svg"
+                                    src="/images/industries/harvestor.jpg"
                                     alt="Harvestor"
                                     className="aspect-[16/9] h-full w-full object-cover object-center"
                                 />
@@ -236,7 +236,7 @@ const SolutionsPage = () => {
                             </div>
                             <div className="md:min-h-[24rem] lg:min-h-[28rem] xl:min-h-[32rem]">
                                 <img
-                                    src="/placeholder.svg"
+                                    src="/images/industries/behavioural-insights.jpg"
                                     alt="Insights"
                                     className="aspect-[16/9] h-full w-full object-cover object-center"
                                 />

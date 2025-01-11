@@ -22,7 +22,7 @@ const CTA = () => {
                         </p>
                         <div className="mt-6">
                             <ScheduleCall
-                                buttonText="Book a Demo"
+                                buttonText="Book a Call"
                                 iconr={<Calendar className="w-4 h-4" />}
                             />
                         </div>

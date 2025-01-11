@@ -24,17 +24,17 @@ const cardData: CardData[] = [
     {
         title: "Tax Systems",
         description: "Verify identities for tax filings to prevent fraudulent submissions and protect public funds. Detect anomalies in declarations and ensure compliance with legal frameworks, safeguarding the integrity of national tax systems while reducing costly errors and misuse.",
-        imageUrl: "/placeholder.svg?height=800&width=600"
+        imageUrl: "/images/industries/tax-systems.jpg?height=800&width=600"
     },
     {
         title: "Public Benefits",
         description: "Prevent fraudulent claims for welfare and social programs by validating identities and detecting fake or duplicate applications. Streamline benefits distribution to ensure support reaches the citizens who truly need it, reducing financial waste and abuse.",
-        imageUrl: "/placeholder.svg?height=800&width=600"
+        imageUrl: "/images/industries/public-benefits.jpg?height=800&width=600"
     },
     {
         title: "Licensing & Permits",
         description: "Authenticate applications for credentials and licenses with robust identity verification processes. Prevent identity manipulation, protect sensitive sectors, and build confidence in systems governing professional certifications, vehicle permits, and more.",
-        imageUrl: "/placeholder.svg?height=800&width=600"
+        imageUrl: "/images/industries/license-permits.jpg?height=800&width=600"
     }
 ];
 

@@ -16,7 +16,13 @@ export function SolutionsBenefits() {
                     key={i}
                     title={item.title}
                     description={item.description}
-                    header={item.header}
+                    header={
+                        <img
+                            src={item.header}
+                            alt={item.title}
+                            className="flex flex-1 w-full h-full min-h-[6rem] rounded-xl"
+                        />
+                    }
                     icon={item.icon}
                     className={i === 3 || i === 6 ? "md:col-span-2" : ""}
                 />
@@ -31,31 +37,31 @@ const items = [
     {
         title: "Real-Time Fraud Detection",
         description: "Proactively stop identity fraud at critical stages.",
-        header: <Skeleton />,
+        header: "/images/industries/real-time-fraud.jpg",
         icon: <ShieldCheck className="h-6 w-6 text-primary" />,
     },
     {
         title: "Cost Reduction",
         description: "Lower investigation and fraud-related costs.",
-        header: <Skeleton />,
+        header: "/images/industries/cost-reduction.jpg",
         icon: <DollarSign className="h-6 w-6 text-primary" />,
     },
     {
         title: "Accurate Decision-Making",
         description: "Reduce false positives and false negatives with confidence.",
-        header: <Skeleton />,
+        header: "/images/industries/decision-making.jpg",
         icon: <Target className="h-6 w-6 text-primary" />,
     },
     {
         title: "Cross-Industry Collaboration",
         description: "Benefit from a shared fraud intelligence network.",
-        header: <Skeleton />,
+        header: "/images/industries/cross-industry.jpg",
         icon: <Network className="h-6 w-6 text-primary" />,
     },
     {
         title: "Scalable Solutions",
         description: "Designed for businesses of all sizes and industries.",
-        header: <Skeleton />,
+        header: "/images/industries/scalable-solution.jpg",
         icon: <Layers className="h-6 w-6 text-primary" />,
     },
 ];

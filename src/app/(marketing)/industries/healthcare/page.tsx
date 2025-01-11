@@ -24,17 +24,17 @@ const cardData: CardData[] = [
     {
         title: "Patient Registration",
         description: "Confirm identity at intake to prevent fraudulent use of medical services. Ensure accurate patient records from the start, protecting both healthcare providers and patients from identity theft and medical misdiagnoses caused by fake identities.",
-        imageUrl: "/placeholder.svg?height=800&width=600"
+        imageUrl: "/images/industries/patient-registration.jpg?height=800&width=600"
     },
     {
         title: "Insurance Billing",
         description: "Prevent fraudulent claims by verifying patient information and service eligibility. Detect billing anomalies and unauthorized claims early, reducing financial losses while streamlining reimbursement processes for genuine cases.",
-        imageUrl: "/placeholder.svg?height=800&width=600"
+        imageUrl: "/images/industries/insurance-billing.jpg?height=800&width=600"
     },
     {
         title: "Medical Record Access",
         description: "Ensure secure patient data management by validating user identities before granting access. Protect sensitive medical records from unauthorized access or breaches, maintaining HIPAA compliance and patient trust.",
-        imageUrl: "/placeholder.svg?height=800&width=600"
+        imageUrl: "/images/industries/medical-records.jpg?height=800&width=600"
     }
 ];
 

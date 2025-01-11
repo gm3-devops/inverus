@@ -25,17 +25,17 @@ const cardData: CardData[] = [
     {
         title: "Dealers",
         description: "Implement robust measures to protect against potential test drive fraud by leveraging advanced verification technologies, while also ensuring that buyer identities are thoroughly and accurately authenticated during vehicle purchase transactions to enhance security and trust.",
-        imageUrl: "/placeholder.svg?height=800&width=600"
+        imageUrl: "/images/industries/car-delaers.jpg?height=800&width=600"
     },
     {
         title: "DMS Providers",
         description: "Deliver enhanced services to clients by seamlessly integrating sophisticated fraud prevention tools into your system offerings, providing measurable value that improves operational efficiency, strengthens client relationships, and builds long-term trust within the industry.",
-        imageUrl: "/placeholder.svg?height=800&width=600"
+        imageUrl: "/images/industries/dms-providers.jpg?height=800&width=600"
     },
     {
         title: "Car Brands",
         description: "Utilize comprehensive data analytics and monitoring solutions to gain deeper insights into regional fraud patterns and trends, enabling you to proactively safeguard dealer networks while maintaining the integrity and reputation of your brand across diverse markets.",
-        imageUrl: "/placeholder.svg?height=800&width=600"
+        imageUrl: "/images/industries/car-brands.jpg?height=800&width=600"
     }
 ];
 
