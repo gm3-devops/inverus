@@ -54,7 +54,7 @@ const Menu = () => {
                                     </Link>
                                 </NavigationMenuLink>
                             </li>
-                            <Item title="Car Dealers" href="/industries/car-dealers" icon={<CarFront className="w-5 h-5" />}>
+                            <Item title="Auto Dealers" href="/industries/car-dealers" icon={<CarFront className="w-5 h-5" />}>
                                 <p className="line-clamp-1 text-sm leading-snug text-muted-foreground">
                                     Dealers, DMS Providers +
                                 </p>

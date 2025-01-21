@@ -27,7 +27,7 @@ export const PillarContent = [
         Icon: ScanSearch,
         name: "Harvestor",
         description:
-            "Our Reverse Search Engine technology scours publicly available and consortium data to validate identities and uncover suspicious activity with precision.",
+            "Our Reverse Search Engine technology scours publicly available data to validate identities and uncover suspicious activity with precision.",
         href: "/solutions#harvestor",
         cta: "Learn more",
         className: "col-span-3 lg:col-span-1",

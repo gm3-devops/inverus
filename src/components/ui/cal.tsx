@@ -14,7 +14,7 @@ export interface ScheduleCallButtonProps
 }
 
 export function ScheduleCall({
-    buttonText = "Book a Demo",
+    buttonText = "Book a Call",
     iconl,
     iconr,
     className,

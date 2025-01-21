@@ -74,7 +74,7 @@ const config = {
         "draw-check": {
           "0%": { strokeDasharray: "0, 30", strokeDashoffset: "30" },
           "50%": { strokeDasharray: "30, 30", strokeDashoffset: "0" },
-          "100%": { strokeDasharray: "0, 30", strokeDashoffset: "30" }, // Restart to loop
+          "100%": { strokeDasharray: "0, 30", strokeDashoffset: "30" },
         },
         scanning: {
           "0%, 100%": {

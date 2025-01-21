@@ -90,7 +90,7 @@ const MobileMenu = ({ isOpen, setIsOpen }: Props) => {
                                 >
                                     <Link href="/industries/car-dealers" className="flex items-center w-full text-start">
                                         <CarFront className="w-4 h-4 mr-2" />
-                                        Car Dealers
+                                        Auto Dealers
                                     </Link>
                                 </li>
                                 <li

@@ -94,7 +94,7 @@ const DealersPage = () => {
             <Wrapper className="flex flex-col items-center justify-center py-40 pb-10 w-full">
                 <Container delay={0.1} className="w-full">
                     <div className="flex w-full flex-col items-center justify-center py-8 lg:items-center">
-                        <MagicBadge title="Car Dealers" />
+                        <MagicBadge title="Auto Dealers" />
                         <h2 className="!leading-[1.1] mt-6 max-w-3xl text-center font-heading font-medium text-3xl text-foreground md:text-4xl lg:text-center">
                             Protect Your Dealerships, Empower Your Systems, Secure Your Brand
                         </h2>
@@ -103,7 +103,7 @@ const DealersPage = () => {
                         </p>
                         <div className="flex items-center justify-center gap-x-4 mt-8">
                             <ScheduleCall
-                                buttonText="Book a Demo"
+                                buttonText="Book a Call"
                                 iconr={<Calendar className="w-4 h-4" />}
                             />
                         </div>

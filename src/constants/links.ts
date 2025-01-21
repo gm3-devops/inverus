@@ -105,7 +105,7 @@ export const FOOTER = [
   {
     title: "Industries",
     links: [
-      { name: "Car Dealers", href: "#" },
+      { name: "Auto Dealers", href: "#" },
       { name: "Financial Institutions", href: "#" },
       { name: "Healthcare Providers", href: "#" },
       { name: "Government", href: "#" },

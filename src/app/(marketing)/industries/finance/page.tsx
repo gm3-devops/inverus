@@ -101,7 +101,7 @@ const FinancePage = () => {
                         </p>
                         <div className="flex items-center justify-center gap-x-4 mt-8">
                             <ScheduleCall
-                                buttonText="Book a Demo Today"
+                                buttonText="Book a Call Today"
                                 iconr={<Calendar className="w-4 h-4" />}
                             />
                         </div>

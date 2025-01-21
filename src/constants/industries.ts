@@ -43,7 +43,7 @@ export const identityFraud = [
   {
     icon: Bug,
     title: "Universal Vulnerability",
-    info: "Every sector is at risk: Car Dealers, Banks, Healthcare, Government, and more.",
+    info: "Every sector is at risk: Auto Dealers, Banks, Healthcare, Government, and more.",
   },
 ];
 

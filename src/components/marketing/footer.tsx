@@ -36,7 +36,7 @@ const Footer = () => {
                                     <ul className="mt-4 text-sm text-muted-foreground">
                                         <li className="mt-2">
                                             <Link href="/industries/car-dealers" className="hover:text-foreground transition-all duration-300">
-                                                Car Dealers
+                                                Auto Dealers
                                             </Link>
                                         </li>
                                         <li className="mt-2">
@@ -84,20 +84,6 @@ const Footer = () => {
                             </div>
                         </div>
                     </div>
-                    {/* <div className="mt-auto border-t border-border/40 pt-4 w-full flex flex-col items-center md:flex-row md:justify-between">
-                <p className="text-sm text-muted-foreground text-center md:text-left">
-                    &copy; {new Date().getFullYear()} inVerus Inc. All rights reserved.
-                </p>
-                <div className="flex gap-4 mt-4 md:mt-0">
-                    <Link href="/privacy-policy" className="text-sm text-muted-foreground hover:text-foreground transition-all duration-300">
-                        Privacy Policy
-                    </Link>
-                    <span>|</span>
-                    <Link href="/terms-and-conditions" className="text-sm text-muted-foreground hover:text-foreground transition-all duration-300">
-                        Terms & Conditions
-                    </Link>
-                </div>
-            </div> */}
                 </footer>
             </div >
         </section >

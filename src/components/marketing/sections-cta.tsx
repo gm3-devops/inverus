@@ -19,7 +19,7 @@ const SectionsCTA = () => {
                         </p>
                         <div className="flex flex-col md:flex-row items-center justify-center w-full gap-6 mt-6">
                             <ScheduleCall
-                                buttonText="Book a Demo"
+                                buttonText="Book a Call"
                                 iconr={<Calendar className="w-4 h-4" />}
                             />
                         </div>
