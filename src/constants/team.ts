@@ -29,7 +29,6 @@ export const leadershipTeam = [
       "Expert in telecommunications policy and industry trends.",
       "Experience scaling and leading high-growth companies.",
       "Lectured at Harvard Business School and testified before Congress on AT&T's break-up.",
-      "Former CPA with over 35 years of financial and private equity investing experience.",
     ],
     companies: ["/images/companies/19.svg", "/images/companies/6.svg"],
     linkedinUrl: "https://www.linkedin.com/in/schrust",
@@ -80,22 +79,22 @@ export const advisorMember = [
       "EVP, Worldwide Managing Director @ Ogilvy.",
       "President @ gyro NY: Acquired by Dentsu (Euronext: DNTUY).",
     ],
-    companies: ["/images/companies/11.svg", "/images/companies/18.svg"],
+    companies: ["/images/companies/11.svg", "/images/companies/24.svg"],
     linkedinUrl: "https://www.linkedin.com/in/keith-turco",
   },
-  {
-    key: 4,
-    name: "Andrew O’Doherty",
-    title: "Capital & Digital Transformation Expert",
-    avatar: "/images/team/andrew_odoherty.png",
-    description: [
-      "Founder/Managing Partner @ gm3: A Business & Technology Advisory firm.",
-      "Founder @ My Data Hub: An early-stage decentralized data marketplace platform leveraging blockchain technology.",
-      "Global Head of Ops & Onboarding Digital Transformation @ Citigroup Securities Services (NYSE: C).",
-    ],
-    companies: ["/images/companies/1.svg", "/images/companies/20.svg"],
-    linkedinUrl: "https://www.linkedin.com/in/andrewirl",
-  },
+  // {
+  //   key: 4,
+  //   name: "Andrew O’Doherty",
+  //   title: "Capital & Digital Transformation Expert",
+  //   avatar: "/images/team/andrew_odoherty.png",
+  //   description: [
+  //     "Founder/Managing Partner @ gm3: A Business & Technology Advisory firm.",
+  //     "Founder @ My Data Hub: An early-stage decentralized data marketplace platform leveraging blockchain technology.",
+  //     "Global Head of Ops & Onboarding Digital Transformation @ Citigroup Securities Services (NYSE: C).",
+  //   ],
+  //   companies: ["/images/companies/1.svg", "/images/companies/20.svg"],
+  //   linkedinUrl: "https://www.linkedin.com/in/andrewirl",
+  // },
 ];
 
 export const teamMembers = [
@@ -145,6 +144,7 @@ export const teamMembers = [
     avatar: "/images/team/stephen_rossetter.png",
     description: [
       "Co-Founder/Managing Partner at Centripetal Capital Partners.",
+      "Former CPA with over 35 years of financial and private equity investing experience.",
     ],
     companies: ["/images/companies/21.svg", "/images/companies/19.svg"],
     linkedinUrl: "https://www.linkedin.com/in/steve-rossetter-a81a08a",

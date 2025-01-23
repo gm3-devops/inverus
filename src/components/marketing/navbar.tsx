@@ -47,7 +47,8 @@ const Navbar = () => {
                                     in
                                 </span>
                                 <svg
-                                    className="w-6 h-6 mx-1 text-blue-300 animate-draw-check"
+                                    // className="w-6 h-6 mx-1 text-blue-300 animate-draw-check"
+                                    className="w-6 h-6 mx-1 text-blue-300"
                                     viewBox="0 0 24 24"
                                     fill="none"
                                     stroke="currentColor"
