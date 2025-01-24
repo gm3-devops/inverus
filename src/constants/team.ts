@@ -79,7 +79,7 @@ export const advisorMember = [
       "EVP, Worldwide Managing Director @ Ogilvy.",
       "President @ gyro NY: Acquired by Dentsu (Euronext: DNTUY).",
     ],
-    companies: ["/images/companies/11.svg", "/images/companies/24.svg"],
+    companies: ["/images/companies/18.svg", "/images/companies/24.svg"],
     linkedinUrl: "https://www.linkedin.com/in/keith-turco",
   },
   // {
