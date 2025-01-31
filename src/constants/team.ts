@@ -82,19 +82,21 @@ export const advisorMember = [
     companies: ["/images/companies/18.svg", "/images/companies/24.svg"],
     linkedinUrl: "https://www.linkedin.com/in/keith-turco",
   },
-  // {
-  //   key: 4,
-  //   name: "Andrew O’Doherty",
-  //   title: "Capital & Digital Transformation Expert",
-  //   avatar: "/images/team/andrew_odoherty.png",
-  //   description: [
-  //     "Founder/Managing Partner @ gm3: A Business & Technology Advisory firm.",
-  //     "Founder @ My Data Hub: An early-stage decentralized data marketplace platform leveraging blockchain technology.",
-  //     "Global Head of Ops & Onboarding Digital Transformation @ Citigroup Securities Services (NYSE: C).",
-  //   ],
-  //   companies: ["/images/companies/1.svg", "/images/companies/20.svg"],
-  //   linkedinUrl: "https://www.linkedin.com/in/andrewirl",
-  // },
+  {
+    key: 4,
+    name: "Alan Kessman",
+    title: "Strategic Growth & Turnaround Leader",
+    avatar: "/images/team/alan_kessman.png",
+    description: [
+      "CEO of multiple middle-market companies, leading turnarounds and growth strategies for firms up to $500M in revenue.",
+      "Led the turnaround and sale of Universal Marine Medical, the global leader in maritime medical product distribution.",
+      "Served on 16 private and public company boards, advising on strategy, operations, and financial performance.",
+      "Expertise in strategic execution, acquisitions, sales growth, operational transformation, and securing financing.",
+      "Proven track record in scaling businesses, optimizing logistics, and mentoring high-performing teams.",
+    ],
+    companies: ["/images/companies/25.svg", "/images/companies/26.svg"],
+    linkedinUrl: "https://www.linkedin.com/in/alan-kessman-bb787016/",
+  },
 ];
 
 export const teamMembers = [
