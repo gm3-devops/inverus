@@ -17,10 +17,10 @@ const BioCard = ({ name, title, avatar, bio, companies, linkedinUrl }: BioCardPr
     return (
         <Card className="max-w-lg">
             {/* Header with Avatar and Company Logos */}
-            <CardHeader className="flex">
+            <CardHeader className="flex items-cente">
                 <div className="flex items-center space-x-4">
-                    <div className="relative h-16 w-16 rounded-full border-2 border-blue-500 overflow-hidden items-start">
-                        <Image src={avatar} alt={name} layout="fill" objectFit="cover" />
+                    <div className="relative h-16 w-16 aspect-square rounded-full border-2 border-blue-500 overflow-hidden">
+                        <Image src={avatar} alt={name} width={64} height={64} className="rounded-full object-cover" />
                     </div>
                     <div>
                         <div className="flex items-center space-x-6">
